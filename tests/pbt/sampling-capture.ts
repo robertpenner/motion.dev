@@ -70,8 +70,11 @@ export async function capture(input: TransformCase) {
             payloads: JSON.parse(JSON.stringify(adapter.payloads)) as Payload[],
         }
     } finally {
-        await adapter.dispose()
-        prototype.numberAt = original
+        try {
+            await adapter.dispose()
+        } finally {
+            prototype.numberAt = original
+        }
     }
 }
 
