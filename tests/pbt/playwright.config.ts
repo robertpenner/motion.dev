@@ -1,9 +1,16 @@
 import { defineConfig, devices } from "@playwright/test"
 import { subjectRoot } from "./revisions"
 
+const port = Number(process.env.PBT_PORT || 8022)
+
 export default defineConfig({
-    testDir: ".",
-    testMatch: "**/*.property.spec.ts",
+    testDir: "..",
+    testMatch: [
+        "**/pbt/*.property.spec.ts",
+        "**/animate/independent-transforms-lifecycle.spec.ts",
+        "**/animate/independent-transforms.spec.ts",
+        "**/animate/independent-transforms-handoff.spec.ts",
+    ],
     timeout: 180000,
     workers: 1,
     retries: 0,
@@ -16,7 +23,7 @@ export default defineConfig({
     ],
     outputDir: "../../test_results/pbt-browser",
     use: {
-        baseURL: "http://localhost:8017/playwright/",
+        baseURL: `http://localhost:${port}/playwright/`,
         trace: "retain-on-failure",
     },
     projects: [
@@ -24,9 +31,9 @@ export default defineConfig({
         { name: "webkit", use: { ...devices["Desktop Safari"] } },
     ],
     webServer: {
-        command: "yarn vite --port 8017 --strictPort",
+        command: `yarn vite --port ${port} --strictPort`,
         cwd: `${subjectRoot}/dev/html`,
-        url: "http://localhost:8017",
+        url: `http://localhost:${port}`,
         reuseExistingServer: false,
     },
 })

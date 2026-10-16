@@ -40,7 +40,7 @@ export function productionAdapter() {
     const savedFrame = { ...frameData }
     const manualTiming = MotionGlobalConfig.useManualTiming
     const steps = Object.values(frameSteps)
-    let now = 1000
+    let now = 100000
     let disposed = false
     supportsFlags.waapi = true
     supportsFlags.linearEasing = true

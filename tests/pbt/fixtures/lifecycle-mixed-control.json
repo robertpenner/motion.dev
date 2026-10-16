@@ -1,0 +1,5 @@
+[
+    { "kind": "play", "target": "x", "value": 0.1 },
+    { "kind": "rate", "target": "all", "value": 0.25 },
+    { "kind": "play", "target": "all", "value": 0.1 }
+]

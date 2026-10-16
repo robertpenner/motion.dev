@@ -2,7 +2,9 @@
 
 Test-only fast-check 4 infrastructure for Motion #1. Production behavior and
 exports are unchanged. This setup is not the sampling (#3) or lifecycle (#2)
-investigation: those have separate coverage and completion budgets.
+investigation: those have separate coverage and completion budgets. The lifecycle
+extension's model, exclusions, budgets and replay commands are in
+[LIFECYCLE.md](./LIFECYCLE.md).
 
 ## Commands
 
