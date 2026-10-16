@@ -19,7 +19,7 @@ Prism/Phrase requirements, and adoption decisions. The subject references are
 ## Immutable provenance
 
 Both final pure and browser runs used committed harness
-**`aee9dd871768a1eab10a2551fa4dbc90a781435c`**, with `dirty: false`. Evidence and
+**`7486862b11a66c9be2ecf2f693eaf864a8a980e8`**, with `dirty: false`. Evidence and
 this report were committed afterward without changing that harness.
 
 The first delivered study used `678c4cd6afef6730a1f1e53f1dd75207987c2536`.
@@ -41,6 +41,21 @@ replay reports one fixture. The internal witness label
 `sampling accuracy characterization` is not a CLI selector. Root CLI regression
 checks pass **4/4 on each subject**, including unknown-selector failure and the
 intended standalone accuracy-assertion exit.
+
+The root integration refresh used `aee9dd871768a1eab10a2551fa4dbc90a781435c`.
+A subsequent sibling-integration check found that the source oracle still
+assumed a 1,000 ms adapter epoch. The current harness captures `adapter.now`
+immediately after startup instead. An isolated regression first failed with
+source error **88.7** at a simulated **100,000 ms** epoch, then passed with metrics
+identical to its native baseline. It passes against both subjects without merging
+the sibling PR or modifying the shared adapter.
+
+Both complete subject comparisons were refreshed again at the current harness.
+[`epoch-metric-equivalence.json`](epoch-metric-equivalence.json) verifies that all
+**2,200 case records are byte-identical** to the prior evidence at the unchanged
+current adapter epoch: parameters, seeds, actual paths and every numeric metric.
+Browser clock handling was already relative to recorded `commonStart`/`run.from`;
+no matching hardcoded source-epoch assumption or browser code change was needed.
 
 | Subject                | Exact revision built/tested                | Bundle SHA-256 (898 dist files each)                               |
 | ---------------------- | ------------------------------------------ | ------------------------------------------------------------------ |
@@ -257,6 +272,8 @@ presented as a newly discovered/minimized current defect.
 -   `*/browser-*-residue*.png`: paused and free-running raw screenshots.
 -   `*/runner-receipts.json`: successful root bounded/discovery/browser selections
     with their own units and exact subject/harness provenance.
+-   `epoch-metric-equivalence.json`: per-subject SHA-256 equality proof against
+    evidence commit `0890cac5f` before the epoch-origin correction.
 -   `replays/*.log`: all twelve standalone expected-failure assertion outputs.
 -   [`../../tests/pbt/fixtures/sampling`](../../tests/pbt/fixtures/sampling):
     reusable plain-data specification and all deterministic replay fixtures.
@@ -321,6 +338,7 @@ Other successful gates:
 ```sh
 yarn tsc -p tests/pbt/tsconfig.json --pretty false
 node --test scripts/pbt-sampling-runner.test.mjs
+FC_PROPERTY='sampling source oracle follows the adapter epoch' yarn test:pbt
 yarn prettier --check tests/pbt/sampling*.ts tests/pbt/execution-receipt.ts tests/pbt/browser-adapter.ts \
   tests/pbt/easing.ts tests/pbt/types.ts tests/pbt/playwright.config.ts \
   tests/pbt/jest.config.cjs tests/pbt/tsconfig.json scripts/pbt-sampling-evidence.mjs \
@@ -340,6 +358,7 @@ regressions passed **4/4 per subject**; existing root browser smoke passed **2/2
 on current; deterministic reference root selection passed. The earlier combined
 PBT invocation also passed **5 Jest tests +4 browser tests per subject**. Explicit
 opt-in and selector-filtered Jest skips are not skipped generated cases.
+The new shifted-epoch root regression passed on both subjects.
 No browser engine was skipped or reinstalled. No Penner files were changed, so
 Penner checks were inapplicable.
 

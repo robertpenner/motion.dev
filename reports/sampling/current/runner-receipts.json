@@ -1,31 +1,5 @@
 [
   {
-    "property": "sampling browser confirmation and independent payload oracle",
-    "mode": "browser",
-    "completed": 18,
-    "unit": "fixtures",
-    "artifact": "/Users/robertpenner/git/robertpenner/motion.dev.worktrees/worktree-ticket-3-sampling/test_results/pbt-sampling/current/browser-chromium.json",
-    "revisions": {
-      "subject": "1cdaf642291dec275c8d218d383fe8cefa7fb91b",
-      "harness": "aee9dd871768a1eab10a2551fa4dbc90a781435c",
-      "subjectRoot": "/Users/robertpenner/git/robertpenner/motion.dev.worktrees/worktree-tickets-1-2-3-execution",
-      "dirty": false
-    }
-  },
-  {
-    "property": "sampling browser confirmation and independent payload oracle",
-    "mode": "browser",
-    "completed": 18,
-    "unit": "fixtures",
-    "artifact": "/Users/robertpenner/git/robertpenner/motion.dev.worktrees/worktree-ticket-3-sampling/test_results/pbt-sampling/current/browser-webkit.json",
-    "revisions": {
-      "subject": "1cdaf642291dec275c8d218d383fe8cefa7fb91b",
-      "harness": "aee9dd871768a1eab10a2551fa4dbc90a781435c",
-      "subjectRoot": "/Users/robertpenner/git/robertpenner/motion.dev.worktrees/worktree-tickets-1-2-3-execution",
-      "dirty": false
-    }
-  },
-  {
     "property": "sampling discovery and path-preserving shrinking",
     "mode": "discovery",
     "completed": 8,
@@ -33,7 +7,7 @@
     "artifact": "/Users/robertpenner/git/robertpenner/motion.dev.worktrees/worktree-ticket-3-sampling/test_results/pbt-sampling/current/discoveries.json",
     "revisions": {
       "subject": "1cdaf642291dec275c8d218d383fe8cefa7fb91b",
-      "harness": "aee9dd871768a1eab10a2551fa4dbc90a781435c",
+      "harness": "7486862b11a66c9be2ecf2f693eaf864a8a980e8",
       "subjectRoot": "/Users/robertpenner/git/robertpenner/motion.dev.worktrees/worktree-tickets-1-2-3-execution",
       "dirty": false
     }
@@ -46,7 +20,33 @@
     "artifact": "/Users/robertpenner/git/robertpenner/motion.dev.worktrees/worktree-ticket-3-sampling/test_results/pbt-sampling/current/bounded.json",
     "revisions": {
       "subject": "1cdaf642291dec275c8d218d383fe8cefa7fb91b",
-      "harness": "aee9dd871768a1eab10a2551fa4dbc90a781435c",
+      "harness": "7486862b11a66c9be2ecf2f693eaf864a8a980e8",
+      "subjectRoot": "/Users/robertpenner/git/robertpenner/motion.dev.worktrees/worktree-tickets-1-2-3-execution",
+      "dirty": false
+    }
+  },
+  {
+    "property": "sampling browser confirmation and independent payload oracle",
+    "mode": "browser",
+    "completed": 18,
+    "unit": "fixtures",
+    "artifact": "/Users/robertpenner/git/robertpenner/motion.dev.worktrees/worktree-ticket-3-sampling/test_results/pbt-sampling/current/browser-chromium.json",
+    "revisions": {
+      "subject": "1cdaf642291dec275c8d218d383fe8cefa7fb91b",
+      "harness": "7486862b11a66c9be2ecf2f693eaf864a8a980e8",
+      "subjectRoot": "/Users/robertpenner/git/robertpenner/motion.dev.worktrees/worktree-tickets-1-2-3-execution",
+      "dirty": false
+    }
+  },
+  {
+    "property": "sampling browser confirmation and independent payload oracle",
+    "mode": "browser",
+    "completed": 18,
+    "unit": "fixtures",
+    "artifact": "/Users/robertpenner/git/robertpenner/motion.dev.worktrees/worktree-ticket-3-sampling/test_results/pbt-sampling/current/browser-webkit.json",
+    "revisions": {
+      "subject": "1cdaf642291dec275c8d218d383fe8cefa7fb91b",
+      "harness": "7486862b11a66c9be2ecf2f693eaf864a8a980e8",
       "subjectRoot": "/Users/robertpenner/git/robertpenner/motion.dev.worktrees/worktree-tickets-1-2-3-execution",
       "dirty": false
     }

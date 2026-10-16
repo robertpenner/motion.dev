@@ -94,3 +94,10 @@ and both browser engines were refreshed using immutable harness
 `aee9dd871768a1eab10a2551fa4dbc90a781435c`, without domain or quota changes.
 The exact seed/path root selector is the actual Jest title
 `sampling discovery and path-preserving shrinking`, not the internal witness label.
+
+The sibling adapter-epoch integration follow-up captures `adapter.now` after
+startup instead of assuming 1,000 ms. A failing-first 100,000 ms regression now
+passes on both subjects; all 2,200 generated metric records remain byte-identical
+at the current epoch. Complete comparison evidence was refreshed under immutable
+harness `7486862b11a66c9be2ecf2f693eaf864a8a980e8`. No sibling merge, shared-adapter
+change or production change was needed.

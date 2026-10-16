@@ -21,6 +21,11 @@ They can be reused without Motion imports:
     plus center. Motion's order is translation → scale → rotation → skewX
     as a CSS transform-function list; it is **not** Penner composition order.
 
+Source sampling timestamps are relative to `adapter.now` captured after startup,
+not a fixed absolute epoch. The isolated root check
+`FC_PROPERTY='sampling source oracle follows the adapter epoch' yarn test:pbt`
+also verifies a simulated 100,000 ms epoch without modifying the shared adapter.
+
 `manifest.json` identifies paired generated original/minimized witnesses,
 known controls, and independent-oracle payload checks. `path` is required
 to remain the actual instrumented production branch in browser replay.

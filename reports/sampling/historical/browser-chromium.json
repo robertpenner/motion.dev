@@ -1,7 +1,7 @@
 {
   "revisions": {
     "subject": "e0c0e7fa8c47a0b070ffd630a5fc2d03d68e58f9",
-    "harness": "aee9dd871768a1eab10a2551fa4dbc90a781435c",
+    "harness": "7486862b11a66c9be2ecf2f693eaf864a8a980e8",
     "subjectRoot": "/Users/robertpenner/git/robertpenner/motion.dev.worktrees/worktree-pbt-historical-e0c0e7f",
     "dirty": false,
     "bundle": {
@@ -17,17 +17,17 @@
   "paintingControl": {
     "rect": {
       "left": 200,
-      "top": 191.47265625,
+      "top": 191.47781372070312,
       "width": 100,
       "height": 100
     },
-    "transform": "matrix(1, 0, 0, 1, 0, -8.52735)",
+    "transform": "matrix(1, 0, 0, 1, 0, -8.52218)",
     "runs": [
       {
-        "from": 479.7000000011176,
-        "to": 1679.7000000011176,
+        "from": 512.2999999988824,
+        "to": 1712.2999999988824,
         "starts": [
-          479.7000000011176
+          512.2999999988824
         ],
         "path": "shared-progress"
       }
@@ -410,16 +410,16 @@
         "instrumentation": {
           "runs": [
             {
-              "from": 11280.89999999851,
-              "to": 11880.89999999851,
+              "from": 10555.700000001118,
+              "to": 11155.700000001118,
               "starts": [
-                11280.89999999851,
-                11280.89999999851
+                10555.700000001118,
+                10555.700000001118
               ],
               "path": "shared-progress"
             }
           ],
-          "commonStart": 11280.89999999851
+          "commonStart": 10555.700000001118
         },
         "path": {
           "path": "native-or-shared-linear",
@@ -1240,16 +1240,16 @@
         "instrumentation": {
           "runs": [
             {
-              "from": 10726.799999998882,
-              "to": 10926.799999998882,
+              "from": 10415.699999999255,
+              "to": 10615.699999999255,
               "starts": [
-                10726.799999998882,
-                10726.799999998882
+                10415.699999999255,
+                10415.699999999255
               ],
               "path": "shared-progress"
             }
           ],
-          "commonStart": 10726.799999998882
+          "commonStart": 10415.699999999255
         },
         "path": {
           "path": "native-or-shared-linear",
@@ -2092,16 +2092,16 @@
         "instrumentation": {
           "runs": [
             {
-              "from": 10782.900000000373,
-              "to": 11082.900000000373,
+              "from": 10404.60000000149,
+              "to": 10704.60000000149,
               "starts": [
-                10782.900000000373,
-                10782.900000000373
+                10404.60000000149,
+                10404.60000000149
               ],
               "path": "adaptive"
             }
           ],
-          "commonStart": 10782.900000000373
+          "commonStart": 10404.60000000149
         },
         "path": {
           "path": "adaptive",
@@ -2935,16 +2935,16 @@
         "instrumentation": {
           "runs": [
             {
-              "from": 10820.5,
-              "to": 11020.5,
+              "from": 10401.200000001118,
+              "to": 10601.200000001118,
               "starts": [
-                10820.5,
-                10820.5
+                10401.200000001118,
+                10401.200000001118
               ],
               "path": "adaptive"
             }
           ],
-          "commonStart": 10820.5
+          "commonStart": 10401.200000001118
         },
         "path": {
           "path": "adaptive",
@@ -3793,16 +3793,16 @@
         "instrumentation": {
           "runs": [
             {
-              "from": 10512,
-              "to": 11512,
+              "from": 10406.099999999627,
+              "to": 11406.099999999627,
               "starts": [
-                10512,
-                10512
+                10406.099999999627,
+                10406.099999999627
               ],
               "path": "shared-progress"
             }
           ],
-          "commonStart": 10512
+          "commonStart": 10406.099999999627
         },
         "path": {
           "path": "native-or-shared-linear",
@@ -4695,16 +4695,16 @@
         "instrumentation": {
           "runs": [
             {
-              "from": 10440.5,
-              "to": 11440.5,
+              "from": 10460.599999999627,
+              "to": 11460.599999999627,
               "starts": [
-                10440.5,
-                10440.5
+                10460.599999999627,
+                10460.599999999627
               ],
               "path": "shared-progress"
             }
           ],
-          "commonStart": 10440.5
+          "commonStart": 10460.599999999627
         },
         "path": {
           "path": "native-or-shared-linear",
@@ -5841,16 +5841,16 @@
         "instrumentation": {
           "runs": [
             {
-              "from": 10503.099999999627,
-              "to": 12410.099999999627,
+              "from": 10699.200000001118,
+              "to": 12606.200000001118,
               "starts": [
-                10503.099999999627,
-                10503.099999999627
+                10699.200000001118,
+                10699.200000001118
               ],
               "path": "adaptive"
             }
           ],
-          "commonStart": 10503.099999999627
+          "commonStart": 10699.200000001118
         },
         "path": {
           "path": "adaptive",
@@ -6834,16 +6834,16 @@
         "instrumentation": {
           "runs": [
             {
-              "from": 10432.39999999851,
-              "to": 10632.39999999851,
+              "from": 10427.700000001118,
+              "to": 10627.700000001118,
               "starts": [
-                10432.39999999851,
-                10432.39999999851
+                10427.700000001118,
+                10427.700000001118
               ],
               "path": "adaptive"
             }
           ],
-          "commonStart": 10432.39999999851
+          "commonStart": 10427.700000001118
         },
         "path": {
           "path": "adaptive",
@@ -8361,16 +8361,16 @@
         "instrumentation": {
           "runs": [
             {
-              "from": 10422.699999999255,
-              "to": 10465.699999999255,
+              "from": 10442.599999999627,
+              "to": 10485.599999999627,
               "starts": [
-                10422.699999999255,
-                10422.699999999255
+                10442.599999999627,
+                10442.599999999627
               ],
               "path": "adaptive"
             }
           ],
-          "commonStart": 10422.699999999255
+          "commonStart": 10442.599999999627
         },
         "path": {
           "path": "adaptive",
@@ -10581,16 +10581,16 @@
         "instrumentation": {
           "runs": [
             {
-              "from": 10469.699999999255,
-              "to": 10484.699999999255,
+              "from": 10440.60000000149,
+              "to": 10455.60000000149,
               "starts": [
-                10469.699999999255,
-                10469.699999999255
+                10440.60000000149,
+                10440.60000000149
               ],
               "path": "adaptive"
             }
           ],
-          "commonStart": 10469.699999999255
+          "commonStart": 10440.60000000149
         },
         "path": {
           "path": "adaptive",
@@ -12060,16 +12060,16 @@
         "instrumentation": {
           "runs": [
             {
-              "from": 10433.800000000745,
-              "to": 10652.800000000745,
+              "from": 10430.799999998882,
+              "to": 10649.799999998882,
               "starts": [
-                10433.800000000745,
-                10433.800000000745
+                10430.799999998882,
+                10430.799999998882
               ],
               "path": "shared-progress"
             }
           ],
-          "commonStart": 10433.800000000745
+          "commonStart": 10430.799999998882
         },
         "path": {
           "path": "shared-progress",
@@ -12747,16 +12747,16 @@
         "instrumentation": {
           "runs": [
             {
-              "from": 10452.400000000373,
-              "to": 10652.400000000373,
+              "from": 10439,
+              "to": 10639,
               "starts": [
-                10452.400000000373,
-                10452.400000000373
+                10439,
+                10439
               ],
               "path": "shared-progress"
             }
           ],
-          "commonStart": 10452.400000000373
+          "commonStart": 10439
         },
         "path": {
           "path": "shared-progress",
@@ -13400,15 +13400,15 @@
         "instrumentation": {
           "runs": [
             {
-              "from": 10490.199999999255,
-              "to": 11490.199999999255,
+              "from": 10448.299999998882,
+              "to": 11448.299999998882,
               "starts": [
-                10490.199999999255
+                10448.299999998882
               ],
               "path": "shared-progress"
             }
           ],
-          "commonStart": 10490.199999999255
+          "commonStart": 10448.299999998882
         },
         "path": {
           "path": "shared-progress",
@@ -13955,15 +13955,15 @@
         "instrumentation": {
           "runs": [
             {
-              "from": 10453.5,
-              "to": 11653.5,
+              "from": 10470.400000000373,
+              "to": 11670.400000000373,
               "starts": [
-                10453.5
+                10470.400000000373
               ],
               "path": "shared-progress"
             }
           ],
-          "commonStart": 10453.5
+          "commonStart": 10470.400000000373
         },
         "path": {
           "path": "shared-progress",
@@ -14475,15 +14475,15 @@
         "instrumentation": {
           "runs": [
             {
-              "from": 10499,
-              "to": 11499,
+              "from": 10505,
+              "to": 11505,
               "starts": [
-                10499
+                10505
               ],
               "path": "native"
             }
           ],
-          "commonStart": 10499
+          "commonStart": 10505
         },
         "path": {
           "path": "native",
@@ -15089,16 +15089,16 @@
         "instrumentation": {
           "runs": [
             {
-              "from": 10457.5,
-              "to": 11457.5,
+              "from": 10520.199999999255,
+              "to": 11520.199999999255,
               "starts": [
-                10457.5,
-                10457.5
+                10520.199999999255,
+                10520.199999999255
               ],
               "path": "shared-progress"
             }
           ],
-          "commonStart": 10457.5
+          "commonStart": 10520.199999999255
         },
         "path": {
           "path": "shared-progress",
@@ -16112,19 +16112,19 @@
         "instrumentation": {
           "runs": [
             {
-              "from": 10470,
-              "to": 11470,
+              "from": 10478.5,
+              "to": 11478.5,
               "starts": [
-                10470,
-                10470,
-                10470,
-                10470,
-                10470
+                10478.5,
+                10478.5,
+                10478.5,
+                10478.5,
+                10478.5
               ],
               "path": "adaptive"
             }
           ],
-          "commonStart": 10470
+          "commonStart": 10478.5
         },
         "path": {
           "path": "adaptive",
