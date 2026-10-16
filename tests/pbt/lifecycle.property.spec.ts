@@ -1,6 +1,10 @@
 import { expect, test } from "@playwright/test"
 import { lifecycleBrowser } from "./lifecycle-browser"
-import { caseArbitrary, categories } from "./lifecycle-model"
+import {
+    caseArbitrary,
+    categories,
+    type LifecycleCase,
+} from "./lifecycle-model"
 import { browserRevisions } from "./revisions"
 import { runProperty } from "./runner"
 
@@ -14,7 +18,9 @@ for (const category of categories) {
         const records: unknown[] = []
         await runProperty(
             `lifecycle browser ${category}`,
-            caseArbitrary.map((input) => ({ ...input, category })),
+            caseArbitrary.map(
+                (input): LifecycleCase => ({ ...input, category })
+            ),
             async (input, coverage) => {
                 const result = await lifecycleBrowser(page, input)
                 const native = (snapshot: any) =>
@@ -96,6 +102,12 @@ for (const category of categories) {
                         Math.abs(row.rect.top - expectedRect.top)
                     ).toBeLessThan(row.expected.y.tolerance + 4)
                     if (row.label === "after:seek") {
+                        const before = result.snapshots.find(
+                            (snapshot) => snapshot.label === "before:seek"
+                        )
+                        expect(
+                            Math.abs(before.controls[0].time - input.seek)
+                        ).toBeGreaterThan(0.002)
                         expect(row.controls[0].time).toBeCloseTo(input.seek, 3)
                         const expectedX = (input.seek / 1.5) * 100
                         if (Math.abs(row.x - expectedX) > 0.2)
@@ -105,8 +117,13 @@ for (const category of categories) {
                                 observed: row.x,
                             })
                     }
-                    if (row.label === "after:rate")
+                    if (row.label === "after:rate") {
+                        const before = result.snapshots.find(
+                            (snapshot) => snapshot.label === "before:rate"
+                        )
+                        expect(before.controls[0].speed).not.toBe(input.rate)
                         expect(row.controls[0].speed).toBe(input.rate)
+                    }
                 }
                 if (category.includes("pause")) {
                     const paused = result.snapshots.find(
@@ -264,6 +281,9 @@ for (const category of categories) {
                         input.seek < 0.15 ||
                         input.seek > 0.65 ||
                         ![0.5, 1, 2].includes(input.rate) ||
+                        (category.endsWith("rate") &&
+                            !category.startsWith("negative") &&
+                            input.rate === 1) ||
                         !Number.isInteger(input.wait) ||
                         input.wait < 70 ||
                         input.wait > 100

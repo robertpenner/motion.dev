@@ -30,7 +30,9 @@ export function allowed(model: LifecycleModel, operation: Operation) {
         ? tracks.some((track) => !track.paused)
         : operation.kind === "play"
         ? tracks.some((track) => track.paused)
-        : true
+        : operation.kind === "seek"
+        ? tracks.some((track) => track.time !== operation.value)
+        : tracks.some((track) => track.rate !== operation.value)
 }
 
 /** Authored linear trajectory, not Motion's sampler or built keyframes. */

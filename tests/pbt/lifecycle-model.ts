@@ -93,6 +93,6 @@ export interface LifecycleCase {
 export const caseArbitrary = fc.record({
     category: fc.constantFrom(...categories),
     seek: fc.integer({ min: 15, max: 65 }).map((n) => n / 100),
-    rate: fc.constantFrom(0.5, 1, 2),
+    rate: fc.constantFrom(0.5, 2),
     wait: fc.integer({ min: 70, max: 100 }),
 })

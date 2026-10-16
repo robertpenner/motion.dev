@@ -23,4 +23,10 @@ it("requires a real pause/play transition and keeps unrelated tracks independent
     apply(model, { kind: "seek", target: "x", value: 0.5 })
     expect(model.x.time).toBe(0.5)
     expect(model.y.time).toBe(0)
+    expect(allowed(model, { kind: "seek", target: "x", value: 0.5 })).toBe(
+        false
+    )
+    expect(allowed(model, { kind: "rate", target: "all", value: 1 })).toBe(
+        false
+    )
 })

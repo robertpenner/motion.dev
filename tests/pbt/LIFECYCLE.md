@@ -7,6 +7,8 @@ controls, and the production `animateElement` adapter. Each of 200 cases starts
 with an observed native effect, pauses/seeks both tracks, then executes at most
 16 generated commands. A redundant pause/play is rejected by the command
 precondition; synchronized play is allowed when only one track is paused.
+Redundant seek/rate commands are also rejected by model preconditions, and the
+browser rate categories use only 0.5 and 2 (never an unchanged initial rate of 1).
 Time, state, positive rate and disposal/owned-effect uniqueness are assertions.
 The manual clock starts at 100000 ms so generated positive seeks/rates cannot
 accidentally put a start timestamp at the special zero origin.
@@ -41,8 +43,12 @@ seek/hold tolerance is 0.2 px; control time tolerance is 2 ms (JS rounds elapsed
 milliseconds). Independent geometry allows that scalar tolerance plus 4 px for
 rotational timing; matrix/rectangle self-consistency is also checked at 0.1 px.
 These are short correctness experiments, not smoothness or performance claims.
-Velocity is not asserted: this domain excludes springs/inertia and does not
-promise instantaneous continuity across authored seeks, reversals or writes.
+The retained evidence is also audited with `node scripts/pbt-lifecycle-audit.mjs`:
+continuous unrelated x trajectories in eight handoff categories must move forward,
+with finite-difference displacement residual at most 0.25 px relative to the
+independent reference over 20–500 ms windows. This is not an instantaneous-velocity
+or spring-momentum assertion. Authored seeks, reversals, pause/rate changes and
+interrupted x trajectories are excluded from that continuity audit.
 
 ## Allowed paths and exclusions
 
