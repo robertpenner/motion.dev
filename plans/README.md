@@ -27,6 +27,16 @@ The 2026-06-10 runs were non-interactive, so plans were written for the top find
 
 ## Execution order & status
 
+Independent-transform prototype note
+[`039`](039-independent-transform-acceleration.md) has a completed bounded
+sampling follow-up: Motion execution
+[#3](https://github.com/robertpenner/motion.dev/issues/3), delivered in
+[PR #6](https://github.com/robertpenner/motion.dev/pull/6).
+Status: **DONE (research evidence only)**. See
+[`reports/sampling`](../reports/sampling/README.md); no runtime changes or global
+accuracy guarantee are implied. This research is separate from the implementation
+plans below.
+
 | Plan | Title | Priority | Effort | Depends on | Status |
 |------|-------|----------|--------|------------|--------|
 | 006 | Rotate exposed UPDATE_SECRET_TOKEN + secret-scan CI gate | P1 | S | — (Step 0 is a human action) | TODO |

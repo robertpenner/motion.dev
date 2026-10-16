@@ -6,6 +6,9 @@ control**. No runtime changes, automatic fixes, upstream publication, performanc
 claims, newly established documented-contract violation, or current implementation
 regression. This is bounded evidence, not a correctness proof.
 
+Delivery: [Motion PR #6](https://github.com/robertpenner/motion.dev/pull/6),
+stacked on shared-infrastructure PR #4; neither PR is merged by this execution.
+
 Motion owns execution under [motion.dev#3](https://github.com/robertpenner/motion.dev/issues/3).
 [penner#3404](https://github.com/robertpenner/penner/issues/3404) owns interpretation,
 Prism/Phrase requirements, and adoption decisions. The subject references are

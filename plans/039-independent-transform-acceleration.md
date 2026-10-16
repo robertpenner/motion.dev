@@ -64,3 +64,25 @@ These stay accelerated, because tracks are sampled and the group rebuilds:
 -   Hand optimised appear animations into the group, so hydration stays on the compositor.
 -   SVG `transform` attribute support.
 -   Benchmark: 500 elements animating `x` on a busy main thread, before and after.
+
+## Sampling investigation execution notes (2026-10-16)
+
+Motion execution issue [#3](https://github.com/robertpenner/motion.dev/issues/3)
+delivered in [PR #6](https://github.com/robertpenner/motion.dev/pull/6), based on
+shared infrastructure PR #4. Status: **DONE (bounded investigation evidence)**;
+no runtime fix or upstream publication was authorized or performed.
+
+The same committed test-only harness completed 1,100 generated cases on each of
+the exact #3897 merge and recorded current subjects. Six branch-preserving
+minimized accuracy limitations were confirmed in Chromium 138 and WebKit 18.5;
+the already-fixed round-trip painting problem remains a historical control.
+The local sampler tolerances described above must not be read as a universal
+source-channel or screen-space accuracy guarantee.
+
+See [`reports/sampling/README.md`](../reports/sampling/README.md) for exact subject,
+harness and bundle hashes, family/path quotas, independent references, raw
+evidence, fixture specification, verified replay commands and bounded limitations.
+The original prototype's WebKit testing note is historical; the bounded sampling
+and ordinary transform/handoff checks now include WebKit, not all prototype
+behaviors or Firefox. Penner interpretation/adoption remains in
+[penner#3404](https://github.com/robertpenner/penner/issues/3404).
