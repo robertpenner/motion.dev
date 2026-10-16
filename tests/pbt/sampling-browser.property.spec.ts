@@ -108,8 +108,7 @@ path: nativeEasing ? "native" : easing ? "shared-progress" : "adaptive" });
             resolve(directory, `browser-${browserName}-progress.json`),
             JSON.stringify(results, null, 2)
         )
-        if (item.kind === "oracle")
-            expect(maxInterpolationError).toBeLessThan(0.03)
+        expect(maxInterpolationError).toBeLessThan(0.03)
         expect(measurements.every((m) => m.matrix.every(Number.isFinite))).toBe(
             true
         )

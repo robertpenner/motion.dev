@@ -149,6 +149,10 @@ export async function browserAdapter(
                 )
                 active.forEach((animation) => animation.pause())
                 if (savedFrame) Object.assign(clock.frameData, savedFrame)
+                if (sampling)
+                    await Promise.all(
+                        active.map((animation) => animation.ready)
+                    )
                 const measurements = []
                 const run = runs?.[runs.length - 1]
                 for (const seconds of fixture.sampleTimes) {
@@ -215,6 +219,18 @@ export async function browserAdapter(
                             height: rect.height,
                         },
                         pixel,
+                        ...(sampling
+                            ? {
+                                  nativeStates: active.map((animation) => ({
+                                      currentTime: animation.currentTime,
+                                      playState: animation.playState,
+                                      pending: animation.pending,
+                                      progress:
+                                          animation.effect?.getComputedTiming()
+                                              .progress,
+                                  })),
+                              }
+                            : {}),
                     })
                 }
                 payloads.forEach((payload, i) => {
