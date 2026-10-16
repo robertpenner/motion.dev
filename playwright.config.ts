@@ -34,6 +34,7 @@ const chromiumLaunchOptions =
  */
 export default defineConfig({
     testDir: "./tests",
+    testIgnore: /\/pbt\//,
     /* Run tests in files in parallel */
     fullyParallel: true,
     /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -61,13 +62,13 @@ export default defineConfig({
                 ...devices["Desktop Chrome"],
                 launchOptions: chromiumLaunchOptions,
             },
-            testIgnore: /tests\/react\//,
+            testIgnore: /tests\/(react|pbt)\//,
         },
 
         {
             name: "webkit",
             use: { ...devices["Desktop Safari"] },
-            testIgnore: /tests\/react\//,
+            testIgnore: /tests\/(react|pbt)\//,
         },
 
         /**
