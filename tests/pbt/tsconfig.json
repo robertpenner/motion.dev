@@ -1,0 +1,12 @@
+{
+    "extends": "../../packages/config/tsconfig.json",
+    "compilerOptions": {
+        "noEmit": true,
+        "lib": ["es2022", "dom"],
+        "baseUrl": "../..",
+        "paths": {
+            "subject/*": ["packages/motion-dom/src/*"]
+        }
+    },
+    "include": ["./**/*.ts"]
+}

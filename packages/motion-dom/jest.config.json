@@ -9,7 +9,7 @@
     ],
     "coverageDirectory": "<rootDir>/../coverage",
     "testMatch": ["**/__tests__/**/*.test.(js|ts)?(x)"],
-    "testPathIgnorePatterns": ["ssr.test.tsx"],
+    "testPathIgnorePatterns": ["ssr.test.tsx", "\\.property\\.test\\."],
     "watchPlugins": [
         "jest-watch-typeahead/filename",
         "jest-watch-typeahead/testname"

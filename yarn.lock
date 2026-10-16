@@ -6629,6 +6629,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"fast-check@npm:^4.7.0":
+  version: 4.10.2
+  resolution: "fast-check@npm:4.10.2"
+  dependencies:
+    pure-rand: ^8.0.0
+  checksum: 172eb559feceea2b226feb3bf9b867bd16f3b873b083c28e13e854adf4fde1e6a152418a50d4d97c998cc3cc684ea006247a9962d9485083a04fa5d995cc3b9f
+  languageName: node
+  linkType: hard
+
 "fast-deep-equal@npm:^3.1.1":
   version: 3.1.3
   resolution: "fast-deep-equal@npm:3.1.3"
@@ -9966,6 +9975,7 @@ __metadata:
     cypress: 4
     dotenv: ^17.2.3
     esbuild: ^0.25.0
+    fast-check: ^4.7.0
     gsap: ^3.12.5
     jest: ^29.7.0
     jest-environment-jsdom: ^29.7.0
@@ -11310,6 +11320,13 @@ __metadata:
   version: 6.1.0
   resolution: "pure-rand@npm:6.1.0"
   checksum: 8d53bc02bed99eca0b65b505090152ee7e9bd67dd74f8ff32ba1c883b87234067c5bf68d2614759fb217d82594d7a92919e6df80f97885e7b12b42af4bd3316a
+  languageName: node
+  linkType: hard
+
+"pure-rand@npm:^8.0.0":
+  version: 8.4.2
+  resolution: "pure-rand@npm:8.4.2"
+  checksum: 84bb2d24e817539eb65a44a2ffb76c8e097d97e14275e59abdf3e86a69784c7bee7fc258f9a12222acd5699772ffdfaa5272bce37526713483e508eebd0c4b23
   languageName: node
   linkType: hard
 
