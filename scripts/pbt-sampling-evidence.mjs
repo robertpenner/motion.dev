@@ -1,4 +1,4 @@
-import { mkdirSync, readFileSync, writeFileSync } from "node:fs"
+import { mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs"
 import { resolve } from "node:path"
 
 const [mode, subject] = process.argv.slice(2)
@@ -172,6 +172,25 @@ if (mode === "fixtures") {
             (perFamilyPaths[row.family][row.path] || 0) + 1
     }
     save(directory, "bounded.json", { ...bounded, perFamilyPaths })
+    const receipts = new Map()
+    for (const file of readdirSync("test_results/pbt")) {
+        if (!file.endsWith(".json")) continue
+        const receipt = JSON.parse(
+            readFileSync(resolve("test_results/pbt", file), "utf8")
+        )
+        if (
+            receipt.mode &&
+            receipt.artifact?.startsWith(input + "/") &&
+            receipt.revisions?.harness === bounded.revisions.harness &&
+            receipt.revisions?.subject === bounded.revisions.subject
+        )
+            receipts.set(receipt.artifact, receipt)
+    }
+    if (receipts.size !== 4)
+        throw new Error(
+            `Expected bounded/discovery/two browser setup receipts, received ${receipts.size}`
+        )
+    save(directory, "runner-receipts.json", [...receipts.values()])
     writeFileSync(
         resolve(directory, "cases.jsonl"),
         rows.map((row) => JSON.stringify(row)).join("\n") + "\n"

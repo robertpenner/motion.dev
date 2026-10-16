@@ -13,6 +13,7 @@ import {
 import { revisions } from "./revisions"
 import type { TransformCase } from "./types"
 import { productionAdapter } from "./production-adapter"
+import { recordExecutionReceipt } from "./execution-receipt"
 
 const directory = resolve(
     __dirname,
@@ -28,6 +29,14 @@ const saved = (name: string, value: unknown) => {
 }
 
 it("sampling bounded investigation", async () => {
+    if (
+        process.env.FC_PATH ||
+        process.env.PBT_FIXTURE ||
+        process.env.SAMPLING_FIXTURE
+    )
+        throw new Error(
+            "Bounded multi-family runs do not accept paths/fixtures; select sampling discovery or standalone replay"
+        )
     const config = configuration()
     const quota = config.deep ? 1000 : 100
     const counts: Record<string, number> = {}
@@ -150,10 +159,23 @@ it("sampling bounded investigation", async () => {
         worst,
     })
     console.log(JSON.stringify({ completed: rows.length, counts, paths }))
+    recordExecutionReceipt({
+        property: "sampling bounded investigation",
+        mode: "bounded",
+        completed: rows.length,
+        unit: "generated-cases",
+        artifact: resolve(directory, "bounded.json"),
+    })
 })
 
 it("sampling discovery and path-preserving shrinking", async () => {
     const config = configuration()
+    if (config.path && !process.env.SAMPLING_FAMILY)
+        throw new Error("Discovery path replay requires SAMPLING_FAMILY")
+    if (process.env.PBT_FIXTURE || process.env.SAMPLING_FIXTURE)
+        throw new Error(
+            "Discovery does not accept fixtures; select sampling standalone replay"
+        )
     const findings = []
     const selected: Family[] = [
         "oscillation",
@@ -232,16 +254,33 @@ it("sampling discovery and path-preserving shrinking", async () => {
         })
     }
     saved("discoveries.json", findings)
+    recordExecutionReceipt({
+        property: "sampling discovery and path-preserving shrinking",
+        mode: "discovery",
+        completed: findings.length,
+        unit: "families",
+        artifact: resolve(directory, "discoveries.json"),
+    })
 })
 
-const replay = process.env.SAMPLING_FIXTURE ? it : it.skip
+const fixtureFile = process.env.SAMPLING_FIXTURE || process.env.PBT_FIXTURE
+const replay = fixtureFile ? it : it.skip
 replay("sampling standalone replay", async () => {
-    const input: TransformCase = JSON.parse(
-        readFileSync(process.env.SAMPLING_FIXTURE!, "utf8")
-    )
+    if (process.env.FC_PATH)
+        throw new Error(
+            "Fixture replay does not accept FC_PATH; select sampling discovery for shrink-path replay"
+        )
+    const input: TransformCase = JSON.parse(readFileSync(fixtureFile!, "utf8"))
     const observed = await capture(input)
     saved("replay.json", { revisions: revisions(), observed })
     if (process.env.SAMPLING_EXPECT_FAILURE === "1")
         expect(observed.metrics.screenPointError).toBeLessThanOrEqual(1)
     else expect(observed.metrics.nonFinite).toBe(0)
+    recordExecutionReceipt({
+        property: "sampling standalone replay",
+        mode: "fixture",
+        completed: 1,
+        unit: "fixtures",
+        artifact: resolve(directory, "replay.json"),
+    })
 })

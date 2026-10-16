@@ -12,6 +12,14 @@ server defaults to port 8023 (`PBT_PORT` overrides it); ordinary suites are
 unchanged. `SAMPLING_SUBJECT=current|historical` separates final raw outputs in
 ignored `test_results/pbt-sampling` before evidence promotion.
 
+Sampling's root `FC_PROPERTY` commands use exact Jest/Playwright test titles.
+Custom sampling checks publish setup-runner execution receipts in
+`test_results/pbt`, while their full measurements remain in `pbt-sampling`.
+Receipts distinguish bounded generated budgets, discovery families and single
+fixture replays. See the sampling fixture README for working bounded, discovery,
+seed/path, fixture and browser selections. Run the root integration regression
+with `node --test scripts/pbt-sampling-runner.test.mjs`.
+
 ## Commands
 
 Use Yarn 3 from the repository root:

@@ -42,6 +42,38 @@ computed matrices alone cannot establish compositor painting.
 
 ## Standalone expected-failure replay
 
+The root setup runner supports explicit bounded, discovery and fixture modes.
+Set `PBT_SUBJECT_ROOT` to a built/stamped subject first:
+
+```sh
+FC_PROPERTY='sampling bounded investigation' yarn test:pbt
+FC_PROPERTY='sampling discovery and path-preserving shrinking' yarn test:pbt
+
+# Exact discovery replay: FC_PROPERTY is the actual Jest title, not the
+# internal witness property label "sampling accuracy characterization".
+SAMPLING_FAMILY=oscillation FC_SEED=20261116 FC_PATH=0:0:0:0:0 \
+FC_PROPERTY='sampling discovery and path-preserving shrinking' yarn test:pbt
+
+# Passing single-fixture measurement, never a generated-budget claim:
+PBT_FIXTURE=tests/pbt/fixtures/sampling/oscillation-minimized.json \
+FC_PROPERTY='sampling standalone replay' yarn test:pbt
+
+# Same fixture, deliberately failing the <=1px diagnostic assertion:
+SAMPLING_EXPECT_FAILURE=1 \
+PBT_FIXTURE=tests/pbt/fixtures/sampling/oscillation-minimized.json \
+FC_PROPERTY='sampling standalone replay' yarn test:pbt
+
+FC_PROPERTY='sampling browser confirmation and independent payload oracle' \
+  yarn test:pbt:browser
+```
+
+Custom tests publish a `PBT_RUN_ID` execution receipt only after their complete
+checks pass. Receipts distinguish generated cases, discovered families and
+fixture replay counts. Discovery/shrink replay does not claim the 1,100-case
+budget; a fixture counts as one replay. Unknown selectors still fail. Bounded
+multi-family runs reject path/fixture overrides; path replay requires the
+discovery selector plus `SAMPLING_FAMILY`.
+
 From the repository root, set `PBT_SUBJECT_ROOT` to either built/stamped
 subject and run:
 
@@ -63,7 +95,7 @@ For exact fast-check discovery replay, use the finding's recorded seed/path:
 
 ```sh
 SAMPLING_FAMILY=oscillation FC_SEED=20261116 FC_PATH=0:0:0:0:0 \
-FC_PROPERTY='sampling accuracy characterization' \
+FC_PROPERTY='sampling discovery and path-preserving shrinking' \
 yarn jest --config tests/pbt/jest.config.cjs --runInBand \
   tests/pbt/sampling.property.test.ts -t 'sampling discovery'
 ```

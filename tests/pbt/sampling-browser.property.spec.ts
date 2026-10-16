@@ -10,12 +10,21 @@ import {
     sourceChannels,
 } from "./sampling-reference"
 import type { TransformCase } from "./types"
+import { recordExecutionReceipt } from "./execution-receipt"
 
 test("sampling browser confirmation and independent payload oracle", async ({
     page,
     browser,
     browserName,
 }) => {
+    if (
+        process.env.FC_PATH ||
+        process.env.PBT_FIXTURE ||
+        process.env.SAMPLING_FIXTURE
+    )
+        throw new Error(
+            "Browser confirmation uses the reviewed manifest, not FC_PATH or a fixture override"
+        )
     const revisions = browserRevisions()
     let injections = 0
     const directory = resolve(
@@ -221,4 +230,12 @@ path: nativeEasing ? "native" : easing ? "shared-progress" : "adaptive" });
             2
         ) + "\n"
     )
+    recordExecutionReceipt({
+        property:
+            "sampling browser confirmation and independent payload oracle",
+        mode: "browser",
+        completed: results.length + 1,
+        unit: "fixtures",
+        artifact: resolve(directory, `browser-${browserName}.json`),
+    })
 })

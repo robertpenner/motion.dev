@@ -7,6 +7,7 @@ import {
     source,
 } from "./sampling-reference"
 import type { Payload, Track } from "./types"
+import { recordExecutionReceipt } from "./execution-receipt"
 
 it("independent analytic reference handles easing, list composition and boundary ownership", () => {
     expect(bezier(0.5, [0.42, 0, 0.58, 1])).toBeCloseTo(0.5, 10)
@@ -49,4 +50,11 @@ it("independent analytic reference handles easing, list composition and boundary
     expect(result.rotate).toBe(45)
     expect(matrix(result)[4]).toBe(10)
     expect(pointError(matrix(result), matrix(result))).toBe(0)
+    recordExecutionReceipt({
+        property:
+            "independent analytic reference handles easing, list composition and boundary ownership",
+        mode: "reference",
+        completed: 1,
+        unit: "checks",
+    })
 })
