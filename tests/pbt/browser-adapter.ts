@@ -45,11 +45,17 @@ export async function browserAdapter(
                 frameSteps: Record<string, { process(data: unknown): void }>
             }
             const savedFrame = sampling ? { ...clock.frameData } : undefined
-            const commonStart = sampling ? 1000 : undefined
+            // Avoid real native finish events before the manual capture is paused.
+            const commonStart = sampling
+                ? Math.max(
+                      clock.time.now(),
+                      Number(document.timeline.currentTime)
+                  ) + 10000
+                : undefined
             const flush = () => {
-                clock.time.set(1000)
+                clock.time.set(commonStart!)
                 Object.assign(clock.frameData, {
-                    timestamp: 1000,
+                    timestamp: commonStart,
                     delta: 0,
                     isProcessing: true,
                 })
@@ -59,9 +65,9 @@ export async function browserAdapter(
                 clock.frameData.isProcessing = false
             }
             if (sampling) {
-                clock.time.set(1000)
+                clock.time.set(commonStart!)
                 Object.assign(clock.frameData, {
-                    timestamp: 1000,
+                    timestamp: commonStart,
                     delta: 0,
                     isProcessing: true,
                 })

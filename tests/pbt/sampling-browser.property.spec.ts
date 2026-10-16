@@ -109,6 +109,16 @@ path: nativeEasing ? "native" : easing ? "shared-progress" : "adaptive" });
             JSON.stringify(results, null, 2)
         )
         expect(maxInterpolationError).toBeLessThan(0.03)
+        expect(
+            measurements.every((m) =>
+                m.nativeStates?.every(
+                    (state) =>
+                        state.playState === "paused" &&
+                        !state.pending &&
+                        state.currentTime !== null
+                )
+            )
+        ).toBe(true)
         expect(measurements.every((m) => m.matrix.every(Number.isFinite))).toBe(
             true
         )
