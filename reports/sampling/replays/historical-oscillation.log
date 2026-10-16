@@ -1,8 +1,4 @@
 FAIL tests/pbt/sampling.property.test.ts
-  ✕ sampling standalone replay (56 ms)
-  ○ skipped sampling bounded investigation
-  ○ skipped sampling discovery and path-preserving shrinking
-
   ● sampling standalone replay
 
     expect(received).toBeLessThanOrEqual(expected)
@@ -10,18 +6,19 @@ FAIL tests/pbt/sampling.property.test.ts
     Expected: <= 1
     Received:    2
 
-      243 |     saved("replay.json", { revisions: revisions(), observed })
-      244 |     if (process.env.SAMPLING_EXPECT_FAILURE === "1")
-    > 245 |         expect(observed.metrics.screenPointError).toBeLessThanOrEqual(1)
+      275 |     saved("replay.json", { revisions: revisions(), observed })
+      276 |     if (process.env.SAMPLING_EXPECT_FAILURE === "1")
+    > 277 |         expect(observed.metrics.screenPointError).toBeLessThanOrEqual(1)
           |                                                   ^
-      246 |     else expect(observed.metrics.nonFinite).toBe(0)
-      247 | })
-      248 |
+      278 |     else expect(observed.metrics.nonFinite).toBe(0)
+      279 |     recordExecutionReceipt({
+      280 |         property: "sampling standalone replay",
 
-      at Object.<anonymous> (tests/pbt/sampling.property.test.ts:245:51)
+      at Object.<anonymous> (tests/pbt/sampling.property.test.ts:277:51)
 
-Test Suites: 1 failed, 1 total
-Tests:       1 failed, 2 skipped, 3 total
+
+Test Suites: 1 failed, 2 skipped, 1 of 3 total
+Tests:       1 failed, 6 skipped, 7 total
 Snapshots:   0 total
-Time:        2.578 s, estimated 3 s
-Ran all test suites matching /tests\/pbt\/sampling.property.test.ts/i with tests matching "sampling standalone replay".
+Time:        2.413 s, estimated 3 s
+Ran all test suites with tests matching "^sampling standalone replay$".

@@ -19,8 +19,28 @@ Prism/Phrase requirements, and adoption decisions. The subject references are
 ## Immutable provenance
 
 Both final pure and browser runs used committed harness
-**`678c4cd6afef6730a1f1e53f1dd75207987c2536`**, with `dirty: false`. Evidence and
+**`aee9dd871768a1eab10a2551fa4dbc90a781435c`**, with `dirty: false`. Evidence and
 this report were committed afterward without changing that harness.
+
+The first delivered study used `678c4cd6afef6730a1f1e53f1dd75207987c2536`.
+Review then reproduced a setup-runner integration error: selecting a custom
+sampling test completed Jest successfully but the root wrapper exited 1 because
+the custom test had not written a run-ID receipt. The current harness adds those
+receipts after successful checks, uses actual Jest titles for root selection,
+and rejects ambiguous path/fixture overrides. The root wrapper's unknown-selector
+failure remains unchanged. All bounded, discovery and browser evidence was
+refreshed on both subjects at the new SHA; domain, quotas, measurements and
+classifications are unchanged. These final runs replace, not add to, the reported
+2,200-case budget.
+
+`*/runner-receipts.json` proves root-wrapper execution separately from the full
+sampling evidence: one 1,100-generated-case bounded receipt, one eight-family
+discovery receipt, and two 18-fixture browser receipts per subject. A selected
+seed/path replay reports one discovery family, not a generated budget; a fixture
+replay reports one fixture. The internal witness label
+`sampling accuracy characterization` is not a CLI selector. Root CLI regression
+checks pass **4/4 on each subject**, including unknown-selector failure and the
+intended standalone accuracy-assertion exit.
 
 | Subject                | Exact revision built/tested                | Bundle SHA-256 (898 dist files each)                               |
 | ---------------------- | ------------------------------------------ | ------------------------------------------------------------------ |
@@ -235,6 +255,8 @@ presented as a newly discovered/minimized current defect.
     replays per engine and revision, plus independent free-running painting control.
     That is **68 payload captures + 4 live painting checks**, excluding smoke.
 -   `*/browser-*-residue*.png`: paused and free-running raw screenshots.
+-   `*/runner-receipts.json`: successful root bounded/discovery/browser selections
+    with their own units and exact subject/harness provenance.
 -   `replays/*.log`: all twelve standalone expected-failure assertion outputs.
 -   [`../../tests/pbt/fixtures/sampling`](../../tests/pbt/fixtures/sampling):
     reusable plain-data specification and all deterministic replay fixtures.
@@ -254,27 +276,40 @@ export SAMPLING_SUBJECT=current
 # export PBT_SUBJECT_ROOT=/Users/robertpenner/git/robertpenner/motion.dev.worktrees/worktree-pbt-historical-e0c0e7f
 # export SAMPLING_SUBJECT=historical
 
-yarn jest --config tests/pbt/jest.config.cjs --runInBand \
-  tests/pbt/sampling.property.test.ts tests/pbt/sampling-reference.property.test.ts \
-  tests/pbt/smoke.property.test.ts
-yarn playwright test --config tests/pbt/playwright.config.ts \
-  sampling-browser.property.spec.ts smoke.property.spec.ts
+FC_PROPERTY='sampling bounded investigation' yarn test:pbt
+FC_PROPERTY='sampling discovery and path-preserving shrinking' yarn test:pbt
+FC_PROPERTY='sampling browser confirmation and independent payload oracle' \
+  yarn test:pbt:browser
+
+# Existing direct Jest/Playwright commands remain supported:
+# yarn jest --config tests/pbt/jest.config.cjs --runInBand \
+#   tests/pbt/sampling.property.test.ts tests/pbt/sampling-reference.property.test.ts \
+#   tests/pbt/smoke.property.test.ts
+# yarn playwright test --config tests/pbt/playwright.config.ts \
+#   sampling-browser.property.spec.ts smoke.property.spec.ts
 
 # Optional larger host search (not included in reported counts):
 PBT_DEPTH=deep yarn jest --config tests/pbt/jest.config.cjs --runInBand \
   tests/pbt/sampling.property.test.ts -t 'sampling bounded investigation'
 
 # Expected-failure regression (intentionally exits 1 for accuracy assertion):
-SAMPLING_FIXTURE=tests/pbt/fixtures/sampling/oscillation-minimized.json \
-SAMPLING_EXPECT_FAILURE=1 yarn jest --config tests/pbt/jest.config.cjs \
-  --runInBand tests/pbt/sampling.property.test.ts -t 'sampling standalone replay'
+SAMPLING_SUBJECT=runner-replay \
+PBT_FIXTURE=tests/pbt/fixtures/sampling/oscillation-minimized.json \
+SAMPLING_EXPECT_FAILURE=1 FC_PROPERTY='sampling standalone replay' yarn test:pbt
+# Omit SAMPLING_EXPECT_FAILURE for a passing one-fixture measurement.
 
 # Exact seed/shrink replay (passing characterization wrapper):
+SAMPLING_SUBJECT=runner-replay \
 SAMPLING_FAMILY=oscillation FC_SEED=20261116 FC_PATH=0:0:0:0:0 \
-FC_PROPERTY='sampling accuracy characterization' \
-yarn jest --config tests/pbt/jest.config.cjs --runInBand \
-  tests/pbt/sampling.property.test.ts -t 'sampling discovery'
+FC_PROPERTY='sampling discovery and path-preserving shrinking' yarn test:pbt
+# Direct single-fixture replay also remains supported:
+# SAMPLING_FIXTURE=tests/pbt/fixtures/sampling/oscillation-minimized.json \
+#   yarn jest --config tests/pbt/jest.config.cjs --runInBand \
+#   tests/pbt/sampling.property.test.ts -t 'sampling standalone replay'
 ```
+
+Replay commands use a separate `SAMPLING_SUBJECT` output label so they cannot
+overwrite the full study's eight-family discovery evidence.
 
 Each of the six `*-minimized.json` files was separately replayed with the
 expected-failure command against **both subjects**; all 12 failed at the intended
@@ -285,9 +320,11 @@ Other successful gates:
 
 ```sh
 yarn tsc -p tests/pbt/tsconfig.json --pretty false
-yarn prettier --check tests/pbt/sampling*.ts tests/pbt/browser-adapter.ts \
+node --test scripts/pbt-sampling-runner.test.mjs
+yarn prettier --check tests/pbt/sampling*.ts tests/pbt/execution-receipt.ts tests/pbt/browser-adapter.ts \
   tests/pbt/easing.ts tests/pbt/types.ts tests/pbt/playwright.config.ts \
   tests/pbt/jest.config.cjs tests/pbt/tsconfig.json scripts/pbt-sampling-evidence.mjs \
+  scripts/pbt-sampling-runner.test.mjs \
   tests/pbt/fixtures/sampling/README.md tests/pbt/README.md
 yarn jest --config tests/pbt/jest.config.cjs --runInBand \
   --testMatch '**/animation/waapi/transforms/__tests__/TransformAnimation.test.ts'
@@ -297,8 +334,12 @@ PBT_SUBJECT_ROOT=/Users/robertpenner/git/robertpenner/motion.dev.worktrees/workt
 
 Results: TypeScript/format passed; targeted ordinary Jest **30/30**; ordinary
 independent-transform + handoff Playwright **52/52** across both engines.
-Final PBT suites passed on both revisions: **5 Jest tests** per subject plus
-explicit opt-in skips, **4 browser tests** per subject (sampling and smoke ×2).
+The refreshed root-selected bounded and discovery checks each passed on both
+subjects; selected browser confirmation passed **2/2 per subject**. Root CLI
+regressions passed **4/4 per subject**; existing root browser smoke passed **2/2**
+on current; deterministic reference root selection passed. The earlier combined
+PBT invocation also passed **5 Jest tests +4 browser tests per subject**. Explicit
+opt-in and selector-filtered Jest skips are not skipped generated cases.
 No browser engine was skipped or reinstalled. No Penner files were changed, so
 Penner checks were inapplicable.
 

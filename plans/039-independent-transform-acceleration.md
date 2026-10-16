@@ -86,3 +86,11 @@ The original prototype's WebKit testing note is historical; the bounded sampling
 and ordinary transform/handoff checks now include WebKit, not all prototype
 behaviors or Firefox. Penner interpretation/adoption remains in
 [penner#3404](https://github.com/robertpenner/penner/issues/3404).
+
+PR #6 integration follow-up: selected root setup commands now publish execution
+receipts only after checks complete. Bounded cases, discovered families and fixture
+replays have distinct units; unknown selectors still fail. Both subject datasets
+and both browser engines were refreshed using immutable harness
+`aee9dd871768a1eab10a2551fa4dbc90a781435c`, without domain or quota changes.
+The exact seed/path root selector is the actual Jest title
+`sampling discovery and path-preserving shrinking`, not the internal witness label.
