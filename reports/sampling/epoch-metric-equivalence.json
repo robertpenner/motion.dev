@@ -1,7 +1,7 @@
 {
   "baselineEvidenceCommit": "0890cac5fd0179c1d9592769b0c9b2d097d34f48",
   "baselineHarness": "aee9dd871768a1eab10a2551fa4dbc90a781435c",
-  "harness": "7486862b11a66c9be2ecf2f693eaf864a8a980e8",
+  "harness": "dde7bed6a5bd1c8a30f23322e64c3759cc063a46",
   "scope": "All generated case parameters, family seeds, paths and metrics at the unchanged current adapter epoch; excludes revision metadata and real-time browser captures",
   "subjects": {
     "current": {
@@ -28,9 +28,9 @@
         "completed": 1,
         "unit": "checks",
         "revisions": {
-          "subject": "1cdaf642291dec275c8d218d383fe8cefa7fb91b",
-          "harness": "7486862b11a66c9be2ecf2f693eaf864a8a980e8",
-          "subjectRoot": "/Users/robertpenner/git/robertpenner/motion.dev.worktrees/worktree-tickets-1-2-3-execution",
+          "subject": "e0c0e7fa8c47a0b070ffd630a5fc2d03d68e58f9",
+          "harness": "dde7bed6a5bd1c8a30f23322e64c3759cc063a46",
+          "subjectRoot": "/Users/robertpenner/git/robertpenner/motion.dev.worktrees/worktree-pbt-historical-e0c0e7f",
           "dirty": false
         }
       },
@@ -40,9 +40,40 @@
         "completed": 1,
         "unit": "checks",
         "revisions": {
+          "subject": "1cdaf642291dec275c8d218d383fe8cefa7fb91b",
+          "harness": "dde7bed6a5bd1c8a30f23322e64c3759cc063a46",
+          "subjectRoot": "/Users/robertpenner/git/robertpenner/motion.dev.worktrees/worktree-tickets-1-2-3-execution",
+          "dirty": false
+        }
+      }
+    ]
+  },
+  "failureIsolation": {
+    "injectedDisposalErrorPropagated": true,
+    "sourceProbeRestored": true,
+    "subsequentCapturePassed": true,
+    "receipts": [
+      {
+        "property": "sampling restores its source probe when disposal fails",
+        "mode": "reference",
+        "completed": 1,
+        "unit": "checks",
+        "revisions": {
           "subject": "e0c0e7fa8c47a0b070ffd630a5fc2d03d68e58f9",
-          "harness": "7486862b11a66c9be2ecf2f693eaf864a8a980e8",
+          "harness": "dde7bed6a5bd1c8a30f23322e64c3759cc063a46",
           "subjectRoot": "/Users/robertpenner/git/robertpenner/motion.dev.worktrees/worktree-pbt-historical-e0c0e7f",
+          "dirty": false
+        }
+      },
+      {
+        "property": "sampling restores its source probe when disposal fails",
+        "mode": "reference",
+        "completed": 1,
+        "unit": "checks",
+        "revisions": {
+          "subject": "1cdaf642291dec275c8d218d383fe8cefa7fb91b",
+          "harness": "dde7bed6a5bd1c8a30f23322e64c3759cc063a46",
+          "subjectRoot": "/Users/robertpenner/git/robertpenner/motion.dev.worktrees/worktree-tickets-1-2-3-execution",
           "dirty": false
         }
       }

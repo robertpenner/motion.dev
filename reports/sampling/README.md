@@ -19,7 +19,7 @@ Prism/Phrase requirements, and adoption decisions. The subject references are
 ## Immutable provenance
 
 Both final pure and browser runs used committed harness
-**`7486862b11a66c9be2ecf2f693eaf864a8a980e8`**, with `dirty: false`. Evidence and
+**`dde7bed6a5bd1c8a30f23322e64c3759cc063a46`**, with `dirty: false`. Evidence and
 this report were committed afterward without changing that harness.
 
 The first delivered study used `678c4cd6afef6730a1f1e53f1dd75207987c2536`.
@@ -56,6 +56,17 @@ Both complete subject comparisons were refreshed again at the current harness.
 current adapter epoch: parameters, seeds, actual paths and every numeric metric.
 Browser clock handling was already relative to recorded `commonStart`/`run.from`;
 no matching hardcoded source-epoch assumption or browser code change was needed.
+
+The epoch refresh used `7486862b11a66c9be2ecf2f693eaf864a8a980e8`. Final failure-
+isolation review added nested `finally` restoration of the `numberAt` probe even
+when adapter disposal throws. Its failing-first injected-disposal regression now
+checks propagated error identity, restored prototype identity and a subsequent
+healthy capture on both subjects. Complete comparisons were refreshed under the
+current harness; all 2,200 metric records still match the same baseline byte for
+byte. Clean failure-isolation root receipts are retained in the equivalence proof.
+One refresh attempt encountered a local Vite `route.fetch` ECONNRESET in Chromium;
+it is not rendering evidence or a counted completed run. A complete Chromium and
+WebKit rerun passed before promotion.
 
 | Subject                | Exact revision built/tested                | Bundle SHA-256 (898 dist files each)                               |
 | ---------------------- | ------------------------------------------ | ------------------------------------------------------------------ |
@@ -339,6 +350,7 @@ Other successful gates:
 yarn tsc -p tests/pbt/tsconfig.json --pretty false
 node --test scripts/pbt-sampling-runner.test.mjs
 FC_PROPERTY='sampling source oracle follows the adapter epoch' yarn test:pbt
+FC_PROPERTY='sampling restores its source probe when disposal fails' yarn test:pbt
 yarn prettier --check tests/pbt/sampling*.ts tests/pbt/execution-receipt.ts tests/pbt/browser-adapter.ts \
   tests/pbt/easing.ts tests/pbt/types.ts tests/pbt/playwright.config.ts \
   tests/pbt/jest.config.cjs tests/pbt/tsconfig.json scripts/pbt-sampling-evidence.mjs \
@@ -359,6 +371,7 @@ on current; deterministic reference root selection passed. The earlier combined
 PBT invocation also passed **5 Jest tests +4 browser tests per subject**. Explicit
 opt-in and selector-filtered Jest skips are not skipped generated cases.
 The new shifted-epoch root regression passed on both subjects.
+The injected-disposal failure-isolation root regression also passed on both.
 No browser engine was skipped or reinstalled. No Penner files were changed, so
 Penner checks were inapplicable.
 

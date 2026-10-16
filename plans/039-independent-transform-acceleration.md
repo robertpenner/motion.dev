@@ -101,3 +101,8 @@ passes on both subjects; all 2,200 generated metric records remain byte-identica
 at the current epoch. Complete comparison evidence was refreshed under immutable
 harness `7486862b11a66c9be2ecf2f693eaf864a8a980e8`. No sibling merge, shared-adapter
 change or production change was needed.
+
+Final failure-isolation review adds nested `finally` probe restoration when adapter
+disposal throws, with a failing-first regression for error/prototype identity and
+a subsequent healthy capture. Both subjects and both browsers were refreshed at
+`dde7bed6a5bd1c8a30f23322e64c3759cc063a46`; all generated metrics remain unchanged.
