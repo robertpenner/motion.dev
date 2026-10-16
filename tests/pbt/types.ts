@@ -5,6 +5,7 @@ export type Easing =
     | { kind: "bezier"; points: [number, number, number, number] }
     | { kind: "power"; exponent: number }
     | { kind: "wave"; cycles: number; amplitude: number }
+    | { kind: "bump"; center: number; width: number; amplitude: number }
 
 export interface Track {
     channel: Channel

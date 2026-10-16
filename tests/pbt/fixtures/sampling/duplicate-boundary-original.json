@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "family": "duplicate-boundary",
+  "tracks": [
+    {
+      "channel": "x",
+      "values": [
+        0,
+        6,
+        24,
+        12
+      ],
+      "duration": 1.907,
+      "ease": {
+        "kind": "named",
+        "name": "linear"
+      },
+      "times": [
+        0,
+        0.5,
+        0.5,
+        1
+      ]
+    },
+    {
+      "channel": "skewX",
+      "values": [
+        0,
+        10
+      ],
+      "duration": 1.907,
+      "ease": {
+        "kind": "power",
+        "exponent": 2
+      }
+    }
+  ],
+  "sampleTimes": [
+    0,
+    1e-7,
+    0.261259,
+    0.707497,
+    0.9534999000000001,
+    0.9535,
+    0.9535001,
+    1.180433,
+    1.6915090000000002,
+    1.9069999,
+    1.907
+  ]
+}

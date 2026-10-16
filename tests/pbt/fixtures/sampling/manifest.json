@@ -1,0 +1,99 @@
+[
+  {
+    "name": "oscillation-original",
+    "file": "oscillation-original.json",
+    "kind": "finding",
+    "path": "shared-progress"
+  },
+  {
+    "name": "oscillation-minimized",
+    "file": "oscillation-minimized.json",
+    "kind": "finding",
+    "path": "shared-progress"
+  },
+  {
+    "name": "adaptive-midpoint-original",
+    "file": "adaptive-midpoint-original.json",
+    "kind": "finding",
+    "path": "adaptive"
+  },
+  {
+    "name": "adaptive-midpoint-minimized",
+    "file": "adaptive-midpoint-minimized.json",
+    "kind": "finding",
+    "path": "adaptive"
+  },
+  {
+    "name": "narrow-feature-original",
+    "file": "narrow-feature-original.json",
+    "kind": "finding",
+    "path": "shared-progress"
+  },
+  {
+    "name": "narrow-feature-minimized",
+    "file": "narrow-feature-minimized.json",
+    "kind": "finding",
+    "path": "shared-progress"
+  },
+  {
+    "name": "duplicate-boundary-original",
+    "file": "duplicate-boundary-original.json",
+    "kind": "finding",
+    "path": "adaptive"
+  },
+  {
+    "name": "duplicate-boundary-minimized",
+    "file": "duplicate-boundary-minimized.json",
+    "kind": "finding",
+    "path": "adaptive"
+  },
+  {
+    "name": "short-repeat-original",
+    "file": "short-repeat-original.json",
+    "kind": "finding",
+    "path": "adaptive"
+  },
+  {
+    "name": "short-repeat-minimized",
+    "file": "short-repeat-minimized.json",
+    "kind": "finding",
+    "path": "adaptive"
+  },
+  {
+    "name": "shared-looking-original",
+    "file": "shared-looking-original.json",
+    "kind": "finding",
+    "path": "shared-progress"
+  },
+  {
+    "name": "shared-looking-minimized",
+    "file": "shared-looking-minimized.json",
+    "kind": "finding",
+    "path": "shared-progress"
+  },
+  {
+    "name": "near-zero-control",
+    "file": "near-zero-control.json",
+    "kind": "control"
+  },
+  {
+    "name": "roundtrip-residue-control",
+    "file": "roundtrip-residue-control.json",
+    "kind": "control"
+  },
+  {
+    "name": "native-oracle",
+    "file": "native-oracle.json",
+    "kind": "oracle"
+  },
+  {
+    "name": "shared-oracle",
+    "file": "shared-oracle.json",
+    "kind": "oracle"
+  },
+  {
+    "name": "adaptive-oracle",
+    "file": "adaptive-oracle.json",
+    "kind": "oracle"
+  }
+]

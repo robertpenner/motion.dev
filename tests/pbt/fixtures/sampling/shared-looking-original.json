@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "family": "shared-looking",
+  "tracks": [
+    {
+      "channel": "x",
+      "values": [
+        0,
+        942
+      ],
+      "duration": 0.219,
+      "ease": {
+        "kind": "power",
+        "exponent": 2
+      }
+    },
+    {
+      "channel": "y",
+      "values": [
+        0,
+        942
+      ],
+      "duration": 0.219,
+      "ease": {
+        "kind": "power",
+        "exponent": 2.004
+      }
+    }
+  ],
+  "sampleTimes": [
+    0,
+    1e-7,
+    0.030003000000000002,
+    0.081249,
+    0.135561,
+    0.194253,
+    0.2189999,
+    0.219
+  ]
+}

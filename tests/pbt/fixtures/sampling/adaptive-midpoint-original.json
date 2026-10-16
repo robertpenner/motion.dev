@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "family": "adaptive-midpoint",
+  "tracks": [
+    {
+      "channel": "x",
+      "values": [
+        0,
+        315
+      ],
+      "duration": 0.3,
+      "ease": {
+        "kind": "named",
+        "name": "linear"
+      }
+    },
+    {
+      "channel": "y",
+      "values": [
+        0,
+        315
+      ],
+      "duration": 0.3,
+      "ease": {
+        "kind": "wave",
+        "cycles": 48,
+        "amplitude": 0.3
+      }
+    }
+  ],
+  "sampleTimes": [
+    0,
+    1e-7,
+    0.0015624999999999999,
+    0.041100000000000005,
+    0.1113,
+    0.15156250000000002,
+    0.1857,
+    0.2661,
+    0.2999999,
+    0.3
+  ]
+}

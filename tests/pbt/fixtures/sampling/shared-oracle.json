@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "family": "shared-oracle",
+  "tracks": [
+    {
+      "channel": "x",
+      "values": [
+        0,
+        200
+      ],
+      "duration": 1,
+      "ease": {
+        "kind": "power",
+        "exponent": 2
+      }
+    },
+    {
+      "channel": "rotate",
+      "values": [
+        0,
+        90
+      ],
+      "duration": 1,
+      "ease": {
+        "kind": "power",
+        "exponent": 2
+      }
+    }
+  ],
+  "sampleTimes": [
+    0,
+    0.137,
+    0.25,
+    0.5,
+    0.75,
+    0.887,
+    1
+  ]
+}
