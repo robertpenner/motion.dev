@@ -22,7 +22,12 @@ module.exports = {
                     module: "commonjs",
                     esModuleInterop: true,
                     baseUrl: root,
-                    paths: { "subject/*": ["packages/motion-dom/src/*"] },
+                    paths: {
+                        "subject/*": [`${subject}/packages/motion-dom/src/*`],
+                        "motion-utils": [
+                            `${subject}/packages/motion-utils/src/index.ts`,
+                        ],
+                    },
                 },
             },
         ],

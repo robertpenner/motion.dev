@@ -5,7 +5,8 @@
         "lib": ["es2022", "dom"],
         "baseUrl": "../..",
         "paths": {
-            "subject/*": ["packages/motion-dom/src/*"]
+            "subject/*": ["packages/motion-dom/src/*"],
+            "motion-utils": ["packages/motion-utils/src/index.ts"]
         }
     },
     "include": ["./**/*.ts"]

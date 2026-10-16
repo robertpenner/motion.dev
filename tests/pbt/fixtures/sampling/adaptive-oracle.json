@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "family": "adaptive-oracle",
+  "tracks": [
+    {
+      "channel": "x",
+      "values": [
+        -20,
+        200
+      ],
+      "duration": 1,
+      "ease": {
+        "kind": "power",
+        "exponent": 2
+      }
+    },
+    {
+      "channel": "y",
+      "values": [
+        -10,
+        70
+      ],
+      "duration": 0.8,
+      "ease": {
+        "kind": "named",
+        "name": "linear"
+      }
+    },
+    {
+      "channel": "scale",
+      "values": [
+        0.5,
+        2
+      ],
+      "duration": 1,
+      "ease": {
+        "kind": "power",
+        "exponent": 3
+      }
+    },
+    {
+      "channel": "rotate",
+      "values": [
+        -40,
+        90
+      ],
+      "duration": 1,
+      "ease": {
+        "kind": "named",
+        "name": "linear"
+      }
+    },
+    {
+      "channel": "skewX",
+      "values": [
+        -10,
+        20
+      ],
+      "duration": 1,
+      "ease": {
+        "kind": "power",
+        "exponent": 2
+      }
+    }
+  ],
+  "sampleTimes": [
+    0,
+    0.137,
+    0.25,
+    0.5,
+    0.75,
+    0.887,
+    1
+  ]
+}

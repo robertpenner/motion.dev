@@ -1,0 +1,24 @@
+FAIL tests/pbt/sampling.property.test.ts
+  ● sampling standalone replay
+
+    expect(received).toBeLessThanOrEqual(expected)
+
+    Expected: <= 1
+    Received:    19.800000000001827
+
+      275 |     saved("replay.json", { revisions: revisions(), observed })
+      276 |     if (process.env.SAMPLING_EXPECT_FAILURE === "1")
+    > 277 |         expect(observed.metrics.screenPointError).toBeLessThanOrEqual(1)
+          |                                                   ^
+      278 |     else expect(observed.metrics.nonFinite).toBe(0)
+      279 |     recordExecutionReceipt({
+      280 |         property: "sampling standalone replay",
+
+      at Object.<anonymous> (tests/pbt/sampling.property.test.ts:277:51)
+
+
+Test Suites: 1 failed, 2 skipped, 1 of 3 total
+Tests:       1 failed, 6 skipped, 7 total
+Snapshots:   0 total
+Time:        2.441 s, estimated 3 s
+Ran all test suites with tests matching "^sampling standalone replay$".

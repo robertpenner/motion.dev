@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "family": "narrow-feature",
+  "tracks": [
+    {
+      "channel": "x",
+      "values": [
+        0,
+        27
+      ],
+      "duration": 1,
+      "ease": {
+        "kind": "named",
+        "name": "linear"
+      }
+    },
+    {
+      "channel": "y",
+      "values": [
+        0,
+        27
+      ],
+      "duration": 1,
+      "ease": {
+        "kind": "bump",
+        "center": 0.025,
+        "width": 0.001,
+        "amplitude": 0.4
+      }
+    }
+  ],
+  "sampleTimes": [
+    0,
+    1e-7,
+    0.024,
+    0.025,
+    0.026000000000000002,
+    0.137,
+    0.371,
+    0.619,
+    0.887,
+    0.9999999,
+    1
+  ]
+}

@@ -1,0 +1,54 @@
+[
+  {
+    "property": "sampling discovery and path-preserving shrinking",
+    "mode": "discovery",
+    "completed": 8,
+    "unit": "families",
+    "artifact": "/Users/robertpenner/git/robertpenner/motion.dev.worktrees/worktree-ticket-3-sampling/test_results/pbt-sampling/current/discoveries.json",
+    "revisions": {
+      "subject": "1cdaf642291dec275c8d218d383fe8cefa7fb91b",
+      "harness": "dde7bed6a5bd1c8a30f23322e64c3759cc063a46",
+      "subjectRoot": "/Users/robertpenner/git/robertpenner/motion.dev.worktrees/worktree-tickets-1-2-3-execution",
+      "dirty": false
+    }
+  },
+  {
+    "property": "sampling bounded investigation",
+    "mode": "bounded",
+    "completed": 1100,
+    "unit": "generated-cases",
+    "artifact": "/Users/robertpenner/git/robertpenner/motion.dev.worktrees/worktree-ticket-3-sampling/test_results/pbt-sampling/current/bounded.json",
+    "revisions": {
+      "subject": "1cdaf642291dec275c8d218d383fe8cefa7fb91b",
+      "harness": "dde7bed6a5bd1c8a30f23322e64c3759cc063a46",
+      "subjectRoot": "/Users/robertpenner/git/robertpenner/motion.dev.worktrees/worktree-tickets-1-2-3-execution",
+      "dirty": false
+    }
+  },
+  {
+    "property": "sampling browser confirmation and independent payload oracle",
+    "mode": "browser",
+    "completed": 18,
+    "unit": "fixtures",
+    "artifact": "/Users/robertpenner/git/robertpenner/motion.dev.worktrees/worktree-ticket-3-sampling/test_results/pbt-sampling/current/browser-webkit.json",
+    "revisions": {
+      "subject": "1cdaf642291dec275c8d218d383fe8cefa7fb91b",
+      "harness": "dde7bed6a5bd1c8a30f23322e64c3759cc063a46",
+      "subjectRoot": "/Users/robertpenner/git/robertpenner/motion.dev.worktrees/worktree-tickets-1-2-3-execution",
+      "dirty": false
+    }
+  },
+  {
+    "property": "sampling browser confirmation and independent payload oracle",
+    "mode": "browser",
+    "completed": 18,
+    "unit": "fixtures",
+    "artifact": "/Users/robertpenner/git/robertpenner/motion.dev.worktrees/worktree-ticket-3-sampling/test_results/pbt-sampling/current/browser-chromium.json",
+    "revisions": {
+      "subject": "1cdaf642291dec275c8d218d383fe8cefa7fb91b",
+      "harness": "dde7bed6a5bd1c8a30f23322e64c3759cc063a46",
+      "subjectRoot": "/Users/robertpenner/git/robertpenner/motion.dev.worktrees/worktree-tickets-1-2-3-execution",
+      "dirty": false
+    }
+  }
+]

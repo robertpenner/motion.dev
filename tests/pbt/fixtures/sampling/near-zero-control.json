@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "family": "near-zero-range",
+  "tracks": [
+    {
+      "channel": "x",
+      "values": [
+        0,
+        100,
+        1e-8
+      ],
+      "times": [
+        0,
+        0.5,
+        1
+      ],
+      "duration": 1,
+      "ease": {
+        "kind": "named",
+        "name": "linear"
+      }
+    }
+  ],
+  "sampleTimes": [
+    0,
+    0.137,
+    0.25,
+    0.5,
+    0.75,
+    0.887,
+    1
+  ]
+}

@@ -64,3 +64,45 @@ These stay accelerated, because tracks are sampled and the group rebuilds:
 -   Hand optimised appear animations into the group, so hydration stays on the compositor.
 -   SVG `transform` attribute support.
 -   Benchmark: 500 elements animating `x` on a busy main thread, before and after.
+
+## Sampling investigation execution notes (2026-10-16)
+
+Motion execution issue [#3](https://github.com/robertpenner/motion.dev/issues/3)
+delivered in [PR #6](https://github.com/robertpenner/motion.dev/pull/6), based on
+shared infrastructure PR #4. Status: **DONE (bounded investigation evidence)**;
+no runtime fix or upstream publication was authorized or performed.
+
+The same committed test-only harness completed 1,100 generated cases on each of
+the exact #3897 merge and recorded current subjects. Six branch-preserving
+minimized accuracy limitations were confirmed in Chromium 138 and WebKit 18.5;
+the already-fixed round-trip painting problem remains a historical control.
+The local sampler tolerances described above must not be read as a universal
+source-channel or screen-space accuracy guarantee.
+
+See [`reports/sampling/README.md`](../reports/sampling/README.md) for exact subject,
+harness and bundle hashes, family/path quotas, independent references, raw
+evidence, fixture specification, verified replay commands and bounded limitations.
+The original prototype's WebKit testing note is historical; the bounded sampling
+and ordinary transform/handoff checks now include WebKit, not all prototype
+behaviors or Firefox. Penner interpretation/adoption remains in
+[penner#3404](https://github.com/robertpenner/penner/issues/3404).
+
+PR #6 integration follow-up: selected root setup commands now publish execution
+receipts only after checks complete. Bounded cases, discovered families and fixture
+replays have distinct units; unknown selectors still fail. Both subject datasets
+and both browser engines were refreshed using immutable harness
+`aee9dd871768a1eab10a2551fa4dbc90a781435c`, without domain or quota changes.
+The exact seed/path root selector is the actual Jest title
+`sampling discovery and path-preserving shrinking`, not the internal witness label.
+
+The sibling adapter-epoch integration follow-up captures `adapter.now` after
+startup instead of assuming 1,000 ms. A failing-first 100,000 ms regression now
+passes on both subjects; all 2,200 generated metric records remain byte-identical
+at the current epoch. Complete comparison evidence was refreshed under immutable
+harness `7486862b11a66c9be2ecf2f693eaf864a8a980e8`. No sibling merge, shared-adapter
+change or production change was needed.
+
+Final failure-isolation review adds nested `finally` probe restoration when adapter
+disposal throws, with a failing-first regression for error/prototype identity and
+a subsequent healthy capture. Both subjects and both browsers were refreshed at
+`dde7bed6a5bd1c8a30f23322e64c3759cc063a46`; all generated metrics remain unchanged.

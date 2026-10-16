@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "family": "native-oracle",
+  "tracks": [
+    {
+      "channel": "x",
+      "values": [
+        0,
+        200
+      ],
+      "duration": 1,
+      "ease": {
+        "kind": "named",
+        "name": "easeInOut"
+      }
+    }
+  ],
+  "sampleTimes": [
+    0,
+    0.137,
+    0.25,
+    0.5,
+    0.75,
+    0.887,
+    1
+  ]
+}

@@ -4,6 +4,22 @@ Test-only fast-check 4 infrastructure for Motion #1. Production behavior and
 exports are unchanged. This setup is not the sampling (#3) or lifecycle (#2)
 investigation: those have separate coverage and completion budgets.
 
+Sampling investigation #3 now lives in `sampling*.ts`; its bounded domain,
+fixture schema, expected-failure replay and deeper search are documented in
+[`fixtures/sampling/README.md`](fixtures/sampling/README.md). Reviewed comparison
+evidence is in [`reports/sampling`](../../reports/sampling). The PBT-only browser
+server defaults to port 8023 (`PBT_PORT` overrides it); ordinary suites are
+unchanged. `SAMPLING_SUBJECT=current|historical` separates final raw outputs in
+ignored `test_results/pbt-sampling` before evidence promotion.
+
+Sampling's root `FC_PROPERTY` commands use exact Jest/Playwright test titles.
+Custom sampling checks publish setup-runner execution receipts in
+`test_results/pbt`, while their full measurements remain in `pbt-sampling`.
+Receipts distinguish bounded generated budgets, discovery families and single
+fixture replays. See the sampling fixture README for working bounded, discovery,
+seed/path, fixture and browser selections. Run the root integration regression
+with `node --test scripts/pbt-sampling-runner.test.mjs`.
+
 ## Commands
 
 Use Yarn 3 from the repository root:
@@ -12,8 +28,8 @@ Use Yarn 3 from the repository root:
 yarn test:pbt                    # Jest: 20 payload + 20 command/model cases
 yarn test:pbt:deep               # opt-in: 200 of each smoke property
 yarn test:pbt:build              # root yarn build, then exact bundle provenance
-yarn test:pbt:browser            # Playwright: 5 cases per Chromium/WebKit engine
-PBT_DEPTH=deep yarn test:pbt:browser  # 50 cases per engine
+yarn test:pbt:browser            # Smoke + sampling witnesses, both engines
+PBT_DEPTH=deep yarn test:pbt:browser  # Smoke grows to 50 cases per engine
 ```
 
 The commands bypass Turbo entirely. Seed, depth, replay, and fixtures are never

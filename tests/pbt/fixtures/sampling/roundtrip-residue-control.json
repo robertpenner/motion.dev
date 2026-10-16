@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "family": "roundtrip-residue-control",
+  "tracks": [
+    {
+      "channel": "y",
+      "values": [
+        -1e-30,
+        -18,
+        0
+      ],
+      "duration": 1.2,
+      "ease": {
+        "kind": "named",
+        "name": "easeInOut"
+      }
+    }
+  ],
+  "sampleTimes": [
+    0.137,
+    0.3,
+    0.5,
+    0.75,
+    1
+  ]
+}
