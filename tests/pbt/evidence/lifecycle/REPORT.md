@@ -164,6 +164,11 @@ and no new current-defect expected-failure fixture is warranted.
 Run from this repository root. `SUBJECT` is either exact built checkout above:
 
 ```sh
+cd /Users/robertpenner/git/robertpenner/motion.dev.worktrees/worktree-ticket-2-lifecycle
+SUBJECT=/Users/robertpenner/git/robertpenner/motion.dev.worktrees/worktree-tickets-1-2-3-execution
+# Repeat with historical:
+# SUBJECT=/Users/robertpenner/git/robertpenner/motion.dev.worktrees/worktree-pbt-historical-e0c0e7f
+export FC_SEED=20261016
 PBT_SUBJECT_ROOT="$SUBJECT" FC_PROPERTY='lifecycle production commands' yarn test:pbt
 PBT_SUBJECT_ROOT="$SUBJECT" yarn test:pbt:browser --grep 'lifecycle browser'
 PBT_SUBJECT_ROOT="$SUBJECT" yarn playwright test -c tests/pbt/playwright.config.ts --grep 'lifecycle locked|an animation cancelled from outside|inertia animation joins|round trip from a float residue'
