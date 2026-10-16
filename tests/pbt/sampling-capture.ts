@@ -30,6 +30,7 @@ export async function capture(input: TransformCase) {
     const adapter = productionAdapter()
     try {
         await adapter.start(input)
+        const origin = adapter.now
         const observed = adapter.path()
         const probeCount = probes
         const path: PathObservation =
@@ -51,7 +52,9 @@ export async function capture(input: TransformCase) {
                 const control = adapter.controls[i] as unknown as {
                     animation: TransformAnimation<number>
                 }
-                const actual = control.animation.numberAt(1000 + seconds * 1000)
+                const actual = control.animation.numberAt(
+                    origin + seconds * 1000
+                )
                 sourceChannelError = Math.max(
                     sourceChannelError,
                     Math.abs(actual - source(track, seconds))
