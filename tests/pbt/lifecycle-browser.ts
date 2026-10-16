@@ -375,6 +375,8 @@ export async function lifecycleBrowser(page: Page, input: LifecycleCase) {
                     )
                     await wait(fixture.wait)
                     snapshot("cancel-survival")
+                    await wait(1600)
+                    snapshot("cancel-completed")
                     break
                 case "callback-return":
                     await transition("callback-join", () =>

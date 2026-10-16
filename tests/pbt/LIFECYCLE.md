@@ -90,7 +90,9 @@ yarn tsc -p tests/pbt/tsconfig.json --pretty false
 
 Port defaults to **8022**; `PBT_PORT` overrides it. Current and historical adapters
 use the same `animateElement` source path and `window.Motion`/`MotionDOM` bundle
-exports; no revision-specific fallback shim is necessary for these two revisions.
+exports; no production-entrypoint shim is necessary for these two revisions.
+The ordinary independent-transform control spec installs `waitFrame` only when
+absent: the historical HTML fixture predates that test-only timeline-refresh helper.
 The inherited provenance guard rejects unstamped/stale bundles. Final evidence
 must name the committed harness SHA independently of both built subject SHAs.
 

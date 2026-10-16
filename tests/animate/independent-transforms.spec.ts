@@ -24,6 +24,13 @@ declare global {
 async function load(page: Page) {
     await page.goto("animate/animate-independent-transforms.html")
     await page.waitForFunction(() => (window as any).ready)
+    await page.evaluate(() => {
+        // The historical subject predates this fixture's timeline-refresh helper.
+        window.waitFrame ||= async (ms: number) => {
+            await new Promise((resolve) => setTimeout(resolve, ms))
+            await window.nextFrames(1)
+        }
+    })
 }
 
 test.describe("animate() independent transforms", () => {
@@ -517,6 +524,8 @@ test.describe("animate() independent transforms", () => {
      */
     test("a round trip from a float residue keeps painting", async ({
         page,
+        browserName,
+        browser,
     }) => {
         await page.evaluate(async () => {
             const element = document.getElementById("a")!
@@ -541,6 +550,19 @@ test.describe("animate() independent transforms", () => {
             context.drawImage(image, 0, 0)
             return Array.from(context.getImageData(50, 100, 1, 1).data)
         }, "data:image/png;base64," + screenshot.toString("base64"))
+
+        console.log(
+            JSON.stringify({
+                control: "already-fixed-float-roundtrip",
+                engine: browserName,
+                version: browser.version(),
+                color,
+            })
+        )
+        await test.info().attach("roundtrip-paint-control", {
+            body: screenshot,
+            contentType: "image/png",
+        })
 
         // The box's colour, #0077ff, not the white page behind it.
         expect(color[0]).toBeLessThan(50)

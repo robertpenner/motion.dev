@@ -208,6 +208,15 @@ for (const category of categories) {
                     ).toBe(false)
                     coverage.hit("completion-once-interrupted-never")
                 }
+                if (category === "native-cancel") {
+                    expect(
+                        result.events.filter((event) => event.name === "x")
+                    ).toHaveLength(1)
+                    expect(
+                        result.events.filter((event) => event.name === "y")
+                    ).toHaveLength(1)
+                    coverage.hit("cancel-completion-once")
+                }
                 if (
                     ["infinite-repeat", "incompatible-loops"].includes(category)
                 ) {
