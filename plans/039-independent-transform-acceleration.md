@@ -64,3 +64,17 @@ These stay accelerated, because tracks are sampled and the group rebuilds:
 -   Hand optimised appear animations into the group, so hydration stays on the compositor.
 -   SVG `transform` attribute support.
 -   Benchmark: 500 elements animating `x` on a busy main thread, before and after.
+
+## Execution notes: Motion #2 lifecycle investigation
+
+Completed bounded test-only execution in [fork PR #5](https://github.com/robertpenner/motion.dev/pull/5),
+stacked on shared infrastructure PR #4. Both recorded subjects completed 200
+production command/model sequences and 36 browser sequences per engine
+(Chromium 138.0.7204.23 and WebKit 18.5). No new current defect was found in the
+declared domain; the existing float-residue correction remained an already-fixed
+control. Runtime behavior was not changed.
+
+The [bounded report](../tests/pbt/evidence/lifecycle/REPORT.md) retains exact
+subject/harness revisions, built bundle digests, coverage, raw observations,
+fixtures, supported regressions and explicit limits. Penner interpretation and
+adoption remain owned by robertpenner/penner#3405.

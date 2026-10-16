@@ -1,0 +1,22 @@
+
+Running 10 tests using 1 worker
+
+  ✓  1 [chromium] › tests/animate/independent-transforms-handoff.spec.ts:93:9 › independent transforms hand-off › to the main thread when an inertia animation joins, and back (3.0s)
+  ✓  2 [chromium] › tests/animate/independent-transforms-lifecycle.spec.ts:4:5 › lifecycle locked paused seek preserves displayed geometry (497ms)
+  ✓  3 [chromium] › tests/animate/independent-transforms-lifecycle.spec.ts:20:5 › lifecycle locked callback demotion returns with unrelated motion intact (756ms)
+  ✓  4 [chromium] › tests/animate/independent-transforms.spec.ts:475:9 › animate() independent transforms › an animation cancelled from outside still finishes (897ms)
+{"control":"already-fixed-float-roundtrip","engine":"chromium","version":"138.0.7204.23","color":[0,119,255,255]}
+  ✓  5 [chromium] › tests/animate/independent-transforms.spec.ts:525:9 › animate() independent transforms › a round trip from a float residue keeps painting (578ms)
+  ✓  6 [webkit] › tests/animate/independent-transforms-handoff.spec.ts:93:9 › independent transforms hand-off › to the main thread when an inertia animation joins, and back (3.1s)
+  ✓  7 [webkit] › tests/animate/independent-transforms-lifecycle.spec.ts:4:5 › lifecycle locked paused seek preserves displayed geometry (651ms)
+  ✓  8 [webkit] › tests/animate/independent-transforms-lifecycle.spec.ts:20:5 › lifecycle locked callback demotion returns with unrelated motion intact (842ms)
+  ✓  9 [webkit] › tests/animate/independent-transforms.spec.ts:475:9 › animate() independent transforms › an animation cancelled from outside still finishes (1.0s)
+{"control":"already-fixed-float-roundtrip","engine":"webkit","version":"18.5","color":[0,119,255,255]}
+  ✓  10 [webkit] › tests/animate/independent-transforms.spec.ts:525:9 › animate() independent transforms › a round trip from a float residue keeps painting (697ms)
+
+  10 passed (14.6s)
+
+To open last HTML report run:
+
+  yarn playwright show-report playwright-report/pbt
+
