@@ -10,6 +10,10 @@ They can be reused without Motion imports:
 -   Easing: `named`, `bezier` control points, `power` exponent, `wave` cycles
     and additive amplitude, or `bump` center/half-width/additive amplitude.
     The bump is a compact triangular feature added to linear progress.
+-   The bounded generated/replay domain uses finite loop/reverse repeats.
+    Infrastructure types can describe mirror/infinite repeats, but no independent
+    mirror-trajectory accuracy claim is made here. Infinite repeats are used only
+    for explicit fallback and historical painting controls.
 -   `sampleTimes`: source-animation seconds, including independently selected
     interior times, feature centers/edges, and boundaries ±0.0000001 seconds.
 -   CSS angles are degrees, translation is CSS pixels, scale is unitless.

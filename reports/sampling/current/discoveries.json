@@ -1,0 +1,7568 @@
+[
+  {
+    "version": 1,
+    "property": "sampling accuracy characterization",
+    "family": "oscillation",
+    "revisions": {
+      "subject": "1cdaf642291dec275c8d218d383fe8cefa7fb91b",
+      "harness": "678c4cd6afef6730a1f1e53f1dd75207987c2536",
+      "subjectRoot": "/Users/robertpenner/git/robertpenner/motion.dev.worktrees/worktree-tickets-1-2-3-execution",
+      "dirty": false
+    },
+    "seed": 20261116,
+    "path": "0:0:0:0:0",
+    "shrinks": 4,
+    "completed": 1,
+    "original": {
+      "version": 1,
+      "family": "oscillation",
+      "tracks": [
+        {
+          "channel": "x",
+          "values": [
+            0,
+            160
+          ],
+          "duration": 0.6,
+          "ease": {
+            "kind": "named",
+            "name": "linear"
+          }
+        },
+        {
+          "channel": "y",
+          "values": [
+            0,
+            160
+          ],
+          "duration": 0.6,
+          "ease": {
+            "kind": "wave",
+            "cycles": 60,
+            "amplitude": 0.2
+          }
+        }
+      ],
+      "sampleTimes": [
+        0,
+        1e-7,
+        0.0025,
+        0.08220000000000001,
+        0.2226,
+        0.3025,
+        0.3714,
+        0.5322,
+        0.5999999,
+        0.6
+      ]
+    },
+    "minimized": {
+      "version": 1,
+      "family": "oscillation",
+      "tracks": [
+        {
+          "channel": "x",
+          "values": [
+            0,
+            20
+          ],
+          "duration": 0.2,
+          "ease": {
+            "kind": "named",
+            "name": "linear"
+          }
+        },
+        {
+          "channel": "y",
+          "values": [
+            0,
+            20
+          ],
+          "duration": 0.2,
+          "ease": {
+            "kind": "wave",
+            "cycles": 20,
+            "amplitude": 0.1
+          }
+        }
+      ],
+      "sampleTimes": [
+        0,
+        1e-7,
+        0.0025,
+        0.027400000000000004,
+        0.0742,
+        0.1025,
+        0.12380000000000001,
+        0.1774,
+        0.1999999,
+        0.2
+      ]
+    },
+    "originalObservation": {
+      "payload": {
+        "keyframes": {
+          "transform": [
+            "translateX(0px) translateY(0px) ",
+            "translateX(160px) translateY(160px) "
+          ]
+        },
+        "options": {
+          "fill": "both",
+          "duration": 600,
+          "easing": "linear"
+        },
+        "id": 0,
+        "cancelled": true
+      },
+      "metrics": {
+        "sourceChannelError": 3.694822225952521e-13,
+        "emittedChannelError": {
+          "x": 0,
+          "y": 32.00000000000001,
+          "scale": 0,
+          "rotate": 0,
+          "skewX": 0
+        },
+        "screenPointError": 32.00000000000001,
+        "nonFinite": 0,
+        "keyframes": 2,
+        "bytes": 187,
+        "easingBytes": 6
+      },
+      "measurements": [
+        {
+          "seconds": 0,
+          "expected": {
+            "x": 0,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 0,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "screenPointError": 0
+        },
+        {
+          "seconds": 1e-7,
+          "expected": {
+            "x": 0.000026666666666666667,
+            "y": 0.0020372859636411996,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 0.000026666666666666667,
+            "y": 0.000026666666666666667,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0.000026666666666666667,
+            0.0020372859636411996
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0.000026666666666666667,
+            0.000026666666666666667
+          ],
+          "screenPointError": 0.002010619296974533
+        },
+        {
+          "seconds": 0.0025,
+          "expected": {
+            "x": 0.6666666666666666,
+            "y": 32.66666666666667,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 0.6666666666666666,
+            "y": 0.6666666666666666,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0.6666666666666666,
+            32.66666666666667
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0.6666666666666666,
+            0.6666666666666666
+          ],
+          "screenPointError": 32.00000000000001
+        },
+        {
+          "seconds": 0.08220000000000001,
+          "expected": {
+            "x": 21.92,
+            "y": 53.35319202331803,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 21.92,
+            "y": 21.92,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            21.92,
+            53.35319202331803
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            21.92,
+            21.92
+          ],
+          "screenPointError": 31.43319202331803
+        },
+        {
+          "seconds": 0.2226,
+          "expected": {
+            "x": 59.36,
+            "y": 91.29685530970474,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 59.36,
+            "y": 59.36,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            59.36,
+            91.29685530970474
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            59.36,
+            59.36
+          ],
+          "screenPointError": 31.93685530970474
+        },
+        {
+          "seconds": 0.3025,
+          "expected": {
+            "x": 80.66666666666666,
+            "y": 112.66666666666666,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 80.66666666666666,
+            "y": 80.66666666666666,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            80.66666666666666,
+            112.66666666666666
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            80.66666666666666,
+            80.66666666666666
+          ],
+          "screenPointError": 32
+        },
+        {
+          "seconds": 0.3714,
+          "expected": {
+            "x": 99.03999999999999,
+            "y": 123.69642376882439,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 99.03999999999999,
+            "y": 99.03999999999999,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            99.03999999999999,
+            123.69642376882439
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            99.03999999999999,
+            99.03999999999999
+          ],
+          "screenPointError": 24.656423768824396
+        },
+        {
+          "seconds": 0.5322,
+          "expected": {
+            "x": 141.92000000000002,
+            "y": 173.35319202331775,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 141.92000000000002,
+            "y": 141.92000000000002,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            141.92000000000002,
+            173.35319202331775
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            141.92000000000002,
+            141.92000000000002
+          ],
+          "screenPointError": 31.43319202331773
+        },
+        {
+          "seconds": 0.5999999,
+          "expected": {
+            "x": 159.99997333333334,
+            "y": 159.99796271403636,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 159.99997333333334,
+            "y": 159.99997333333334,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            159.99997333333334,
+            159.99796271403636
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            159.99997333333334,
+            159.99997333333334
+          ],
+          "screenPointError": 0.002010619296981986
+        },
+        {
+          "seconds": 0.6,
+          "expected": {
+            "x": 160,
+            "y": 160,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 160,
+            "y": 160,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            160,
+            160
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            160,
+            160
+          ],
+          "screenPointError": 0
+        }
+      ],
+      "input": {
+        "version": 1,
+        "family": "oscillation",
+        "tracks": [
+          {
+            "channel": "x",
+            "values": [
+              0,
+              160
+            ],
+            "duration": 0.6,
+            "ease": {
+              "kind": "named",
+              "name": "linear"
+            }
+          },
+          {
+            "channel": "y",
+            "values": [
+              0,
+              160
+            ],
+            "duration": 0.6,
+            "ease": {
+              "kind": "wave",
+              "cycles": 60,
+              "amplitude": 0.2
+            }
+          }
+        ],
+        "sampleTimes": [
+          0,
+          1e-7,
+          0.0025,
+          0.08220000000000001,
+          0.2226,
+          0.3025,
+          0.3714,
+          0.5322,
+          0.5999999,
+          0.6
+        ]
+      },
+      "path": {
+        "path": "shared-progress",
+        "evidence": "Test-only numberAt prototype spy: 122 sampler calls before capture"
+      },
+      "probeCount": 122,
+      "payloads": [
+        {
+          "keyframes": {
+            "transform": [
+              "translateX(0px) translateY(0px) ",
+              "translateX(160px) translateY(160px) "
+            ]
+          },
+          "options": {
+            "fill": "both",
+            "duration": 600,
+            "easing": "linear"
+          },
+          "id": 0,
+          "cancelled": false
+        }
+      ]
+    },
+    "minimizedObservation": {
+      "payload": {
+        "keyframes": {
+          "transform": [
+            "translateX(0px) translateY(0px) ",
+            "translateX(20px) translateY(20px) "
+          ]
+        },
+        "options": {
+          "fill": "both",
+          "duration": 200,
+          "easing": "linear"
+        },
+        "id": 0,
+        "cancelled": true
+      },
+      "metrics": {
+        "sourceChannelError": 3.197442310920451e-14,
+        "emittedChannelError": {
+          "x": 0,
+          "y": 2,
+          "scale": 0,
+          "rotate": 0,
+          "skewX": 0
+        },
+        "screenPointError": 2,
+        "nonFinite": 0,
+        "keyframes": 2,
+        "bytes": 185,
+        "easingBytes": 6
+      },
+      "measurements": [
+        {
+          "seconds": 0,
+          "expected": {
+            "x": 0,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 0,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "screenPointError": 0
+        },
+        {
+          "seconds": 1e-7,
+          "expected": {
+            "x": 0.000009999999999999999,
+            "y": 0.00013566370606090834,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 0.000009999999999999999,
+            "y": 0.000009999999999999999,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0.000009999999999999999,
+            0.00013566370606090834
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0.000009999999999999999,
+            0.000009999999999999999
+          ],
+          "screenPointError": 0.00012566370606090834
+        },
+        {
+          "seconds": 0.0025,
+          "expected": {
+            "x": 0.24999999999999997,
+            "y": 2.25,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 0.24999999999999997,
+            "y": 0.24999999999999997,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0.24999999999999997,
+            2.25
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0.24999999999999997,
+            0.24999999999999997
+          ],
+          "screenPointError": 2
+        },
+        {
+          "seconds": 0.027400000000000004,
+          "expected": {
+            "x": 2.74,
+            "y": 0.7439465431434567,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 2.74,
+            "y": 2.74,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            2.74,
+            0.7439465431434567
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            2.74,
+            2.74
+          ],
+          "screenPointError": 1.9960534568565436
+        },
+        {
+          "seconds": 0.0742,
+          "expected": {
+            "x": 7.42,
+            "y": 8.383507348203436,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 7.42,
+            "y": 7.42,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            7.42,
+            8.383507348203436
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            7.42,
+            7.42
+          ],
+          "screenPointError": 0.9635073482034358
+        },
+        {
+          "seconds": 0.1025,
+          "expected": {
+            "x": 10.25,
+            "y": 12.249999999999998,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 10.25,
+            "y": 10.25,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            10.25,
+            12.249999999999998
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            10.25,
+            10.25
+          ],
+          "screenPointError": 1.9999999999999982
+        },
+        {
+          "seconds": 0.12380000000000001,
+          "expected": {
+            "x": 12.379999999999999,
+            "y": 13.749094211857392,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 12.379999999999999,
+            "y": 12.379999999999999,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            12.379999999999999,
+            13.749094211857392
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            12.379999999999999,
+            12.379999999999999
+          ],
+          "screenPointError": 1.3690942118573926
+        },
+        {
+          "seconds": 0.1774,
+          "expected": {
+            "x": 17.740000000000002,
+            "y": 15.743946543143457,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 17.740000000000002,
+            "y": 17.740000000000002,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            17.740000000000002,
+            15.743946543143457
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            17.740000000000002,
+            17.740000000000002
+          ],
+          "screenPointError": 1.9960534568565453
+        },
+        {
+          "seconds": 0.1999999,
+          "expected": {
+            "x": 19.99999,
+            "y": 19.999864336293932,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 19.99999,
+            "y": 19.99999,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            19.99999,
+            19.999864336293932
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            19.99999,
+            19.99999
+          ],
+          "screenPointError": 0.00012566370606847954
+        },
+        {
+          "seconds": 0.2,
+          "expected": {
+            "x": 20,
+            "y": 20,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 20,
+            "y": 20,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20,
+            20
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20,
+            20
+          ],
+          "screenPointError": 0
+        }
+      ],
+      "input": {
+        "version": 1,
+        "family": "oscillation",
+        "tracks": [
+          {
+            "channel": "x",
+            "values": [
+              0,
+              20
+            ],
+            "duration": 0.2,
+            "ease": {
+              "kind": "named",
+              "name": "linear"
+            }
+          },
+          {
+            "channel": "y",
+            "values": [
+              0,
+              20
+            ],
+            "duration": 0.2,
+            "ease": {
+              "kind": "wave",
+              "cycles": 20,
+              "amplitude": 0.1
+            }
+          }
+        ],
+        "sampleTimes": [
+          0,
+          1e-7,
+          0.0025,
+          0.027400000000000004,
+          0.0742,
+          0.1025,
+          0.12380000000000001,
+          0.1774,
+          0.1999999,
+          0.2
+        ]
+      },
+      "path": {
+        "path": "shared-progress",
+        "evidence": "Test-only numberAt prototype spy: 42 sampler calls before capture"
+      },
+      "probeCount": 42,
+      "payloads": [
+        {
+          "keyframes": {
+            "transform": [
+              "translateX(0px) translateY(0px) ",
+              "translateX(20px) translateY(20px) "
+            ]
+          },
+          "options": {
+            "fill": "both",
+            "duration": 200,
+            "easing": "linear"
+          },
+          "id": 0,
+          "cancelled": false
+        }
+      ]
+    },
+    "expectedFailure": true,
+    "classification": "accuracy limitation without a promised global bound",
+    "tolerance": {
+      "screenPointPx": 1
+    }
+  },
+  {
+    "version": 1,
+    "property": "sampling accuracy characterization",
+    "family": "adaptive-midpoint",
+    "revisions": {
+      "subject": "1cdaf642291dec275c8d218d383fe8cefa7fb91b",
+      "harness": "678c4cd6afef6730a1f1e53f1dd75207987c2536",
+      "subjectRoot": "/Users/robertpenner/git/robertpenner/motion.dev.worktrees/worktree-tickets-1-2-3-execution",
+      "dirty": false
+    },
+    "seed": 20261117,
+    "path": "0:0:0:0:0",
+    "shrinks": 4,
+    "completed": 1,
+    "original": {
+      "version": 1,
+      "family": "adaptive-midpoint",
+      "tracks": [
+        {
+          "channel": "x",
+          "values": [
+            0,
+            315
+          ],
+          "duration": 0.3,
+          "ease": {
+            "kind": "named",
+            "name": "linear"
+          }
+        },
+        {
+          "channel": "y",
+          "values": [
+            0,
+            315
+          ],
+          "duration": 0.3,
+          "ease": {
+            "kind": "wave",
+            "cycles": 48,
+            "amplitude": 0.3
+          }
+        }
+      ],
+      "sampleTimes": [
+        0,
+        1e-7,
+        0.0015624999999999999,
+        0.041100000000000005,
+        0.1113,
+        0.15156250000000002,
+        0.1857,
+        0.2661,
+        0.2999999,
+        0.3
+      ]
+    },
+    "minimized": {
+      "version": 1,
+      "family": "adaptive-midpoint",
+      "tracks": [
+        {
+          "channel": "x",
+          "values": [
+            0,
+            20
+          ],
+          "duration": 0.2,
+          "ease": {
+            "kind": "named",
+            "name": "linear"
+          }
+        },
+        {
+          "channel": "y",
+          "values": [
+            0,
+            20
+          ],
+          "duration": 0.2,
+          "ease": {
+            "kind": "wave",
+            "cycles": 32,
+            "amplitude": 0.1
+          }
+        }
+      ],
+      "sampleTimes": [
+        0,
+        1e-7,
+        0.0015625,
+        0.027400000000000004,
+        0.0742,
+        0.1015625,
+        0.12380000000000001,
+        0.1774,
+        0.1999999,
+        0.2
+      ]
+    },
+    "originalObservation": {
+      "payload": {
+        "keyframes": {
+          "transform": [
+            "translateX(0px) translateY(0px) ",
+            "translateX(105px) translateY(104.99999999999963px) ",
+            "translateX(210px) translateY(209.99999999999926px) ",
+            "translateX(315px) translateY(315px) "
+          ],
+          "offset": [
+            0,
+            0.3333333333333333,
+            0.6666666666666666,
+            1
+          ]
+        },
+        "options": {
+          "fill": "both",
+          "duration": 300,
+          "easing": "linear"
+        },
+        "id": 0,
+        "cancelled": true
+      },
+      "metrics": {
+        "sourceChannelError": 5.684341886080802e-14,
+        "emittedChannelError": {
+          "x": 5.684341886080802e-14,
+          "y": 94.50000000000054,
+          "scale": 0,
+          "rotate": 0,
+          "skewX": 0
+        },
+        "screenPointError": 94.50000000000054,
+        "nonFinite": 0,
+        "keyframes": 4,
+        "bytes": 348,
+        "easingBytes": 6
+      },
+      "measurements": [
+        {
+          "seconds": 0,
+          "expected": {
+            "x": 0,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 0,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "screenPointError": 0
+        },
+        {
+          "seconds": 1e-7,
+          "expected": {
+            "x": 0.000105,
+            "y": 0.009605176168453319,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 0.00010500000000000002,
+            "y": 0.00010499999999999965,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0.000105,
+            0.009605176168453319
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0.00010500000000000002,
+            0.00010499999999999965
+          ],
+          "screenPointError": 0.00950017616845332
+        },
+        {
+          "seconds": 0.0015624999999999999,
+          "expected": {
+            "x": 1.640625,
+            "y": 96.14062499999999,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 1.640625,
+            "y": 1.6406249999999942,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            1.640625,
+            96.14062499999999
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            1.640625,
+            1.6406249999999942
+          ],
+          "screenPointError": 94.49999999999999
+        },
+        {
+          "seconds": 0.041100000000000005,
+          "expected": {
+            "x": 43.155,
+            "y": -0.2752968287306491,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 43.155,
+            "y": 43.15499999999985,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            43.155,
+            -0.2752968287306491
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            43.155,
+            43.15499999999985
+          ],
+          "screenPointError": 43.4302968287305
+        },
+        {
+          "seconds": 0.1113,
+          "expected": {
+            "x": 116.865,
+            "y": 28.570914937850144,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 116.86500000000001,
+            "y": 116.8649999999996,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            116.865,
+            28.570914937850144
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            116.86500000000001,
+            116.8649999999996
+          ],
+          "screenPointError": 88.29408506214945
+        },
+        {
+          "seconds": 0.15156250000000002,
+          "expected": {
+            "x": 159.140625,
+            "y": 253.640625,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 159.14062500000003,
+            "y": 159.14062499999946,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            159.140625,
+            253.640625
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            159.14062500000003,
+            159.14062499999946
+          ],
+          "screenPointError": 94.50000000000054
+        },
+        {
+          "seconds": 0.1857,
+          "expected": {
+            "x": 194.98499999999999,
+            "y": 103.16580123956383,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 194.985,
+            "y": 194.98499999999933,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            194.98499999999999,
+            103.16580123956383
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            194.985,
+            194.98499999999933
+          ],
+          "screenPointError": 91.8191987604355
+        },
+        {
+          "seconds": 0.2661,
+          "expected": {
+            "x": 279.40500000000003,
+            "y": 235.97470317126889,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 279.405,
+            "y": 279.40499999999975,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            279.40500000000003,
+            235.97470317126889
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            279.405,
+            279.40499999999975
+          ],
+          "screenPointError": 43.43029682873086
+        },
+        {
+          "seconds": 0.2999999,
+          "expected": {
+            "x": 314.999895,
+            "y": 314.99039482383046,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 314.999895,
+            "y": 314.999895,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            314.999895,
+            314.99039482383046
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            314.999895,
+            314.999895
+          ],
+          "screenPointError": 0.009500176169524366
+        },
+        {
+          "seconds": 0.3,
+          "expected": {
+            "x": 315,
+            "y": 315,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 315,
+            "y": 315,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            315,
+            315
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            315,
+            315
+          ],
+          "screenPointError": 0
+        }
+      ],
+      "input": {
+        "version": 1,
+        "family": "adaptive-midpoint",
+        "tracks": [
+          {
+            "channel": "x",
+            "values": [
+              0,
+              315
+            ],
+            "duration": 0.3,
+            "ease": {
+              "kind": "named",
+              "name": "linear"
+            }
+          },
+          {
+            "channel": "y",
+            "values": [
+              0,
+              315
+            ],
+            "duration": 0.3,
+            "ease": {
+              "kind": "wave",
+              "cycles": 48,
+              "amplitude": 0.3
+            }
+          }
+        ],
+        "sampleTimes": [
+          0,
+          1e-7,
+          0.0015624999999999999,
+          0.041100000000000005,
+          0.1113,
+          0.15156250000000002,
+          0.1857,
+          0.2661,
+          0.2999999,
+          0.3
+        ]
+      },
+      "path": {
+        "path": "adaptive",
+        "evidence": "Production emits explicit adaptive offsets"
+      },
+      "probeCount": 80,
+      "payloads": [
+        {
+          "keyframes": {
+            "transform": [
+              "translateX(0px) translateY(0px) ",
+              "translateX(105px) translateY(104.99999999999963px) ",
+              "translateX(210px) translateY(209.99999999999926px) ",
+              "translateX(315px) translateY(315px) "
+            ],
+            "offset": [
+              0,
+              0.3333333333333333,
+              0.6666666666666666,
+              1
+            ]
+          },
+          "options": {
+            "fill": "both",
+            "duration": 300,
+            "easing": "linear"
+          },
+          "id": 0,
+          "cancelled": false
+        }
+      ]
+    },
+    "minimizedObservation": {
+      "payload": {
+        "keyframes": {
+          "transform": [
+            "translateX(0px) translateY(0px) ",
+            "translateX(10px) translateY(9.999999999999993px) ",
+            "translateX(20px) translateY(20px) "
+          ],
+          "offset": [
+            0,
+            0.5,
+            1
+          ]
+        },
+        "options": {
+          "fill": "both",
+          "duration": 200,
+          "easing": "linear"
+        },
+        "id": 0,
+        "cancelled": true
+      },
+      "metrics": {
+        "sourceChannelError": 6.039613253960852e-14,
+        "emittedChannelError": {
+          "x": 0,
+          "y": 2.000000000000007,
+          "scale": 0,
+          "rotate": 0,
+          "skewX": 0
+        },
+        "screenPointError": 2.000000000000007,
+        "nonFinite": 0,
+        "keyframes": 3,
+        "bytes": 256,
+        "easingBytes": 6
+      },
+      "measurements": [
+        {
+          "seconds": 0,
+          "expected": {
+            "x": 0,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 0,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "screenPointError": 0
+        },
+        {
+          "seconds": 1e-7,
+          "expected": {
+            "x": 0.000009999999999999999,
+            "y": 0.00021106192949107552,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 0.000009999999999999999,
+            "y": 0.000009999999999999992,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0.000009999999999999999,
+            0.00021106192949107552
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0.000009999999999999999,
+            0.000009999999999999992
+          ],
+          "screenPointError": 0.00020106192949107552
+        },
+        {
+          "seconds": 0.0015625,
+          "expected": {
+            "x": 0.15625,
+            "y": 2.15625,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 0.15625,
+            "y": 0.1562499999999999,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0.15625,
+            2.15625
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0.15625,
+            0.1562499999999999
+          ],
+          "screenPointError": 2
+        },
+        {
+          "seconds": 0.027400000000000004,
+          "expected": {
+            "x": 2.74,
+            "y": 4.072023734868501,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 2.74,
+            "y": 2.7399999999999984,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            2.74,
+            4.072023734868501
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            2.74,
+            2.7399999999999984
+          ],
+          "screenPointError": 1.3320237348685025
+        },
+        {
+          "seconds": 0.0742,
+          "expected": {
+            "x": 7.42,
+            "y": 5.979381950224173,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 7.42,
+            "y": 7.419999999999995,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            7.42,
+            5.979381950224173
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            7.42,
+            7.419999999999995
+          ],
+          "screenPointError": 1.4406180497758214
+        },
+        {
+          "seconds": 0.1015625,
+          "expected": {
+            "x": 10.15625,
+            "y": 12.15625,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 10.15625,
+            "y": 10.156249999999993,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            10.15625,
+            12.15625
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            10.15625,
+            10.156249999999993
+          ],
+          "screenPointError": 2.000000000000007
+        },
+        {
+          "seconds": 0.12380000000000001,
+          "expected": {
+            "x": 12.379999999999999,
+            "y": 10.511342115086775,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 12.379999999999999,
+            "y": 12.379999999999995,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            12.379999999999999,
+            10.511342115086775
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            12.379999999999999,
+            12.379999999999995
+          ],
+          "screenPointError": 1.8686578849132207
+        },
+        {
+          "seconds": 0.1774,
+          "expected": {
+            "x": 17.740000000000002,
+            "y": 19.072023734868527,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 17.740000000000002,
+            "y": 17.74,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            17.740000000000002,
+            19.072023734868527
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            17.740000000000002,
+            17.74
+          ],
+          "screenPointError": 1.3320237348685282
+        },
+        {
+          "seconds": 0.1999999,
+          "expected": {
+            "x": 19.99999,
+            "y": 19.999788938070495,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 19.99999,
+            "y": 19.99999,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            19.99999,
+            19.999788938070495
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            19.99999,
+            19.99999
+          ],
+          "screenPointError": 0.0002010619295056415
+        },
+        {
+          "seconds": 0.2,
+          "expected": {
+            "x": 20,
+            "y": 20,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 20,
+            "y": 20,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20,
+            20
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20,
+            20
+          ],
+          "screenPointError": 0
+        }
+      ],
+      "input": {
+        "version": 1,
+        "family": "adaptive-midpoint",
+        "tracks": [
+          {
+            "channel": "x",
+            "values": [
+              0,
+              20
+            ],
+            "duration": 0.2,
+            "ease": {
+              "kind": "named",
+              "name": "linear"
+            }
+          },
+          {
+            "channel": "y",
+            "values": [
+              0,
+              20
+            ],
+            "duration": 0.2,
+            "ease": {
+              "kind": "wave",
+              "cycles": 32,
+              "amplitude": 0.1
+            }
+          }
+        ],
+        "sampleTimes": [
+          0,
+          1e-7,
+          0.0015625,
+          0.027400000000000004,
+          0.0742,
+          0.1015625,
+          0.12380000000000001,
+          0.1774,
+          0.1999999,
+          0.2
+        ]
+      },
+      "path": {
+        "path": "adaptive",
+        "evidence": "Production emits explicit adaptive offsets"
+      },
+      "probeCount": 54,
+      "payloads": [
+        {
+          "keyframes": {
+            "transform": [
+              "translateX(0px) translateY(0px) ",
+              "translateX(10px) translateY(9.999999999999993px) ",
+              "translateX(20px) translateY(20px) "
+            ],
+            "offset": [
+              0,
+              0.5,
+              1
+            ]
+          },
+          "options": {
+            "fill": "both",
+            "duration": 200,
+            "easing": "linear"
+          },
+          "id": 0,
+          "cancelled": false
+        }
+      ]
+    },
+    "expectedFailure": true,
+    "classification": "accuracy limitation without a promised global bound",
+    "tolerance": {
+      "screenPointPx": 1
+    }
+  },
+  {
+    "version": 1,
+    "property": "sampling accuracy characterization",
+    "family": "narrow-feature",
+    "revisions": {
+      "subject": "1cdaf642291dec275c8d218d383fe8cefa7fb91b",
+      "harness": "678c4cd6afef6730a1f1e53f1dd75207987c2536",
+      "subjectRoot": "/Users/robertpenner/git/robertpenner/motion.dev.worktrees/worktree-tickets-1-2-3-execution",
+      "dirty": false
+    },
+    "seed": 20261118,
+    "path": "0:0:0:0:0",
+    "shrinks": 4,
+    "completed": 1,
+    "original": {
+      "version": 1,
+      "family": "narrow-feature",
+      "tracks": [
+        {
+          "channel": "x",
+          "values": [
+            0,
+            27
+          ],
+          "duration": 1,
+          "ease": {
+            "kind": "named",
+            "name": "linear"
+          }
+        },
+        {
+          "channel": "y",
+          "values": [
+            0,
+            27
+          ],
+          "duration": 1,
+          "ease": {
+            "kind": "bump",
+            "center": 0.025,
+            "width": 0.001,
+            "amplitude": 0.4
+          }
+        }
+      ],
+      "sampleTimes": [
+        0,
+        1e-7,
+        0.024,
+        0.025,
+        0.026000000000000002,
+        0.137,
+        0.371,
+        0.619,
+        0.887,
+        0.9999999,
+        1
+      ]
+    },
+    "minimized": {
+      "version": 1,
+      "family": "narrow-feature",
+      "tracks": [
+        {
+          "channel": "x",
+          "values": [
+            0,
+            20
+          ],
+          "duration": 1,
+          "ease": {
+            "kind": "named",
+            "name": "linear"
+          }
+        },
+        {
+          "channel": "y",
+          "values": [
+            0,
+            20
+          ],
+          "duration": 1,
+          "ease": {
+            "kind": "bump",
+            "center": 0.015,
+            "width": 0.001,
+            "amplitude": 0.1
+          }
+        }
+      ],
+      "sampleTimes": [
+        0,
+        1e-7,
+        0.013999999999999999,
+        0.015,
+        0.016,
+        0.137,
+        0.371,
+        0.619,
+        0.887,
+        0.9999999,
+        1
+      ]
+    },
+    "originalObservation": {
+      "payload": {
+        "keyframes": {
+          "transform": [
+            "translateX(0px) translateY(0px) ",
+            "translateX(27px) translateY(27px) "
+          ]
+        },
+        "options": {
+          "fill": "both",
+          "duration": 1000,
+          "easing": "linear"
+        },
+        "id": 0,
+        "cancelled": true
+      },
+      "metrics": {
+        "sourceChannelError": 2.7422508708241367e-14,
+        "emittedChannelError": {
+          "x": 0,
+          "y": 10.8,
+          "scale": 0,
+          "rotate": 0,
+          "skewX": 0
+        },
+        "screenPointError": 10.8,
+        "nonFinite": 0,
+        "keyframes": 2,
+        "bytes": 186,
+        "easingBytes": 6
+      },
+      "measurements": [
+        {
+          "seconds": 0,
+          "expected": {
+            "x": 0,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 0,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "screenPointError": 0
+        },
+        {
+          "seconds": 1e-7,
+          "expected": {
+            "x": 0.0000027,
+            "y": 0.0000027,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 0.0000027,
+            "y": 0.0000027,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0.0000027,
+            0.0000027
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0.0000027,
+            0.0000027
+          ],
+          "screenPointError": 0
+        },
+        {
+          "seconds": 0.024,
+          "expected": {
+            "x": 0.648,
+            "y": 0.648,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 0.648,
+            "y": 0.648,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0.648,
+            0.648
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0.648,
+            0.648
+          ],
+          "screenPointError": 0
+        },
+        {
+          "seconds": 0.025,
+          "expected": {
+            "x": 0.675,
+            "y": 11.475000000000001,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 0.675,
+            "y": 0.675,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0.675,
+            11.475000000000001
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0.675,
+            0.675
+          ],
+          "screenPointError": 10.8
+        },
+        {
+          "seconds": 0.026000000000000002,
+          "expected": {
+            "x": 0.7020000000000001,
+            "y": 0.7020000000000001,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 0.7020000000000001,
+            "y": 0.7020000000000001,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0.7020000000000001,
+            0.7020000000000001
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0.7020000000000001,
+            0.7020000000000001
+          ],
+          "screenPointError": 0
+        },
+        {
+          "seconds": 0.137,
+          "expected": {
+            "x": 3.6990000000000003,
+            "y": 3.6990000000000003,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 3.6990000000000003,
+            "y": 3.6990000000000003,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            3.6990000000000003,
+            3.6990000000000003
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            3.6990000000000003,
+            3.6990000000000003
+          ],
+          "screenPointError": 0
+        },
+        {
+          "seconds": 0.371,
+          "expected": {
+            "x": 10.017,
+            "y": 10.017,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 10.017,
+            "y": 10.017,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            10.017,
+            10.017
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            10.017,
+            10.017
+          ],
+          "screenPointError": 0
+        },
+        {
+          "seconds": 0.619,
+          "expected": {
+            "x": 16.713,
+            "y": 16.713,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 16.713,
+            "y": 16.713,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            16.713,
+            16.713
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            16.713,
+            16.713
+          ],
+          "screenPointError": 0
+        },
+        {
+          "seconds": 0.887,
+          "expected": {
+            "x": 23.949,
+            "y": 23.949,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 23.949,
+            "y": 23.949,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            23.949,
+            23.949
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            23.949,
+            23.949
+          ],
+          "screenPointError": 0
+        },
+        {
+          "seconds": 0.9999999,
+          "expected": {
+            "x": 26.9999973,
+            "y": 26.9999973,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 26.9999973,
+            "y": 26.9999973,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            26.9999973,
+            26.9999973
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            26.9999973,
+            26.9999973
+          ],
+          "screenPointError": 0
+        },
+        {
+          "seconds": 1,
+          "expected": {
+            "x": 27,
+            "y": 27,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 27,
+            "y": 27,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            27,
+            27
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            27,
+            27
+          ],
+          "screenPointError": 0
+        }
+      ],
+      "input": {
+        "version": 1,
+        "family": "narrow-feature",
+        "tracks": [
+          {
+            "channel": "x",
+            "values": [
+              0,
+              27
+            ],
+            "duration": 1,
+            "ease": {
+              "kind": "named",
+              "name": "linear"
+            }
+          },
+          {
+            "channel": "y",
+            "values": [
+              0,
+              27
+            ],
+            "duration": 1,
+            "ease": {
+              "kind": "bump",
+              "center": 0.025,
+              "width": 0.001,
+              "amplitude": 0.4
+            }
+          }
+        ],
+        "sampleTimes": [
+          0,
+          1e-7,
+          0.024,
+          0.025,
+          0.026000000000000002,
+          0.137,
+          0.371,
+          0.619,
+          0.887,
+          0.9999999,
+          1
+        ]
+      },
+      "path": {
+        "path": "shared-progress",
+        "evidence": "Test-only numberAt prototype spy: 202 sampler calls before capture"
+      },
+      "probeCount": 202,
+      "payloads": [
+        {
+          "keyframes": {
+            "transform": [
+              "translateX(0px) translateY(0px) ",
+              "translateX(27px) translateY(27px) "
+            ]
+          },
+          "options": {
+            "fill": "both",
+            "duration": 1000,
+            "easing": "linear"
+          },
+          "id": 0,
+          "cancelled": false
+        }
+      ]
+    },
+    "minimizedObservation": {
+      "payload": {
+        "keyframes": {
+          "transform": [
+            "translateX(0px) translateY(0px) ",
+            "translateX(20px) translateY(20px) "
+          ]
+        },
+        "options": {
+          "fill": "both",
+          "duration": 1000,
+          "easing": "linear"
+        },
+        "id": 0,
+        "cancelled": true
+      },
+      "metrics": {
+        "sourceChannelError": 1.8318679906315083e-15,
+        "emittedChannelError": {
+          "x": 0,
+          "y": 2.0000000000000004,
+          "scale": 0,
+          "rotate": 0,
+          "skewX": 0
+        },
+        "screenPointError": 2.0000000000000004,
+        "nonFinite": 0,
+        "keyframes": 2,
+        "bytes": 186,
+        "easingBytes": 6
+      },
+      "measurements": [
+        {
+          "seconds": 0,
+          "expected": {
+            "x": 0,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 0,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "screenPointError": 0
+        },
+        {
+          "seconds": 1e-7,
+          "expected": {
+            "x": 0.000002,
+            "y": 0.000002,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 0.000002,
+            "y": 0.000002,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0.000002,
+            0.000002
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0.000002,
+            0.000002
+          ],
+          "screenPointError": 0
+        },
+        {
+          "seconds": 0.013999999999999999,
+          "expected": {
+            "x": 0.27999999999999997,
+            "y": 0.27999999999999997,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 0.27999999999999997,
+            "y": 0.27999999999999997,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0.27999999999999997,
+            0.27999999999999997
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0.27999999999999997,
+            0.27999999999999997
+          ],
+          "screenPointError": 0
+        },
+        {
+          "seconds": 0.015,
+          "expected": {
+            "x": 0.3,
+            "y": 2.3000000000000003,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 0.3,
+            "y": 0.3,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0.3,
+            2.3000000000000003
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0.3,
+            0.3
+          ],
+          "screenPointError": 2.0000000000000004
+        },
+        {
+          "seconds": 0.016,
+          "expected": {
+            "x": 0.32,
+            "y": 0.32,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 0.32,
+            "y": 0.32,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0.32,
+            0.32
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0.32,
+            0.32
+          ],
+          "screenPointError": 0
+        },
+        {
+          "seconds": 0.137,
+          "expected": {
+            "x": 2.74,
+            "y": 2.74,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 2.74,
+            "y": 2.74,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            2.74,
+            2.74
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            2.74,
+            2.74
+          ],
+          "screenPointError": 0
+        },
+        {
+          "seconds": 0.371,
+          "expected": {
+            "x": 7.42,
+            "y": 7.42,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 7.42,
+            "y": 7.42,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            7.42,
+            7.42
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            7.42,
+            7.42
+          ],
+          "screenPointError": 0
+        },
+        {
+          "seconds": 0.619,
+          "expected": {
+            "x": 12.379999999999999,
+            "y": 12.379999999999999,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 12.379999999999999,
+            "y": 12.379999999999999,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            12.379999999999999,
+            12.379999999999999
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            12.379999999999999,
+            12.379999999999999
+          ],
+          "screenPointError": 0
+        },
+        {
+          "seconds": 0.887,
+          "expected": {
+            "x": 17.740000000000002,
+            "y": 17.740000000000002,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 17.740000000000002,
+            "y": 17.740000000000002,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            17.740000000000002,
+            17.740000000000002
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            17.740000000000002,
+            17.740000000000002
+          ],
+          "screenPointError": 0
+        },
+        {
+          "seconds": 0.9999999,
+          "expected": {
+            "x": 19.999998,
+            "y": 19.999998,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 19.999998,
+            "y": 19.999998,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            19.999998,
+            19.999998
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            19.999998,
+            19.999998
+          ],
+          "screenPointError": 0
+        },
+        {
+          "seconds": 1,
+          "expected": {
+            "x": 20,
+            "y": 20,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 20,
+            "y": 20,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20,
+            20
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20,
+            20
+          ],
+          "screenPointError": 0
+        }
+      ],
+      "input": {
+        "version": 1,
+        "family": "narrow-feature",
+        "tracks": [
+          {
+            "channel": "x",
+            "values": [
+              0,
+              20
+            ],
+            "duration": 1,
+            "ease": {
+              "kind": "named",
+              "name": "linear"
+            }
+          },
+          {
+            "channel": "y",
+            "values": [
+              0,
+              20
+            ],
+            "duration": 1,
+            "ease": {
+              "kind": "bump",
+              "center": 0.015,
+              "width": 0.001,
+              "amplitude": 0.1
+            }
+          }
+        ],
+        "sampleTimes": [
+          0,
+          1e-7,
+          0.013999999999999999,
+          0.015,
+          0.016,
+          0.137,
+          0.371,
+          0.619,
+          0.887,
+          0.9999999,
+          1
+        ]
+      },
+      "path": {
+        "path": "shared-progress",
+        "evidence": "Test-only numberAt prototype spy: 202 sampler calls before capture"
+      },
+      "probeCount": 202,
+      "payloads": [
+        {
+          "keyframes": {
+            "transform": [
+              "translateX(0px) translateY(0px) ",
+              "translateX(20px) translateY(20px) "
+            ]
+          },
+          "options": {
+            "fill": "both",
+            "duration": 1000,
+            "easing": "linear"
+          },
+          "id": 0,
+          "cancelled": false
+        }
+      ]
+    },
+    "expectedFailure": true,
+    "classification": "accuracy limitation without a promised global bound",
+    "tolerance": {
+      "screenPointPx": 1
+    }
+  },
+  {
+    "version": 1,
+    "property": "sampling accuracy characterization",
+    "family": "near-zero-range",
+    "revisions": {
+      "subject": "1cdaf642291dec275c8d218d383fe8cefa7fb91b",
+      "harness": "678c4cd6afef6730a1f1e53f1dd75207987c2536",
+      "subjectRoot": "/Users/robertpenner/git/robertpenner/motion.dev.worktrees/worktree-tickets-1-2-3-execution",
+      "dirty": false
+    },
+    "seed": 20261119,
+    "path": null,
+    "shrinks": 0,
+    "completed": 100,
+    "original": null,
+    "minimized": null,
+    "minimizedObservation": null,
+    "expectedFailure": false,
+    "classification": "already-fixed behavior control",
+    "tolerance": {
+      "screenPointPx": 1
+    }
+  },
+  {
+    "version": 1,
+    "property": "sampling accuracy characterization",
+    "family": "duplicate-boundary",
+    "revisions": {
+      "subject": "1cdaf642291dec275c8d218d383fe8cefa7fb91b",
+      "harness": "678c4cd6afef6730a1f1e53f1dd75207987c2536",
+      "subjectRoot": "/Users/robertpenner/git/robertpenner/motion.dev.worktrees/worktree-tickets-1-2-3-execution",
+      "dirty": false
+    },
+    "seed": 20261120,
+    "path": "0:0:0:0:0",
+    "shrinks": 4,
+    "completed": 1,
+    "original": {
+      "version": 1,
+      "family": "duplicate-boundary",
+      "tracks": [
+        {
+          "channel": "x",
+          "values": [
+            0,
+            6,
+            24,
+            12
+          ],
+          "duration": 1.907,
+          "ease": {
+            "kind": "named",
+            "name": "linear"
+          },
+          "times": [
+            0,
+            0.5,
+            0.5,
+            1
+          ]
+        },
+        {
+          "channel": "skewX",
+          "values": [
+            0,
+            10
+          ],
+          "duration": 1.907,
+          "ease": {
+            "kind": "power",
+            "exponent": 2
+          }
+        }
+      ],
+      "sampleTimes": [
+        0,
+        1e-7,
+        0.261259,
+        0.707497,
+        0.9534999000000001,
+        0.9535,
+        0.9535001,
+        1.180433,
+        1.6915090000000002,
+        1.9069999,
+        1.907
+      ]
+    },
+    "minimized": {
+      "version": 1,
+      "family": "duplicate-boundary",
+      "tracks": [
+        {
+          "channel": "x",
+          "values": [
+            0,
+            5,
+            20,
+            10
+          ],
+          "duration": 0.2,
+          "ease": {
+            "kind": "named",
+            "name": "linear"
+          },
+          "times": [
+            0,
+            0.5,
+            0.5,
+            1
+          ]
+        },
+        {
+          "channel": "skewX",
+          "values": [
+            0,
+            5
+          ],
+          "duration": 0.2,
+          "ease": {
+            "kind": "power",
+            "exponent": 2
+          }
+        }
+      ],
+      "sampleTimes": [
+        0,
+        1e-7,
+        0.027400000000000004,
+        0.0742,
+        0.0999999,
+        0.1,
+        0.10000010000000001,
+        0.12380000000000001,
+        0.1774,
+        0.1999999,
+        0.2
+      ]
+    },
+    "originalObservation": {
+      "payload": {
+        "keyframes": {
+          "transform": [
+            "translateX(0px) skewX(0deg) ",
+            "translateX(0.6px) skewX(0.024999999999999994deg) ",
+            "translateX(1.2px) skewX(0.09999999999999998deg) ",
+            "translateX(1.7999999999999998px) skewX(0.22499999999999998deg) ",
+            "translateX(2.4px) skewX(0.3999999999999999deg) ",
+            "translateX(3px) skewX(0.625deg) ",
+            "translateX(3.5999999999999996px) skewX(0.8999999999999999deg) ",
+            "translateX(4.2px) skewX(1.2250000000000003deg) ",
+            "translateX(4.8px) skewX(1.5999999999999996deg) ",
+            "translateX(5.4px) skewX(2.0250000000000004deg) ",
+            "translateX(5.7px) skewX(2.25625deg) ",
+            "translateX(5.85px) skewX(2.3765625deg) ",
+            "translateX(5.925000314630309px) skewX(2.4378908839145326deg) ",
+            "translateX(5.962499842684846px) skewX(2.468847525973389deg) ",
+            "translateX(5.999963502884111px) skewX(2.499969585829262deg) ",
+            "translateX(24px) skewX(2.5deg) ",
+            "translateX(24px) skewX(2.5deg) ",
+            "translateX(23.999874147876245px) skewX(2.500052438659876deg) ",
+            "translateX(22.8px) skewX(3.0249999999999995deg) ",
+            "translateX(21.6px) skewX(3.5999999999999996deg) ",
+            "translateX(20.400000000000002px) skewX(4.2250000000000005deg) ",
+            "translateX(19.2px) skewX(4.900000000000001deg) ",
+            "translateX(18px) skewX(5.625deg) ",
+            "translateX(16.8px) skewX(6.399999999999999deg) ",
+            "translateX(15.6px) skewX(7.225deg) ",
+            "translateX(14.4px) skewX(8.100000000000001deg) ",
+            "translateX(13.2px) skewX(9.025deg) ",
+            "translateX(12px) skewX(10deg) "
+          ],
+          "offset": [
+            0,
+            0.049999999999999954,
+            0.10000000000000002,
+            0.14999999999999997,
+            0.20000000000000004,
+            0.25,
+            0.29999999999999993,
+            0.3499999999999999,
+            0.4000000000000001,
+            0.45000000000000007,
+            0.47500000000000003,
+            0.48749999999999993,
+            0.49374999999999997,
+            0.49687500000000007,
+            0.49999694824218743,
+            0.5,
+            0.5,
+            0.5000052438384898,
+            0.5500000000000002,
+            0.5999999999999999,
+            0.6500000000000001,
+            0.6999999999999998,
+            0.75,
+            0.8000000000000002,
+            0.8499999999999999,
+            0.9000000000000001,
+            0.9499999999999998,
+            1
+          ]
+        },
+        "options": {
+          "fill": "both",
+          "duration": 1907,
+          "easing": "linear"
+        },
+        "id": 0,
+        "cancelled": true
+      },
+      "metrics": {
+        "sourceChannelError": 1.7763568394002505e-15,
+        "emittedChannelError": {
+          "x": 17.690705823040595,
+          "y": 0,
+          "scale": 0,
+          "rotate": 0,
+          "skewX": 0.006090000000000151
+        },
+        "screenPointError": 17.690705826147646,
+        "nonFinite": 0,
+        "keyframes": 28,
+        "bytes": 1942,
+        "easingBytes": 6
+      },
+      "measurements": [
+        {
+          "seconds": 0,
+          "expected": {
+            "x": 0,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 0,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "screenPointError": 0
+        },
+        {
+          "seconds": 1e-7,
+          "expected": {
+            "x": 6.292606187729417e-7,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 2.749784210684066e-14
+          },
+          "observed": {
+            "x": 6.292606187729424e-7,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 2.6219192448872593e-8
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            4.799278819579038e-16,
+            1,
+            6.292606187729417e-7,
+            0
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            4.5761123544686174e-10,
+            1,
+            6.292606187729424e-7,
+            0
+          ],
+          "screenPointError": 4.57610755518986e-8
+        },
+        {
+          "seconds": 0.261259,
+          "expected": {
+            "x": 1.6440000000000001,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0.18769000000000005
+          },
+          "observed": {
+            "x": 1.6440000000000001,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0.19250000000000006
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0.003275820190599265,
+            1,
+            1.6440000000000001,
+            0
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0.0033597714517754227,
+            1,
+            1.6440000000000001,
+            0
+          ],
+          "screenPointError": 0.008395126117615836
+        },
+        {
+          "seconds": 0.707497,
+          "expected": {
+            "x": 4.452,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 1.37641
+          },
+          "observed": {
+            "x": 4.452,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 1.3825
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0.024027508619496037,
+            1,
+            4.452,
+            0
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0.024133860806741122,
+            1,
+            4.452,
+            0
+          ],
+          "screenPointError": 0.010635218724508455
+        },
+        {
+          "seconds": 0.9534999000000001,
+          "expected": {
+            "x": 5.999999370739381,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 2.4999994756161787
+          },
+          "observed": {
+            "x": 23.690705193779976,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 2.4999994773930014
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0.04366093373884116,
+            1,
+            5.999999370739381,
+            0
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0.043660933769911675,
+            1,
+            23.690705193779976,
+            0
+          ],
+          "screenPointError": 17.690705826147646
+        },
+        {
+          "seconds": 0.9535,
+          "expected": {
+            "x": 24,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 2.5
+          },
+          "observed": {
+            "x": 24,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 2.5
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0.04366094290851206,
+            1,
+            24,
+            0
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0.04366094290851206,
+            1,
+            24,
+            0
+          ],
+          "screenPointError": 0
+        },
+        {
+          "seconds": 0.9535001,
+          "expected": {
+            "x": 23.999998741478763,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 2.5000005243838763
+          },
+          "observed": {
+            "x": 23.999998741478763,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 2.500000524386598
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0.043660952078183934,
+            1,
+            23.999998741478763,
+            0
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0.043660952078231535,
+            1,
+            23.999998741478763,
+            0
+          ],
+          "screenPointError": 4.760636329592671e-12
+        },
+        {
+          "seconds": 1.180433,
+          "expected": {
+            "x": 21.144,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 3.8316099999999995
+          },
+          "observed": {
+            "x": 21.144000000000002,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 3.8375000000000004
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0.0669740795310714,
+            1,
+            21.144,
+            0
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0.06707734124705633,
+            1,
+            21.144000000000002,
+            0
+          ],
+          "screenPointError": 0.010326171598496359
+        },
+        {
+          "seconds": 1.6915090000000002,
+          "expected": {
+            "x": 14.712,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 7.8676900000000005
+          },
+          "observed": {
+            "x": 14.712000000000002,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 7.8725
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0.13818673781316324,
+            1,
+            14.712,
+            0
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0.13827229222280218,
+            1,
+            14.712000000000002,
+            0
+          ],
+          "screenPointError": 0.008555440963895933
+        },
+        {
+          "seconds": 1.9069999,
+          "expected": {
+            "x": 12.00000125852124,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 9.999998951232328
+          },
+          "observed": {
+            "x": 12.00000125852124,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 9.999998977451494
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0.1763269618349087,
+            1,
+            12.00000125852124,
+            0
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0.17632696230674713,
+            1,
+            12.00000125852124,
+            0
+          ],
+          "screenPointError": 4.718384261082065e-8
+        },
+        {
+          "seconds": 1.907,
+          "expected": {
+            "x": 12,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 10
+          },
+          "observed": {
+            "x": 12,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 10
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0.17632698070846498,
+            1,
+            12,
+            0
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0.17632698070846498,
+            1,
+            12,
+            0
+          ],
+          "screenPointError": 0
+        }
+      ],
+      "input": {
+        "version": 1,
+        "family": "duplicate-boundary",
+        "tracks": [
+          {
+            "channel": "x",
+            "values": [
+              0,
+              6,
+              24,
+              12
+            ],
+            "duration": 1.907,
+            "ease": {
+              "kind": "named",
+              "name": "linear"
+            },
+            "times": [
+              0,
+              0.5,
+              0.5,
+              1
+            ]
+          },
+          {
+            "channel": "skewX",
+            "values": [
+              0,
+              10
+            ],
+            "duration": 1.907,
+            "ease": {
+              "kind": "power",
+              "exponent": 2
+            }
+          }
+        ],
+        "sampleTimes": [
+          0,
+          1e-7,
+          0.261259,
+          0.707497,
+          0.9534999000000001,
+          0.9535,
+          0.9535001,
+          1.180433,
+          1.6915090000000002,
+          1.9069999,
+          1.907
+        ]
+      },
+      "path": {
+        "path": "adaptive",
+        "evidence": "Production emits explicit adaptive offsets"
+      },
+      "probeCount": 629,
+      "payloads": [
+        {
+          "keyframes": {
+            "transform": [
+              "translateX(0px) skewX(0deg) ",
+              "translateX(0.6px) skewX(0.024999999999999994deg) ",
+              "translateX(1.2px) skewX(0.09999999999999998deg) ",
+              "translateX(1.7999999999999998px) skewX(0.22499999999999998deg) ",
+              "translateX(2.4px) skewX(0.3999999999999999deg) ",
+              "translateX(3px) skewX(0.625deg) ",
+              "translateX(3.5999999999999996px) skewX(0.8999999999999999deg) ",
+              "translateX(4.2px) skewX(1.2250000000000003deg) ",
+              "translateX(4.8px) skewX(1.5999999999999996deg) ",
+              "translateX(5.4px) skewX(2.0250000000000004deg) ",
+              "translateX(5.7px) skewX(2.25625deg) ",
+              "translateX(5.85px) skewX(2.3765625deg) ",
+              "translateX(5.925000314630309px) skewX(2.4378908839145326deg) ",
+              "translateX(5.962499842684846px) skewX(2.468847525973389deg) ",
+              "translateX(5.999963502884111px) skewX(2.499969585829262deg) ",
+              "translateX(24px) skewX(2.5deg) ",
+              "translateX(24px) skewX(2.5deg) ",
+              "translateX(23.999874147876245px) skewX(2.500052438659876deg) ",
+              "translateX(22.8px) skewX(3.0249999999999995deg) ",
+              "translateX(21.6px) skewX(3.5999999999999996deg) ",
+              "translateX(20.400000000000002px) skewX(4.2250000000000005deg) ",
+              "translateX(19.2px) skewX(4.900000000000001deg) ",
+              "translateX(18px) skewX(5.625deg) ",
+              "translateX(16.8px) skewX(6.399999999999999deg) ",
+              "translateX(15.6px) skewX(7.225deg) ",
+              "translateX(14.4px) skewX(8.100000000000001deg) ",
+              "translateX(13.2px) skewX(9.025deg) ",
+              "translateX(12px) skewX(10deg) "
+            ],
+            "offset": [
+              0,
+              0.049999999999999954,
+              0.10000000000000002,
+              0.14999999999999997,
+              0.20000000000000004,
+              0.25,
+              0.29999999999999993,
+              0.3499999999999999,
+              0.4000000000000001,
+              0.45000000000000007,
+              0.47500000000000003,
+              0.48749999999999993,
+              0.49374999999999997,
+              0.49687500000000007,
+              0.49999694824218743,
+              0.5,
+              0.5,
+              0.5000052438384898,
+              0.5500000000000002,
+              0.5999999999999999,
+              0.6500000000000001,
+              0.6999999999999998,
+              0.75,
+              0.8000000000000002,
+              0.8499999999999999,
+              0.9000000000000001,
+              0.9499999999999998,
+              1
+            ]
+          },
+          "options": {
+            "fill": "both",
+            "duration": 1907,
+            "easing": "linear"
+          },
+          "id": 0,
+          "cancelled": false
+        }
+      ]
+    },
+    "minimizedObservation": {
+      "payload": {
+        "keyframes": {
+          "transform": [
+            "translateX(0px) skewX(0deg) ",
+            "translateX(2.5px) skewX(0.3125deg) ",
+            "translateX(3.75px) skewX(0.703125deg) ",
+            "translateX(4.375px) skewX(0.95703125deg) ",
+            "translateX(4.6875px) skewX(1.0986328125deg) ",
+            "translateX(4.999694999999999px) skewX(1.2498475046512496deg) ",
+            "translateX(20px) skewX(1.25deg) ",
+            "translateX(20px) skewX(1.25deg) ",
+            "translateX(19.999px) skewX(1.2502500125deg) ",
+            "translateX(14.999500000000001px) skewX(2.812687503125deg) ",
+            "translateX(10px) skewX(5deg) "
+          ],
+          "offset": [
+            0,
+            0.25,
+            0.375,
+            0.4375,
+            0.46875,
+            0.499969482421875,
+            0.5,
+            0.5,
+            0.50005,
+            0.7500250000000005,
+            1
+          ]
+        },
+        "options": {
+          "fill": "both",
+          "duration": 200,
+          "easing": "linear"
+        },
+        "id": 0,
+        "cancelled": true
+      },
+      "metrics": {
+        "sourceChannelError": 1.7763568394002505e-15,
+        "emittedChannelError": {
+          "x": 14.754240002872931,
+          "y": 0,
+          "scale": 0,
+          "rotate": 0,
+          "skewX": 0.07792711874999858
+        },
+        "screenPointError": 14.754240005518287,
+        "nonFinite": 0,
+        "keyframes": 11,
+        "bytes": 682,
+        "easingBytes": 6
+      },
+      "measurements": [
+        {
+          "seconds": 0,
+          "expected": {
+            "x": 0,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 0,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "screenPointError": 0
+        },
+        {
+          "seconds": 1e-7,
+          "expected": {
+            "x": 0.0000049999999999999996,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 1.25e-12
+          },
+          "observed": {
+            "x": 0.0000049999999999999996,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 6.249999999999999e-7
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            2.1816615649929117e-14,
+            1,
+            0.0000049999999999999996,
+            0
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            1.0908307824964559e-8,
+            1,
+            0.0000049999999999999996,
+            0
+          ],
+          "screenPointError": 0.000001090828600834891
+        },
+        {
+          "seconds": 0.027400000000000004,
+          "expected": {
+            "x": 1.37,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0.09384500000000003
+          },
+          "observed": {
+            "x": 1.37,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0.17125
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0.001637905701220752,
+            1,
+            1.37,
+            0
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0.0029888852443299384,
+            1,
+            1.37,
+            0
+          ],
+          "screenPointError": 0.13509795431091853
+        },
+        {
+          "seconds": 0.0742,
+          "expected": {
+            "x": 3.71,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0.688205
+          },
+          "observed": {
+            "x": 3.71,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0.690625
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0.0120120208614152,
+            1,
+            3.71,
+            0
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0.012054263945085545,
+            1,
+            3.71,
+            0
+          ],
+          "screenPointError": 0.004224308367034801
+        },
+        {
+          "seconds": 0.0999999,
+          "expected": {
+            "x": 4.999995,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 1.24999750000125
+          },
+          "observed": {
+            "x": 19.75423500287293,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 1.249997501516206
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0.02182003396816557,
+            1,
+            4.999995,
+            0
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0.02182003399461913,
+            1,
+            19.75423500287293,
+            0
+          ],
+          "screenPointError": 14.754240005518287
+        },
+        {
+          "seconds": 0.1,
+          "expected": {
+            "x": 20,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 1.25
+          },
+          "observed": {
+            "x": 20,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 1.25
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0.021820077622149475,
+            1,
+            20,
+            0
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0.021820077622149475,
+            1,
+            20,
+            0
+          ],
+          "screenPointError": 0
+        },
+        {
+          "seconds": 0.10000010000000001,
+          "expected": {
+            "x": 19.99999,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 1.25000250000125
+          },
+          "observed": {
+            "x": 19.99999,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 1.2500025001249997
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0.021820121276177114,
+            1,
+            19.99999,
+            0
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0.021820121278337982,
+            1,
+            19.99999,
+            0
+          ],
+          "screenPointError": 2.1608670408568287e-10
+        },
+        {
+          "seconds": 0.12380000000000001,
+          "expected": {
+            "x": 17.62,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 1.9158049999999998
+          },
+          "observed": {
+            "x": 17.620000000000005,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 1.9937321187499983
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0.03344957199187761,
+            1,
+            17.62,
+            0
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0.03481124134174634,
+            1,
+            17.620000000000005,
+            0
+          ],
+          "screenPointError": 0.13616693498687482
+        },
+        {
+          "seconds": 0.1774,
+          "expected": {
+            "x": 12.26,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 3.9338450000000003
+          },
+          "observed": {
+            "x": 12.260000000000005,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 4.011235874999998
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0.06876663670664537,
+            1,
+            12.26,
+            0
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0.070123876557927,
+            1,
+            12.260000000000005,
+            0
+          ],
+          "screenPointError": 0.13572398512816797
+        },
+        {
+          "seconds": 0.1999999,
+          "expected": {
+            "x": 10.00001,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 4.999995000001251
+          },
+          "observed": {
+            "x": 10.00001,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 4.9999956249375
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0.08748857559152333,
+            1,
+            10.00001,
+            0
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0.08748858658220492,
+            1,
+            10.00001,
+            0
+          ],
+          "screenPointError": 0.0000010990681591493967
+        },
+        {
+          "seconds": 0.2,
+          "expected": {
+            "x": 10,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 5
+          },
+          "observed": {
+            "x": 10,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 5
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0.08748866352592401,
+            1,
+            10,
+            0
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0.08748866352592401,
+            1,
+            10,
+            0
+          ],
+          "screenPointError": 0
+        }
+      ],
+      "input": {
+        "version": 1,
+        "family": "duplicate-boundary",
+        "tracks": [
+          {
+            "channel": "x",
+            "values": [
+              0,
+              5,
+              20,
+              10
+            ],
+            "duration": 0.2,
+            "ease": {
+              "kind": "named",
+              "name": "linear"
+            },
+            "times": [
+              0,
+              0.5,
+              0.5,
+              1
+            ]
+          },
+          {
+            "channel": "skewX",
+            "values": [
+              0,
+              5
+            ],
+            "duration": 0.2,
+            "ease": {
+              "kind": "power",
+              "exponent": 2
+            }
+          }
+        ],
+        "sampleTimes": [
+          0,
+          1e-7,
+          0.027400000000000004,
+          0.0742,
+          0.0999999,
+          0.1,
+          0.10000010000000001,
+          0.12380000000000001,
+          0.1774,
+          0.1999999,
+          0.2
+        ]
+      },
+      "path": {
+        "path": "adaptive",
+        "evidence": "Production emits explicit adaptive offsets"
+      },
+      "probeCount": 191,
+      "payloads": [
+        {
+          "keyframes": {
+            "transform": [
+              "translateX(0px) skewX(0deg) ",
+              "translateX(2.5px) skewX(0.3125deg) ",
+              "translateX(3.75px) skewX(0.703125deg) ",
+              "translateX(4.375px) skewX(0.95703125deg) ",
+              "translateX(4.6875px) skewX(1.0986328125deg) ",
+              "translateX(4.999694999999999px) skewX(1.2498475046512496deg) ",
+              "translateX(20px) skewX(1.25deg) ",
+              "translateX(20px) skewX(1.25deg) ",
+              "translateX(19.999px) skewX(1.2502500125deg) ",
+              "translateX(14.999500000000001px) skewX(2.812687503125deg) ",
+              "translateX(10px) skewX(5deg) "
+            ],
+            "offset": [
+              0,
+              0.25,
+              0.375,
+              0.4375,
+              0.46875,
+              0.499969482421875,
+              0.5,
+              0.5,
+              0.50005,
+              0.7500250000000005,
+              1
+            ]
+          },
+          "options": {
+            "fill": "both",
+            "duration": 200,
+            "easing": "linear"
+          },
+          "id": 0,
+          "cancelled": false
+        }
+      ]
+    },
+    "expectedFailure": true,
+    "classification": "accuracy limitation without a promised global bound",
+    "tolerance": {
+      "screenPointPx": 1
+    }
+  },
+  {
+    "version": 1,
+    "property": "sampling accuracy characterization",
+    "family": "large-bounded",
+    "revisions": {
+      "subject": "1cdaf642291dec275c8d218d383fe8cefa7fb91b",
+      "harness": "678c4cd6afef6730a1f1e53f1dd75207987c2536",
+      "subjectRoot": "/Users/robertpenner/git/robertpenner/motion.dev.worktrees/worktree-tickets-1-2-3-execution",
+      "dirty": false
+    },
+    "seed": 20261121,
+    "path": null,
+    "shrinks": 0,
+    "completed": 100,
+    "original": null,
+    "minimized": null,
+    "minimizedObservation": null,
+    "expectedFailure": false,
+    "classification": "accuracy limitation without a promised global bound",
+    "tolerance": {
+      "screenPointPx": 1
+    }
+  },
+  {
+    "version": 1,
+    "property": "sampling accuracy characterization",
+    "family": "short-repeat",
+    "revisions": {
+      "subject": "1cdaf642291dec275c8d218d383fe8cefa7fb91b",
+      "harness": "678c4cd6afef6730a1f1e53f1dd75207987c2536",
+      "subjectRoot": "/Users/robertpenner/git/robertpenner/motion.dev.worktrees/worktree-tickets-1-2-3-execution",
+      "dirty": false
+    },
+    "seed": 20261122,
+    "path": "0:0:0:0",
+    "shrinks": 3,
+    "completed": 1,
+    "original": {
+      "version": 1,
+      "family": "short-repeat",
+      "tracks": [
+        {
+          "channel": "x",
+          "values": [
+            0,
+            887
+          ],
+          "duration": 0.01,
+          "ease": {
+            "kind": "named",
+            "name": "linear"
+          },
+          "repeat": 3,
+          "repeatDelay": 0.001,
+          "repeatType": "loop"
+        },
+        {
+          "channel": "y",
+          "values": [
+            0,
+            887
+          ],
+          "duration": 0.04,
+          "ease": {
+            "kind": "named",
+            "name": "linear"
+          }
+        }
+      ],
+      "sampleTimes": [
+        0,
+        1e-7,
+        0.005891000000000001,
+        0.0099999,
+        0.01,
+        0.0100001,
+        0.0109999,
+        0.011,
+        0.011000099999999999,
+        0.015953000000000002,
+        0.0209999,
+        0.020999999999999998,
+        0.021000099999999997,
+        0.0219999,
+        0.022,
+        0.022000099999999998,
+        0.026617000000000002,
+        0.0319999,
+        0.032,
+        0.032000100000000004,
+        0.0329999,
+        0.033,
+        0.033000100000000004,
+        0.038141,
+        0.0399999,
+        0.04,
+        0.040000100000000004,
+        0.0429999,
+        0.043000000000000003
+      ]
+    },
+    "minimized": {
+      "version": 1,
+      "family": "short-repeat",
+      "tracks": [
+        {
+          "channel": "x",
+          "values": [
+            0,
+            20
+          ],
+          "duration": 0.003,
+          "ease": {
+            "kind": "named",
+            "name": "linear"
+          },
+          "repeat": 3,
+          "repeatDelay": 0.001,
+          "repeatType": "loop"
+        },
+        {
+          "channel": "y",
+          "values": [
+            0,
+            20
+          ],
+          "duration": 0.012,
+          "ease": {
+            "kind": "named",
+            "name": "linear"
+          }
+        }
+      ],
+      "sampleTimes": [
+        0,
+        1e-7,
+        0.002055,
+        0.0029999000000000002,
+        0.003,
+        0.0030001,
+        0.0039999,
+        0.004,
+        0.0040001,
+        0.005565,
+        0.0069999,
+        0.007,
+        0.0070001,
+        0.0079999,
+        0.008,
+        0.0080001,
+        0.009285,
+        0.0109999,
+        0.011,
+        0.011000099999999999,
+        0.0119999,
+        0.012,
+        0.0120001,
+        0.013304999999999999,
+        0.0149999,
+        0.015
+      ]
+    },
+    "originalObservation": {
+      "payload": {
+        "keyframes": {
+          "transform": [
+            "translateX(0px) translateY(0px) ",
+            "translateX(887px) translateY(221.75px) ",
+            "translateX(887px) translateY(221.97175px) ",
+            "translateX(887px) translateY(243.925px) ",
+            "translateX(0.8870000000000599px) translateY(244.14675px) ",
+            "translateX(887px) translateY(465.675px) ",
+            "translateX(887px) translateY(465.89675px) ",
+            "translateX(887px) translateY(487.85px) ",
+            "translateX(0.8870000000000599px) translateY(488.07175px) ",
+            "translateX(887px) translateY(709.6px) ",
+            "translateX(887px) translateY(709.82175px) ",
+            "translateX(887px) translateY(731.775px) ",
+            "translateX(0.8869999999996265px) translateY(731.9967499999999px) ",
+            "translateX(620.8999999999999px) translateY(887px) ",
+            "translateX(621.7869999999999px) translateY(887px) ",
+            "translateX(887px) translateY(887px) "
+          ],
+          "offset": [
+            0,
+            0.23255813953488372,
+            0.2327906976744184,
+            0.2558139534883721,
+            0.25604651162790676,
+            0.4883720930232558,
+            0.4886046511627905,
+            0.5116279069767442,
+            0.5118604651162788,
+            0.7441860465116279,
+            0.7444186046511626,
+            0.7674418604651163,
+            0.7676744186046509,
+            0.9302325581395349,
+            0.9304651162790696,
+            1
+          ]
+        },
+        "options": {
+          "fill": "both",
+          "duration": 43,
+          "easing": "linear"
+        },
+        "id": 0,
+        "cancelled": true
+      },
+      "metrics": {
+        "sourceChannelError": 3.410605131648481e-13,
+        "emittedChannelError": {
+          "x": 878.1300000000022,
+          "y": 2.2737367544323206e-13,
+          "scale": 0,
+          "rotate": 0,
+          "skewX": 0
+        },
+        "screenPointError": 878.1300000000022,
+        "nonFinite": 0,
+        "keyframes": 16,
+        "bytes": 1152,
+        "easingBytes": 6
+      },
+      "measurements": [
+        {
+          "seconds": 0,
+          "expected": {
+            "x": 0,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 0,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "screenPointError": 0
+        },
+        {
+          "seconds": 1e-7,
+          "expected": {
+            "x": 0.00887,
+            "y": 0.0022175,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 0.00887,
+            "y": 0.0022175,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0.00887,
+            0.0022175
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0.00887,
+            0.0022175
+          ],
+          "screenPointError": 0
+        },
+        {
+          "seconds": 0.005891000000000001,
+          "expected": {
+            "x": 522.5317000000001,
+            "y": 130.63292500000003,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 522.5317000000001,
+            "y": 130.63292500000003,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            522.5317000000001,
+            130.63292500000003
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            522.5317000000001,
+            130.63292500000003
+          ],
+          "screenPointError": 0
+        },
+        {
+          "seconds": 0.0099999,
+          "expected": {
+            "x": 886.99113,
+            "y": 221.7477825,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 886.9911300000001,
+            "y": 221.74778250000003,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            886.99113,
+            221.7477825
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            886.9911300000001,
+            221.74778250000003
+          ],
+          "screenPointError": 1.1718571004216928e-13
+        },
+        {
+          "seconds": 0.01,
+          "expected": {
+            "x": 887,
+            "y": 221.75,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 887,
+            "y": 221.75000000000003,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            887,
+            221.75
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            887,
+            221.75000000000003
+          ],
+          "screenPointError": 2.842170943040401e-14
+        },
+        {
+          "seconds": 0.0100001,
+          "expected": {
+            "x": 887,
+            "y": 221.75221749999997,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 887,
+            "y": 221.75221750000003,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            887,
+            221.75221749999997
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            887,
+            221.75221750000003
+          ],
+          "screenPointError": 5.684341886080802e-14
+        },
+        {
+          "seconds": 0.0109999,
+          "expected": {
+            "x": 887,
+            "y": 243.9227825,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 887,
+            "y": 243.9227825,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            887,
+            243.9227825
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            887,
+            243.9227825
+          ],
+          "screenPointError": 0
+        },
+        {
+          "seconds": 0.011,
+          "expected": {
+            "x": 887,
+            "y": 243.92499999999998,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 887,
+            "y": 243.925,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            887,
+            243.92499999999998
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            887,
+            243.925
+          ],
+          "screenPointError": 2.842170943040401e-14
+        },
+        {
+          "seconds": 0.011000099999999999,
+          "expected": {
+            "x": 0.008869999999947323,
+            "y": 243.92721749999998,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 878.1388700000022,
+            "y": 243.9272175,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0.008869999999947323,
+            243.92721749999998
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            878.1388700000022,
+            243.9272175
+          ],
+          "screenPointError": 878.1300000000022
+        },
+        {
+          "seconds": 0.015953000000000002,
+          "expected": {
+            "x": 439.3311000000002,
+            "y": 353.75777500000004,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 439.3311000000007,
+            "y": 353.75777500000015,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            439.3311000000002,
+            353.75777500000004
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            439.3311000000007,
+            353.75777500000015
+          ],
+          "screenPointError": 4.687428401686771e-13
+        },
+        {
+          "seconds": 0.0209999,
+          "expected": {
+            "x": 886.99113,
+            "y": 465.6727824999999,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 886.99113,
+            "y": 465.67278250000004,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            886.99113,
+            465.6727824999999
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            886.99113,
+            465.67278250000004
+          ],
+          "screenPointError": 1.1368683772161603e-13
+        },
+        {
+          "seconds": 0.020999999999999998,
+          "expected": {
+            "x": 886.9999999999998,
+            "y": 465.6749999999999,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 887,
+            "y": 465.675,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            886.9999999999998,
+            465.6749999999999
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            887,
+            465.675
+          ],
+          "screenPointError": 2.5421149729252077e-13
+        },
+        {
+          "seconds": 0.021000099999999997,
+          "expected": {
+            "x": 887,
+            "y": 465.6772174999999,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 887,
+            "y": 465.6772175,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            887,
+            465.6772174999999
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            887,
+            465.6772175
+          ],
+          "screenPointError": 5.684341886080802e-14
+        },
+        {
+          "seconds": 0.0219999,
+          "expected": {
+            "x": 887,
+            "y": 487.84778249999994,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 887,
+            "y": 487.84778250000005,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            887,
+            487.84778249999994
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            887,
+            487.84778250000005
+          ],
+          "screenPointError": 1.1368683772161603e-13
+        },
+        {
+          "seconds": 0.022,
+          "expected": {
+            "x": 887,
+            "y": 487.84999999999997,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 887,
+            "y": 487.85,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            887,
+            487.84999999999997
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            887,
+            487.85
+          ],
+          "screenPointError": 5.684341886080802e-14
+        },
+        {
+          "seconds": 0.022000099999999998,
+          "expected": {
+            "x": 0.008869999999947323,
+            "y": 487.85221749999994,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 878.13887,
+            "y": 487.8522175,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0.008869999999947323,
+            487.85221749999994
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            878.13887,
+            487.8522175
+          ],
+          "screenPointError": 878.13
+        },
+        {
+          "seconds": 0.026617000000000002,
+          "expected": {
+            "x": 409.5279000000003,
+            "y": 590.231975,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 409.527900000001,
+            "y": 590.2319750000003,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            409.5279000000003,
+            590.231975
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            409.527900000001,
+            590.2319750000003
+          ],
+          "screenPointError": 7.731540852509763e-13
+        },
+        {
+          "seconds": 0.0319999,
+          "expected": {
+            "x": 886.99113,
+            "y": 709.5977824999999,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 886.99113,
+            "y": 709.5977825,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            886.99113,
+            709.5977824999999
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            886.99113,
+            709.5977825
+          ],
+          "screenPointError": 1.1368683772161603e-13
+        },
+        {
+          "seconds": 0.032,
+          "expected": {
+            "x": 887,
+            "y": 709.6,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 887,
+            "y": 709.6000000000001,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            887,
+            709.6
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            887,
+            709.6000000000001
+          ],
+          "screenPointError": 1.1368683772161603e-13
+        },
+        {
+          "seconds": 0.032000100000000004,
+          "expected": {
+            "x": 887,
+            "y": 709.6022175,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 887,
+            "y": 709.6022175000002,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            887,
+            709.6022175
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            887,
+            709.6022175000002
+          ],
+          "screenPointError": 1.1368683772161603e-13
+        },
+        {
+          "seconds": 0.0329999,
+          "expected": {
+            "x": 887,
+            "y": 731.7727825,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 887,
+            "y": 731.7727825,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            887,
+            731.7727825
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            887,
+            731.7727825
+          ],
+          "screenPointError": 0
+        },
+        {
+          "seconds": 0.033,
+          "expected": {
+            "x": 887,
+            "y": 731.7750000000001,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 886.999999999577,
+            "y": 731.7750000000001,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            887,
+            731.7750000000001
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            886.999999999577,
+            731.7750000000001
+          ],
+          "screenPointError": 4.2302872316213325e-10
+        },
+        {
+          "seconds": 0.033000100000000004,
+          "expected": {
+            "x": 0.008870000000255063,
+            "y": 731.7772175000001,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 878.138869999577,
+            "y": 731.7772175000001,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0.008870000000255063,
+            731.7772175000001
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            878.138869999577,
+            731.7772175000001
+          ],
+          "screenPointError": 878.1299999995767
+        },
+        {
+          "seconds": 0.038141,
+          "expected": {
+            "x": 456.0067,
+            "y": 845.7766750000001,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 456.0067000000006,
+            "y": 845.7766750000002,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            456.0067,
+            845.7766750000001
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            456.0067000000006,
+            845.7766750000002
+          ],
+          "screenPointError": 5.796914039811765e-13
+        },
+        {
+          "seconds": 0.0399999,
+          "expected": {
+            "x": 620.8911299999997,
+            "y": 886.9977825,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 620.8911299999999,
+            "y": 886.9977825,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            620.8911299999997,
+            886.9977825
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            620.8911299999999,
+            886.9977825
+          ],
+          "screenPointError": 1.1368683772161603e-13
+        },
+        {
+          "seconds": 0.04,
+          "expected": {
+            "x": 620.9,
+            "y": 887,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 620.9000000000003,
+            "y": 887,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            620.9,
+            887
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            620.9000000000003,
+            887
+          ],
+          "screenPointError": 3.410605131648481e-13
+        },
+        {
+          "seconds": 0.040000100000000004,
+          "expected": {
+            "x": 620.9088700000002,
+            "y": 887,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 620.9088700000007,
+            "y": 887,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            620.9088700000002,
+            887
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            620.9088700000007,
+            887
+          ],
+          "screenPointError": 4.547473508864641e-13
+        },
+        {
+          "seconds": 0.0429999,
+          "expected": {
+            "x": 886.99113,
+            "y": 887,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 886.9911300000005,
+            "y": 887,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            886.99113,
+            887
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            886.9911300000005,
+            887
+          ],
+          "screenPointError": 4.547473508864641e-13
+        },
+        {
+          "seconds": 0.043000000000000003,
+          "expected": {
+            "x": 887,
+            "y": 887,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 887,
+            "y": 887,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            887,
+            887
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            887,
+            887
+          ],
+          "screenPointError": 0
+        }
+      ],
+      "input": {
+        "version": 1,
+        "family": "short-repeat",
+        "tracks": [
+          {
+            "channel": "x",
+            "values": [
+              0,
+              887
+            ],
+            "duration": 0.01,
+            "ease": {
+              "kind": "named",
+              "name": "linear"
+            },
+            "repeat": 3,
+            "repeatDelay": 0.001,
+            "repeatType": "loop"
+          },
+          {
+            "channel": "y",
+            "values": [
+              0,
+              887
+            ],
+            "duration": 0.04,
+            "ease": {
+              "kind": "named",
+              "name": "linear"
+            }
+          }
+        ],
+        "sampleTimes": [
+          0,
+          1e-7,
+          0.005891000000000001,
+          0.0099999,
+          0.01,
+          0.0100001,
+          0.0109999,
+          0.011,
+          0.011000099999999999,
+          0.015953000000000002,
+          0.0209999,
+          0.020999999999999998,
+          0.021000099999999997,
+          0.0219999,
+          0.022,
+          0.022000099999999998,
+          0.026617000000000002,
+          0.0319999,
+          0.032,
+          0.032000100000000004,
+          0.0329999,
+          0.033,
+          0.033000100000000004,
+          0.038141,
+          0.0399999,
+          0.04,
+          0.040000100000000004,
+          0.0429999,
+          0.043000000000000003
+        ]
+      },
+      "path": {
+        "path": "adaptive",
+        "evidence": "Production emits explicit adaptive offsets"
+      },
+      "probeCount": 30,
+      "payloads": [
+        {
+          "keyframes": {
+            "transform": [
+              "translateX(0px) translateY(0px) ",
+              "translateX(887px) translateY(221.75px) ",
+              "translateX(887px) translateY(221.97175px) ",
+              "translateX(887px) translateY(243.925px) ",
+              "translateX(0.8870000000000599px) translateY(244.14675px) ",
+              "translateX(887px) translateY(465.675px) ",
+              "translateX(887px) translateY(465.89675px) ",
+              "translateX(887px) translateY(487.85px) ",
+              "translateX(0.8870000000000599px) translateY(488.07175px) ",
+              "translateX(887px) translateY(709.6px) ",
+              "translateX(887px) translateY(709.82175px) ",
+              "translateX(887px) translateY(731.775px) ",
+              "translateX(0.8869999999996265px) translateY(731.9967499999999px) ",
+              "translateX(620.8999999999999px) translateY(887px) ",
+              "translateX(621.7869999999999px) translateY(887px) ",
+              "translateX(887px) translateY(887px) "
+            ],
+            "offset": [
+              0,
+              0.23255813953488372,
+              0.2327906976744184,
+              0.2558139534883721,
+              0.25604651162790676,
+              0.4883720930232558,
+              0.4886046511627905,
+              0.5116279069767442,
+              0.5118604651162788,
+              0.7441860465116279,
+              0.7444186046511626,
+              0.7674418604651163,
+              0.7676744186046509,
+              0.9302325581395349,
+              0.9304651162790696,
+              1
+            ]
+          },
+          "options": {
+            "fill": "both",
+            "duration": 43,
+            "easing": "linear"
+          },
+          "id": 0,
+          "cancelled": false
+        },
+        {
+          "keyframes": null,
+          "options": {
+            "duration": 40
+          },
+          "id": 1,
+          "cancelled": false
+        }
+      ]
+    },
+    "minimizedObservation": {
+      "payload": {
+        "keyframes": {
+          "transform": [
+            "translateX(0px) translateY(0px) ",
+            "translateX(20px) translateY(5px) ",
+            "translateX(20px) translateY(5.016666666666666px) ",
+            "translateX(20px) translateY(6.666666666666666px) ",
+            "translateX(0.06666666666666525px) translateY(6.683333333333334px) ",
+            "translateX(20px) translateY(11.666666666666668px) ",
+            "translateX(20px) translateY(11.683333333333332px) ",
+            "translateX(20px) translateY(13.333333333333332px) ",
+            "translateX(0.06666666666666525px) translateY(13.35px) ",
+            "translateX(20px) translateY(18.333333333333332px) ",
+            "translateX(20px) translateY(18.35px) ",
+            "translateX(20px) translateY(20px) ",
+            "translateX(0.06666666666666525px) translateY(20px) ",
+            "translateX(20px) translateY(20px) "
+          ],
+          "offset": [
+            0,
+            0.2,
+            0.20066666666666605,
+            0.26666666666666666,
+            0.2673333333333327,
+            0.4666666666666667,
+            0.4673333333333327,
+            0.5333333333333333,
+            0.5339999999999994,
+            0.7333333333333333,
+            0.7339999999999994,
+            0.8,
+            0.8006666666666661,
+            1
+          ]
+        },
+        "options": {
+          "fill": "both",
+          "duration": 15,
+          "easing": "linear"
+        },
+        "id": 0,
+        "cancelled": true
+      },
+      "metrics": {
+        "sourceChannelError": 7.105427357601002e-15,
+        "emittedChannelError": {
+          "x": 19.800000000001827,
+          "y": 1.0658141036401503e-14,
+          "scale": 0,
+          "rotate": 0,
+          "skewX": 0
+        },
+        "screenPointError": 19.800000000001827,
+        "nonFinite": 0,
+        "keyframes": 14,
+        "bytes": 1008,
+        "easingBytes": 6
+      },
+      "measurements": [
+        {
+          "seconds": 0,
+          "expected": {
+            "x": 0,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 0,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "screenPointError": 0
+        },
+        {
+          "seconds": 1e-7,
+          "expected": {
+            "x": 0.0006666666666666665,
+            "y": 0.00016666666666666663,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 0.0006666666666666665,
+            "y": 0.00016666666666666663,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0.0006666666666666665,
+            0.00016666666666666663
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0.0006666666666666665,
+            0.00016666666666666663
+          ],
+          "screenPointError": 0
+        },
+        {
+          "seconds": 0.002055,
+          "expected": {
+            "x": 13.7,
+            "y": 3.425,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 13.700000000000001,
+            "y": 3.4250000000000003,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            13.7,
+            3.425
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            13.700000000000001,
+            3.4250000000000003
+          ],
+          "screenPointError": 1.831026719408895e-15
+        },
+        {
+          "seconds": 0.0029999000000000002,
+          "expected": {
+            "x": 19.999333333333333,
+            "y": 4.999833333333333,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 19.999333333333336,
+            "y": 4.999833333333334,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            19.999333333333333,
+            4.999833333333333
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            19.999333333333336,
+            4.999833333333334
+          ],
+          "screenPointError": 3.66205343881779e-15
+        },
+        {
+          "seconds": 0.003,
+          "expected": {
+            "x": 20,
+            "y": 5,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 20,
+            "y": 5,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20,
+            5
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20,
+            5
+          ],
+          "screenPointError": 0
+        },
+        {
+          "seconds": 0.0030001,
+          "expected": {
+            "x": 20,
+            "y": 5.000166666666667,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 20,
+            "y": 5.000166666666667,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20,
+            5.000166666666667
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20,
+            5.000166666666667
+          ],
+          "screenPointError": 0
+        },
+        {
+          "seconds": 0.0039999,
+          "expected": {
+            "x": 20,
+            "y": 6.666499999999999,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 20,
+            "y": 6.666499999999999,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20,
+            6.666499999999999
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20,
+            6.666499999999999
+          ],
+          "screenPointError": 0
+        },
+        {
+          "seconds": 0.004,
+          "expected": {
+            "x": 20,
+            "y": 6.666666666666666,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 20,
+            "y": 6.666666666666666,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20,
+            6.666666666666666
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20,
+            6.666666666666666
+          ],
+          "screenPointError": 0
+        },
+        {
+          "seconds": 0.0040001,
+          "expected": {
+            "x": 0.00066666666666849,
+            "y": 6.666833333333334,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 19.800666666665172,
+            "y": 6.666833333333334,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0.00066666666666849,
+            6.666833333333334
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            19.800666666665172,
+            6.666833333333334
+          ],
+          "screenPointError": 19.799999999998505
+        },
+        {
+          "seconds": 0.005565,
+          "expected": {
+            "x": 10.43333333333333,
+            "y": 9.274999999999999,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 10.43333333333336,
+            "y": 9.275000000000007,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            10.43333333333333,
+            9.274999999999999
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            10.43333333333336,
+            9.275000000000007
+          ],
+          "screenPointError": 3.147712339076732e-14
+        },
+        {
+          "seconds": 0.0069999,
+          "expected": {
+            "x": 19.999333333333333,
+            "y": 11.6665,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 19.999333333333333,
+            "y": 11.666500000000001,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            19.999333333333333,
+            11.6665
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            19.999333333333333,
+            11.666500000000001
+          ],
+          "screenPointError": 1.7763568394002505e-15
+        },
+        {
+          "seconds": 0.007,
+          "expected": {
+            "x": 20,
+            "y": 11.666666666666668,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 20,
+            "y": 11.666666666666668,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20,
+            11.666666666666668
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20,
+            11.666666666666668
+          ],
+          "screenPointError": 0
+        },
+        {
+          "seconds": 0.0070001,
+          "expected": {
+            "x": 20,
+            "y": 11.666833333333333,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 20,
+            "y": 11.666833333333336,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20,
+            11.666833333333333
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20,
+            11.666833333333336
+          ],
+          "screenPointError": 3.552713678800501e-15
+        },
+        {
+          "seconds": 0.0079999,
+          "expected": {
+            "x": 20,
+            "y": 13.333166666666667,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 20,
+            "y": 13.333166666666667,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20,
+            13.333166666666667
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20,
+            13.333166666666667
+          ],
+          "screenPointError": 0
+        },
+        {
+          "seconds": 0.008,
+          "expected": {
+            "x": 20,
+            "y": 13.333333333333332,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 20,
+            "y": 13.333333333333332,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20,
+            13.333333333333332
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20,
+            13.333333333333332
+          ],
+          "screenPointError": 0
+        },
+        {
+          "seconds": 0.0080001,
+          "expected": {
+            "x": 0.0006666666666627075,
+            "y": 13.333499999999997,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 19.800666666665172,
+            "y": 13.3335,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0.0006666666666627075,
+            13.333499999999997
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            19.800666666665172,
+            13.3335
+          ],
+          "screenPointError": 19.79999999999851
+        },
+        {
+          "seconds": 0.009285,
+          "expected": {
+            "x": 8.566666666666665,
+            "y": 15.474999999999998,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 8.566666666666704,
+            "y": 15.475000000000009,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            8.566666666666665,
+            15.474999999999998
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            8.566666666666704,
+            15.475000000000009
+          ],
+          "screenPointError": 4.050716828981883e-14
+        },
+        {
+          "seconds": 0.0109999,
+          "expected": {
+            "x": 19.999333333333333,
+            "y": 18.333166666666667,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 19.99933333333334,
+            "y": 18.333166666666667,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            19.999333333333333,
+            18.333166666666667
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            19.99933333333334,
+            18.333166666666667
+          ],
+          "screenPointError": 7.105427357601002e-15
+        },
+        {
+          "seconds": 0.011,
+          "expected": {
+            "x": 19.999999999999993,
+            "y": 18.333333333333332,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 20,
+            "y": 18.333333333333332,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            19.999999999999993,
+            18.333333333333332
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20,
+            18.333333333333332
+          ],
+          "screenPointError": 7.105427357601002e-15
+        },
+        {
+          "seconds": 0.011000099999999999,
+          "expected": {
+            "x": 20,
+            "y": 18.333499999999997,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 20,
+            "y": 18.3335,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20,
+            18.333499999999997
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20,
+            18.3335
+          ],
+          "screenPointError": 3.552713678800501e-15
+        },
+        {
+          "seconds": 0.0119999,
+          "expected": {
+            "x": 20,
+            "y": 19.999833333333335,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 20,
+            "y": 19.999833333333335,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20,
+            19.999833333333335
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20,
+            19.999833333333335
+          ],
+          "screenPointError": 0
+        },
+        {
+          "seconds": 0.012,
+          "expected": {
+            "x": 20,
+            "y": 20,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 20,
+            "y": 20,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20,
+            20
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20,
+            20
+          ],
+          "screenPointError": 0
+        },
+        {
+          "seconds": 0.0120001,
+          "expected": {
+            "x": 0.0006666666666627075,
+            "y": 20,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 19.80066666666849,
+            "y": 20,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0.0006666666666627075,
+            20
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            19.80066666666849,
+            20
+          ],
+          "screenPointError": 19.800000000001827
+        },
+        {
+          "seconds": 0.013304999999999999,
+          "expected": {
+            "x": 8.699999999999992,
+            "y": 20,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 8.700000000000033,
+            "y": 20,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            8.699999999999992,
+            20
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            8.700000000000033,
+            20
+          ],
+          "screenPointError": 4.085620730620576e-14
+        },
+        {
+          "seconds": 0.0149999,
+          "expected": {
+            "x": 19.999333333333333,
+            "y": 20,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 19.99933333333334,
+            "y": 20,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            19.999333333333333,
+            20
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            19.99933333333334,
+            20
+          ],
+          "screenPointError": 7.105427357601002e-15
+        },
+        {
+          "seconds": 0.015,
+          "expected": {
+            "x": 20,
+            "y": 20,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 20,
+            "y": 20,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20,
+            20
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20,
+            20
+          ],
+          "screenPointError": 0
+        }
+      ],
+      "input": {
+        "version": 1,
+        "family": "short-repeat",
+        "tracks": [
+          {
+            "channel": "x",
+            "values": [
+              0,
+              20
+            ],
+            "duration": 0.003,
+            "ease": {
+              "kind": "named",
+              "name": "linear"
+            },
+            "repeat": 3,
+            "repeatDelay": 0.001,
+            "repeatType": "loop"
+          },
+          {
+            "channel": "y",
+            "values": [
+              0,
+              20
+            ],
+            "duration": 0.012,
+            "ease": {
+              "kind": "named",
+              "name": "linear"
+            }
+          }
+        ],
+        "sampleTimes": [
+          0,
+          1e-7,
+          0.002055,
+          0.0029999000000000002,
+          0.003,
+          0.0030001,
+          0.0039999,
+          0.004,
+          0.0040001,
+          0.005565,
+          0.0069999,
+          0.007,
+          0.0070001,
+          0.0079999,
+          0.008,
+          0.0080001,
+          0.009285,
+          0.0109999,
+          0.011,
+          0.011000099999999999,
+          0.0119999,
+          0.012,
+          0.0120001,
+          0.013304999999999999,
+          0.0149999,
+          0.015
+        ]
+      },
+      "path": {
+        "path": "adaptive",
+        "evidence": "Production emits explicit adaptive offsets"
+      },
+      "probeCount": 24,
+      "payloads": [
+        {
+          "keyframes": {
+            "transform": [
+              "translateX(0px) translateY(0px) ",
+              "translateX(20px) translateY(5px) ",
+              "translateX(20px) translateY(5.016666666666666px) ",
+              "translateX(20px) translateY(6.666666666666666px) ",
+              "translateX(0.06666666666666525px) translateY(6.683333333333334px) ",
+              "translateX(20px) translateY(11.666666666666668px) ",
+              "translateX(20px) translateY(11.683333333333332px) ",
+              "translateX(20px) translateY(13.333333333333332px) ",
+              "translateX(0.06666666666666525px) translateY(13.35px) ",
+              "translateX(20px) translateY(18.333333333333332px) ",
+              "translateX(20px) translateY(18.35px) ",
+              "translateX(20px) translateY(20px) ",
+              "translateX(0.06666666666666525px) translateY(20px) ",
+              "translateX(20px) translateY(20px) "
+            ],
+            "offset": [
+              0,
+              0.2,
+              0.20066666666666605,
+              0.26666666666666666,
+              0.2673333333333327,
+              0.4666666666666667,
+              0.4673333333333327,
+              0.5333333333333333,
+              0.5339999999999994,
+              0.7333333333333333,
+              0.7339999999999994,
+              0.8,
+              0.8006666666666661,
+              1
+            ]
+          },
+          "options": {
+            "fill": "both",
+            "duration": 15,
+            "easing": "linear"
+          },
+          "id": 0,
+          "cancelled": false
+        },
+        {
+          "keyframes": null,
+          "options": {
+            "duration": 12
+          },
+          "id": 1,
+          "cancelled": false
+        }
+      ]
+    },
+    "expectedFailure": true,
+    "classification": "accuracy limitation without a promised global bound",
+    "tolerance": {
+      "screenPointPx": 1
+    }
+  },
+  {
+    "version": 1,
+    "property": "sampling accuracy characterization",
+    "family": "shared-looking",
+    "revisions": {
+      "subject": "1cdaf642291dec275c8d218d383fe8cefa7fb91b",
+      "harness": "678c4cd6afef6730a1f1e53f1dd75207987c2536",
+      "subjectRoot": "/Users/robertpenner/git/robertpenner/motion.dev.worktrees/worktree-tickets-1-2-3-execution",
+      "dirty": false
+    },
+    "seed": 20261123,
+    "path": "47:3:0:0:2:0:0:1:0:5:0:0:0:0:0:1:3",
+    "shrinks": 16,
+    "completed": 48,
+    "original": {
+      "version": 1,
+      "family": "shared-looking",
+      "tracks": [
+        {
+          "channel": "x",
+          "values": [
+            0,
+            942
+          ],
+          "duration": 0.219,
+          "ease": {
+            "kind": "power",
+            "exponent": 2
+          }
+        },
+        {
+          "channel": "y",
+          "values": [
+            0,
+            942
+          ],
+          "duration": 0.219,
+          "ease": {
+            "kind": "power",
+            "exponent": 2.004
+          }
+        }
+      ],
+      "sampleTimes": [
+        0,
+        1e-7,
+        0.030003000000000002,
+        0.081249,
+        0.135561,
+        0.194253,
+        0.2189999,
+        0.219
+      ]
+    },
+    "minimized": {
+      "version": 1,
+      "family": "shared-looking",
+      "tracks": [
+        {
+          "channel": "x",
+          "values": [
+            0,
+            691
+          ],
+          "duration": 0.2,
+          "ease": {
+            "kind": "power",
+            "exponent": 2
+          }
+        },
+        {
+          "channel": "y",
+          "values": [
+            0,
+            691
+          ],
+          "duration": 0.2,
+          "ease": {
+            "kind": "power",
+            "exponent": 2.004
+          }
+        }
+      ],
+      "sampleTimes": [
+        0,
+        1e-7,
+        0.027400000000000004,
+        0.0742,
+        0.12380000000000001,
+        0.1774,
+        0.1999999,
+        0.2
+      ]
+    },
+    "originalObservation": {
+      "payload": {
+        "keyframes": {
+          "transform": [
+            "translateX(0px) translateY(0px) ",
+            "translateX(942px) translateY(942px) "
+          ]
+        },
+        "options": {
+          "fill": "both",
+          "duration": 219,
+          "easing": "linear(0 0%,0.0021 4.5455%,0.0083 9.0909%,0.0186 13.6364%,0.0331 18.1818%,0.0517 22.7273%,0.0744 27.2727%,0.1012 31.8182%,0.1322 36.3636%,0.1674 40.9091%,0.2066 45.4545%,0.25 50%,0.2975 54.5455%,0.3492 59.0909%,0.405 63.6364%,0.4649 68.1818%,0.5289 72.7273%,0.5971 77.2727%,0.6694 81.8182%,0.7459 86.3636%,0.8264 90.9091%,0.9112 95.4545%,1 100%)"
+        },
+        "id": 0,
+        "cancelled": true
+      },
+      "metrics": {
+        "sourceChannelError": 2.2737367544323206e-13,
+        "emittedChannelError": {
+          "x": 0.4928230863491194,
+          "y": 1.1846542079300661,
+          "scale": 0,
+          "rotate": 0,
+          "skewX": 0
+        },
+        "screenPointError": 1.283074505554952,
+        "nonFinite": 0,
+        "keyframes": 2,
+        "bytes": 526,
+        "easingBytes": 345
+      },
+      "measurements": [
+        {
+          "seconds": 0,
+          "expected": {
+            "x": 0,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 0,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "screenPointError": 0
+        },
+        {
+          "seconds": 1e-7,
+          "expected": {
+            "x": 1.9640958278601362e-10,
+            "y": 1.85268206215364e-10,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 0.00001987213004582283,
+            "y": 0.00001987213004582283,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            1.9640958278601362e-10,
+            1.85268206215364e-10
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0.00001987213004582283,
+            0.00001987213004582283
+          ],
+          "screenPointError": 0.000028103165937092793
+        },
+        {
+          "seconds": 0.030003000000000002,
+          "expected": {
+            "x": 17.680398000000004,
+            "y": 17.540376831858868,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 17.712319021428254,
+            "y": 17.712319021428254,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            17.680398000000004,
+            17.540376831858868
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            17.712319021428254,
+            17.712319021428254
+          ],
+          "screenPointError": 0.1748801537137285
+        },
+        {
+          "seconds": 0.081249,
+          "expected": {
+            "x": 129.65782199999998,
+            "y": 129.14458994485872,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 129.90427234847655,
+            "y": 129.90427234847655,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            129.65782199999998,
+            129.14458994485872
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            129.90427234847655,
+            129.90427234847655
+          ],
+          "screenPointError": 0.7986583303458292
+        },
+        {
+          "seconds": 0.135561,
+          "expected": {
+            "x": 360.937662,
+            "y": 360.24583087841904,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 361.4304850863491,
+            "y": 361.4304850863491,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            360.937662,
+            360.24583087841904
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            361.4304850863491,
+            361.4304850863491
+          ],
+          "screenPointError": 1.283074505554952
+        },
+        {
+          "seconds": 0.194253,
+          "expected": {
+            "x": 741.1363980000001,
+            "y": 740.7810036962502,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 741.6151508744912,
+            "y": 741.6151508744912,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            741.1363980000001,
+            740.7810036962502
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            741.6151508744912,
+            741.6151508744912
+          ],
+          "screenPointError": 0.961772233847944
+        },
+        {
+          "seconds": 0.2189999,
+          "expected": {
+            "x": 941.9991397262238,
+            "y": 941.9991380056771,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 941.9991596927866,
+            "y": 941.9991596927866,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            941.9991397262238,
+            941.9991380056771
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            941.9991596927866,
+            941.9991596927866
+          ],
+          "screenPointError": 0.00002947871014843524
+        },
+        {
+          "seconds": 0.219,
+          "expected": {
+            "x": 942,
+            "y": 942,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 942,
+            "y": 942,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            942,
+            942
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            942,
+            942
+          ],
+          "screenPointError": 0
+        }
+      ],
+      "input": {
+        "version": 1,
+        "family": "shared-looking",
+        "tracks": [
+          {
+            "channel": "x",
+            "values": [
+              0,
+              942
+            ],
+            "duration": 0.219,
+            "ease": {
+              "kind": "power",
+              "exponent": 2
+            }
+          },
+          {
+            "channel": "y",
+            "values": [
+              0,
+              942
+            ],
+            "duration": 0.219,
+            "ease": {
+              "kind": "power",
+              "exponent": 2.004
+            }
+          }
+        ],
+        "sampleTimes": [
+          0,
+          1e-7,
+          0.030003000000000002,
+          0.081249,
+          0.135561,
+          0.194253,
+          0.2189999,
+          0.219
+        ]
+      },
+      "path": {
+        "path": "shared-progress",
+        "evidence": "Two endpoints with sampled linear() easing"
+      },
+      "probeCount": 46,
+      "payloads": [
+        {
+          "keyframes": {
+            "transform": [
+              "translateX(0px) translateY(0px) ",
+              "translateX(942px) translateY(942px) "
+            ]
+          },
+          "options": {
+            "fill": "both",
+            "duration": 219,
+            "easing": "linear(0 0%,0.0021 4.5455%,0.0083 9.0909%,0.0186 13.6364%,0.0331 18.1818%,0.0517 22.7273%,0.0744 27.2727%,0.1012 31.8182%,0.1322 36.3636%,0.1674 40.9091%,0.2066 45.4545%,0.25 50%,0.2975 54.5455%,0.3492 59.0909%,0.405 63.6364%,0.4649 68.1818%,0.5289 72.7273%,0.5971 77.2727%,0.6694 81.8182%,0.7459 86.3636%,0.8264 90.9091%,0.9112 95.4545%,1 100%)"
+          },
+          "id": 0,
+          "cancelled": false
+        }
+      ]
+    },
+    "minimizedObservation": {
+      "payload": {
+        "keyframes": {
+          "transform": [
+            "translateX(0px) translateY(0px) ",
+            "translateX(691px) translateY(691px) "
+          ]
+        },
+        "options": {
+          "fill": "both",
+          "duration": 200,
+          "easing": "linear(0 0%,0.0025 5%,0.01 10%,0.0225 15%,0.04 20%,0.0625 25%,0.09 30%,0.1225 35%,0.16 40%,0.2025 45%,0.25 50%,0.3025 55%,0.36 60%,0.4225 65%,0.49 70%,0.5625 75%,0.64 80%,0.7225 85%,0.81 90%,0.9025 95%,1 100%)"
+        },
+        "id": 0,
+        "cancelled": true
+      },
+      "metrics": {
+        "sourceChannelError": 2.2737367544323206e-13,
+        "emittedChannelError": {
+          "x": 0.4208189999999945,
+          "y": 0.9144887080811372,
+          "scale": 0,
+          "rotate": 0,
+          "skewX": 0
+        },
+        "screenPointError": 1.0009684226832007,
+        "nonFinite": 0,
+        "keyframes": 2,
+        "bytes": 390,
+        "easingBytes": 209
+      },
+      "measurements": [
+        {
+          "seconds": 0,
+          "expected": {
+            "x": 0,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 0,
+            "y": 0,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "screenPointError": 0
+        },
+        {
+          "seconds": 1e-7,
+          "expected": {
+            "x": 1.7275e-10,
+            "y": 1.6300988313417653e-10,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 0.000017275,
+            "y": 0.000017275,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            1.7275e-10,
+            1.6300988313417653e-10
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            0.000017275,
+            0.000017275
+          ],
+          "screenPointError": 0.00002443030187190597
+        },
+        {
+          "seconds": 0.027400000000000004,
+          "expected": {
+            "x": 12.969379000000004,
+            "y": 12.866667081544032,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 13.301750000000002,
+            "y": 13.301750000000002,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            12.969379000000004,
+            12.866667081544032
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            13.301750000000002,
+            13.301750000000002
+          ],
+          "screenPointError": 0.5475103903791813
+        },
+        {
+          "seconds": 0.0742,
+          "expected": {
+            "x": 95.10993099999999,
+            "y": 94.73345185976366,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 95.53074999999998,
+            "y": 95.53074999999998,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            95.10993099999999,
+            94.73345185976366
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            95.53074999999998,
+            95.53074999999998
+          ],
+          "screenPointError": 0.9015392144467664
+        },
+        {
+          "seconds": 0.12380000000000001,
+          "expected": {
+            "x": 264.764251,
+            "y": 264.25676129191885,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 265.17125,
+            "y": 265.17125,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            264.764251,
+            264.25676129191885
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            265.17125,
+            265.17125
+          ],
+          "screenPointError": 1.0009684226832007
+        },
+        {
+          "seconds": 0.1774,
+          "expected": {
+            "x": 543.657379,
+            "y": 543.3966810553172,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 543.98975,
+            "y": 543.98975,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            543.657379,
+            543.3966810553172
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            543.98975,
+            543.98975
+          ],
+          "screenPointError": 0.6798538481085927
+        },
+        {
+          "seconds": 0.1999999,
+          "expected": {
+            "x": 690.9993090001728,
+            "y": 690.9993076181738,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 690.999326275,
+            "y": 690.999326275,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            690.9993090001728,
+            690.9993076181738
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            690.999326275,
+            690.999326275
+          ],
+          "screenPointError": 0.00002542630173095041
+        },
+        {
+          "seconds": 0.2,
+          "expected": {
+            "x": 691,
+            "y": 691,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "observed": {
+            "x": 691,
+            "y": 691,
+            "scale": 1,
+            "rotate": 0,
+            "skewX": 0
+          },
+          "expectedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            691,
+            691
+          ],
+          "observedMatrix": [
+            1,
+            0,
+            0,
+            1,
+            691,
+            691
+          ],
+          "screenPointError": 0
+        }
+      ],
+      "input": {
+        "version": 1,
+        "family": "shared-looking",
+        "tracks": [
+          {
+            "channel": "x",
+            "values": [
+              0,
+              691
+            ],
+            "duration": 0.2,
+            "ease": {
+              "kind": "power",
+              "exponent": 2
+            }
+          },
+          {
+            "channel": "y",
+            "values": [
+              0,
+              691
+            ],
+            "duration": 0.2,
+            "ease": {
+              "kind": "power",
+              "exponent": 2.004
+            }
+          }
+        ],
+        "sampleTimes": [
+          0,
+          1e-7,
+          0.027400000000000004,
+          0.0742,
+          0.12380000000000001,
+          0.1774,
+          0.1999999,
+          0.2
+        ]
+      },
+      "path": {
+        "path": "shared-progress",
+        "evidence": "Two endpoints with sampled linear() easing"
+      },
+      "probeCount": 42,
+      "payloads": [
+        {
+          "keyframes": {
+            "transform": [
+              "translateX(0px) translateY(0px) ",
+              "translateX(691px) translateY(691px) "
+            ]
+          },
+          "options": {
+            "fill": "both",
+            "duration": 200,
+            "easing": "linear(0 0%,0.0025 5%,0.01 10%,0.0225 15%,0.04 20%,0.0625 25%,0.09 30%,0.1225 35%,0.16 40%,0.2025 45%,0.25 50%,0.3025 55%,0.36 60%,0.4225 65%,0.49 70%,0.5625 75%,0.64 80%,0.7225 85%,0.81 90%,0.9025 95%,1 100%)"
+          },
+          "id": 0,
+          "cancelled": false
+        }
+      ]
+    },
+    "expectedFailure": true,
+    "classification": "accuracy limitation without a promised global bound",
+    "tolerance": {
+      "screenPointPx": 1
+    }
+  }
+]
