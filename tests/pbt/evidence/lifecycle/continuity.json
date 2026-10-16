@@ -1,0 +1,3514 @@
+[
+  {
+    "subject": "current",
+    "engine": "chromium",
+    "harness": "81d76a4f61b1a241fb090213e1bcbeb327cdeeb8",
+    "count": 54,
+    "tolerancePx": 0.25,
+    "maxResidualPx": 0.06003666669150043,
+    "windows": [
+      {
+        "input": {
+          "category": "join-leave",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 100,
+        "dx": 6.666663,
+        "referenceDx": 6.666666666666666,
+        "residualPx": 0.0000036666666662910075,
+        "velocityPxPerMs": 0.06666663,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "join-leave",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "before:join",
+        "next": "after:join",
+        "dt": 33.30000000000001,
+        "dx": 2.2199999999999998,
+        "referenceDx": 2.2200000000000006,
+        "residualPx": 8.881784197001252e-16,
+        "velocityPxPerMs": 0.06666666666666664,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "join-leave",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "before:leave",
+        "next": "after:leave",
+        "dt": 33.39999999999998,
+        "dx": 2.2266700000000004,
+        "referenceDx": 2.2266666666666666,
+        "residualPx": 0.00000333333333379926,
+        "velocityPxPerMs": 0.06666676646706593,
+        "referenceVelocityPxPerMs": 0.06666666666666671
+      },
+      {
+        "input": {
+          "category": "join-leave",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "after:leave",
+        "next": "last",
+        "dt": 100,
+        "dx": 6.6667000000000005,
+        "referenceDx": 6.666666666666666,
+        "residualPx": 0.000033333333334439885,
+        "velocityPxPerMs": 0.066667,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "join-leave",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 99.89999999999998,
+        "dx": 6.66,
+        "referenceDx": 6.66,
+        "residualPx": 0,
+        "velocityPxPerMs": 0.06666666666666668,
+        "referenceVelocityPxPerMs": 0.06666666666666668
+      },
+      {
+        "input": {
+          "category": "join-leave",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "before:join",
+        "next": "after:join",
+        "dt": 33.30000000000001,
+        "dx": 2.2200299999999995,
+        "referenceDx": 2.219999999999999,
+        "residualPx": 0.000030000000000640625,
+        "velocityPxPerMs": 0.06666756756756753,
+        "referenceVelocityPxPerMs": 0.06666666666666661
+      },
+      {
+        "input": {
+          "category": "join-leave",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "before:leave",
+        "next": "after:leave",
+        "dt": 33.39999999999998,
+        "dx": 2.2266000000000012,
+        "referenceDx": 2.226666666666665,
+        "residualPx": 0.0000666666666635507,
+        "velocityPxPerMs": 0.06666467065868271,
+        "referenceVelocityPxPerMs": 0.06666666666666665
+      },
+      {
+        "input": {
+          "category": "join-leave",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "after:leave",
+        "next": "last",
+        "dt": 100,
+        "dx": 6.6667000000000005,
+        "referenceDx": 6.666666666666664,
+        "residualPx": 0.00003333333333621624,
+        "velocityPxPerMs": 0.066667,
+        "referenceVelocityPxPerMs": 0.06666666666666664
+      },
+      {
+        "input": {
+          "category": "finite-repeat",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 100.00000000000003,
+        "dx": 6.66667,
+        "referenceDx": 6.666666666666667,
+        "residualPx": 0.0000033333333329110815,
+        "velocityPxPerMs": 0.06666669999999998,
+        "referenceVelocityPxPerMs": 0.06666666666666665
+      },
+      {
+        "input": {
+          "category": "finite-repeat",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "before:finite-repeat-delay",
+        "next": "after:finite-repeat-delay",
+        "dt": 33.299999999999955,
+        "dx": 2.2200000000000006,
+        "referenceDx": 2.219999999999999,
+        "residualPx": 1.7763568394002505e-15,
+        "velocityPxPerMs": 0.06666666666666678,
+        "referenceVelocityPxPerMs": 0.06666666666666672
+      },
+      {
+        "input": {
+          "category": "finite-repeat",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "after:finite-repeat-delay",
+        "next": "finite-finished",
+        "dt": 383.30000000000007,
+        "dx": 25.5533,
+        "referenceDx": 25.553333333333335,
+        "residualPx": 0.000033333333334439885,
+        "velocityPxPerMs": 0.06666657970258281,
+        "referenceVelocityPxPerMs": 0.06666666666666665
+      },
+      {
+        "input": {
+          "category": "finite-repeat",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "finite-finished",
+        "next": "last",
+        "dt": 100.09999999999991,
+        "dx": 6.673399999999994,
+        "referenceDx": 6.673333333333332,
+        "residualPx": 0.00006666666666177434,
+        "velocityPxPerMs": 0.06666733266733267,
+        "referenceVelocityPxPerMs": 0.06666666666666671
+      },
+      {
+        "input": {
+          "category": "finite-repeat",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 100,
+        "dx": 6.666663000000001,
+        "referenceDx": 6.666666666666667,
+        "residualPx": 0.0000036666666662910075,
+        "velocityPxPerMs": 0.06666663,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "finite-repeat",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "before:finite-repeat-delay",
+        "next": "after:finite-repeat-delay",
+        "dt": 33.29999999999998,
+        "dx": 2.219999999999999,
+        "referenceDx": 2.219999999999998,
+        "residualPx": 8.881784197001252e-16,
+        "velocityPxPerMs": 0.06666666666666667,
+        "referenceVelocityPxPerMs": 0.06666666666666664
+      },
+      {
+        "input": {
+          "category": "finite-repeat",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "after:finite-repeat-delay",
+        "next": "finite-finished",
+        "dt": 383.4,
+        "dx": 25.55997,
+        "referenceDx": 25.560000000000002,
+        "residualPx": 0.000030000000002416982,
+        "velocityPxPerMs": 0.06666658841940533,
+        "referenceVelocityPxPerMs": 0.06666666666666668
+      },
+      {
+        "input": {
+          "category": "finite-repeat",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "finite-finished",
+        "next": "last",
+        "dt": 99.90000000000009,
+        "dx": 6.660000000000004,
+        "referenceDx": 6.659999999999997,
+        "residualPx": 7.105427357601002e-15,
+        "velocityPxPerMs": 0.06666666666666664,
+        "referenceVelocityPxPerMs": 0.06666666666666657
+      },
+      {
+        "input": {
+          "category": "infinite-repeat",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 99.90000000000003,
+        "dx": 6.659999999999999,
+        "referenceDx": 6.660000000000002,
+        "residualPx": 2.6645352591003757e-15,
+        "velocityPxPerMs": 0.06666666666666664,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "infinite-repeat",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "before:infinite-repeat",
+        "next": "after:infinite-repeat",
+        "dt": 33.39999999999998,
+        "dx": 2.22663,
+        "referenceDx": 2.2266666666666666,
+        "residualPx": 0.00003666666666646279,
+        "velocityPxPerMs": 0.0666655688622755,
+        "referenceVelocityPxPerMs": 0.06666666666666671
+      },
+      {
+        "input": {
+          "category": "infinite-repeat",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "after:infinite-repeat",
+        "next": "loop-running",
+        "dt": 333.29999999999995,
+        "dx": 22.22,
+        "referenceDx": 22.21999999999999,
+        "residualPx": 7.105427357601002e-15,
+        "velocityPxPerMs": 0.06666666666666667,
+        "referenceVelocityPxPerMs": 0.06666666666666665
+      },
+      {
+        "input": {
+          "category": "infinite-repeat",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "loop-running",
+        "next": "last",
+        "dt": 100,
+        "dx": 6.666699999999999,
+        "referenceDx": 6.666666666666664,
+        "residualPx": 0.000033333333334439885,
+        "velocityPxPerMs": 0.06666699999999999,
+        "referenceVelocityPxPerMs": 0.06666666666666664
+      },
+      {
+        "input": {
+          "category": "infinite-repeat",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 99.99999999999997,
+        "dx": 6.666669999999999,
+        "referenceDx": 6.666666666666665,
+        "residualPx": 0.00000333333333379926,
+        "velocityPxPerMs": 0.06666670000000001,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "infinite-repeat",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "before:infinite-repeat",
+        "next": "after:infinite-repeat",
+        "dt": 33.400000000000034,
+        "dx": 2.22663,
+        "referenceDx": 2.2266666666666666,
+        "residualPx": 0.00003666666666646279,
+        "velocityPxPerMs": 0.06666556886227538,
+        "referenceVelocityPxPerMs": 0.0666666666666666
+      },
+      {
+        "input": {
+          "category": "infinite-repeat",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "after:infinite-repeat",
+        "next": "loop-running",
+        "dt": 333.3,
+        "dx": 22.220000000000002,
+        "referenceDx": 22.22,
+        "residualPx": 3.552713678800501e-15,
+        "velocityPxPerMs": 0.06666666666666667,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "infinite-repeat",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "loop-running",
+        "next": "last",
+        "dt": 99.89999999999998,
+        "dx": 6.659999999999997,
+        "referenceDx": 6.660000000000004,
+        "residualPx": 7.105427357601002e-15,
+        "velocityPxPerMs": 0.06666666666666665,
+        "referenceVelocityPxPerMs": 0.06666666666666672
+      },
+      {
+        "input": {
+          "category": "outside-write",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 100,
+        "dx": 6.666663,
+        "referenceDx": 6.666666666666667,
+        "residualPx": 0.000003666666667179186,
+        "velocityPxPerMs": 0.06666663,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "outside-write",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "before:outside-write-one",
+        "next": "after:outside-write-one",
+        "dt": 33.30000000000001,
+        "dx": 2.2200000000000006,
+        "referenceDx": 2.2199999999999998,
+        "residualPx": 8.881784197001252e-16,
+        "velocityPxPerMs": 0.06666666666666667,
+        "referenceVelocityPxPerMs": 0.06666666666666664
+      },
+      {
+        "input": {
+          "category": "outside-write",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "before:outside-write-two",
+        "next": "after:outside-write-two",
+        "dt": 35.59999999925492,
+        "dx": 2.3999699999999997,
+        "referenceDx": 2.373333333283661,
+        "residualPx": 0.026636666716338908,
+        "velocityPxPerMs": 0.06741488764186038,
+        "referenceVelocityPxPerMs": 0.06666666666666665
+      },
+      {
+        "input": {
+          "category": "outside-write",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "after:outside-write-two",
+        "next": "last",
+        "dt": 99.90000000037253,
+        "dx": 6.6667000000000005,
+        "referenceDx": 6.660000000024835,
+        "residualPx": 0.006699999975165127,
+        "velocityPxPerMs": 0.06673373373348489,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "outside-write",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 100,
+        "dx": 6.66667,
+        "referenceDx": 6.666666666666666,
+        "residualPx": 0.00000333333333379926,
+        "velocityPxPerMs": 0.0666667,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "outside-write",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "before:outside-write-one",
+        "next": "after:outside-write-one",
+        "dt": 33.400000000000006,
+        "dx": 2.22663,
+        "referenceDx": 2.2266666666666666,
+        "residualPx": 0.00003666666666646279,
+        "velocityPxPerMs": 0.06666556886227544,
+        "referenceVelocityPxPerMs": 0.06666666666666665
+      },
+      {
+        "input": {
+          "category": "outside-write",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "before:outside-write-two",
+        "next": "after:outside-write-two",
+        "dt": 33.89999999925493,
+        "dx": 2.2467000000000006,
+        "referenceDx": 2.259999999950331,
+        "residualPx": 0.013299999950330488,
+        "velocityPxPerMs": 0.06627433628464247,
+        "referenceVelocityPxPerMs": 0.06666666666666674
+      },
+      {
+        "input": {
+          "category": "outside-write",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "after:outside-write-two",
+        "next": "last",
+        "dt": 101.5,
+        "dx": 6.800000000000001,
+        "referenceDx": 6.766666666666664,
+        "residualPx": 0.03333333333333677,
+        "velocityPxPerMs": 0.06699507389162562,
+        "referenceVelocityPxPerMs": 0.06666666666666664
+      },
+      {
+        "input": {
+          "category": "native-cancel",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 100,
+        "dx": 6.6666669999999995,
+        "referenceDx": 6.666666666666667,
+        "residualPx": 3.3333333249174757e-7,
+        "velocityPxPerMs": 0.06666667,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "native-cancel",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "after:external-native-cancel",
+        "next": "cancel-survival",
+        "dt": 115.09999999962747,
+        "dx": 7.733369999999999,
+        "referenceDx": 7.6733333333084985,
+        "residualPx": 0.06003666669150043,
+        "velocityPxPerMs": 0.06718827106885342,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "native-cancel",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 100,
+        "dx": 6.66667,
+        "referenceDx": 6.666666666666666,
+        "residualPx": 0.00000333333333379926,
+        "velocityPxPerMs": 0.0666667,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "native-cancel",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "after:external-native-cancel",
+        "next": "cancel-survival",
+        "dt": 116.60000000149012,
+        "dx": 7.7333300000000005,
+        "referenceDx": 7.773333333432674,
+        "residualPx": 0.040003333432673926,
+        "velocityPxPerMs": 0.06632358490481279,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "callback-return",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 99.9,
+        "dx": 6.66,
+        "referenceDx": 6.660000000000001,
+        "residualPx": 8.881784197001252e-16,
+        "velocityPxPerMs": 0.06666666666666667,
+        "referenceVelocityPxPerMs": 0.06666666666666668
+      },
+      {
+        "input": {
+          "category": "callback-return",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "after:callback-join",
+        "next": "callback-ended",
+        "dt": 299.09999999850993,
+        "dx": 19.9267,
+        "referenceDx": 19.939999999900664,
+        "residualPx": 0.01329999990066355,
+        "velocityPxPerMs": 0.06662219993346463,
+        "referenceVelocityPxPerMs": 0.06666666666666668
+      },
+      {
+        "input": {
+          "category": "callback-return",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "callback-ended",
+        "next": "last",
+        "dt": 100,
+        "dx": 6.6666000000000025,
+        "referenceDx": 6.666666666666668,
+        "residualPx": 0.00006666666666532706,
+        "velocityPxPerMs": 0.06666600000000003,
+        "referenceVelocityPxPerMs": 0.06666666666666668
+      },
+      {
+        "input": {
+          "category": "callback-return",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 100.1,
+        "dx": 6.67333,
+        "referenceDx": 6.673333333333334,
+        "residualPx": 0.00000333333333379926,
+        "velocityPxPerMs": 0.06666663336663337,
+        "referenceVelocityPxPerMs": 0.06666666666666668
+      },
+      {
+        "input": {
+          "category": "callback-return",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "after:callback-join",
+        "next": "callback-ended",
+        "dt": 299.29999999999995,
+        "dx": 19.98003,
+        "referenceDx": 19.953333333333333,
+        "residualPx": 0.026696666666666147,
+        "velocityPxPerMs": 0.0667558636819245,
+        "referenceVelocityPxPerMs": 0.06666666666666668
+      },
+      {
+        "input": {
+          "category": "callback-return",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "callback-ended",
+        "next": "last",
+        "dt": 100,
+        "dx": 6.6666000000000025,
+        "referenceDx": 6.666666666666664,
+        "residualPx": 0.00006666666666177434,
+        "velocityPxPerMs": 0.06666600000000003,
+        "referenceVelocityPxPerMs": 0.06666666666666664
+      },
+      {
+        "input": {
+          "category": "incompatible-loops",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 100,
+        "dx": 6.66667,
+        "referenceDx": 6.666666666666667,
+        "residualPx": 0.0000033333333329110815,
+        "velocityPxPerMs": 0.0666667,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "incompatible-loops",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "before:first-loop",
+        "next": "after:first-loop",
+        "dt": 33.30000000000001,
+        "dx": 2.2200300000000004,
+        "referenceDx": 2.2199999999999998,
+        "residualPx": 0.000030000000000640625,
+        "velocityPxPerMs": 0.06666756756756756,
+        "referenceVelocityPxPerMs": 0.06666666666666664
+      },
+      {
+        "input": {
+          "category": "incompatible-loops",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "after:incompatible-loop",
+        "next": "last",
+        "dt": 116.5,
+        "dx": 7.7333,
+        "referenceDx": 7.766666666666669,
+        "residualPx": 0.03336666666666943,
+        "velocityPxPerMs": 0.06638025751072961,
+        "referenceVelocityPxPerMs": 0.0666666666666667
+      },
+      {
+        "input": {
+          "category": "incompatible-loops",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 99.9,
+        "dx": 6.66,
+        "referenceDx": 6.66,
+        "residualPx": 0,
+        "velocityPxPerMs": 0.06666666666666667,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "incompatible-loops",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "before:first-loop",
+        "next": "after:first-loop",
+        "dt": 33.400000000000006,
+        "dx": 2.2266999999999992,
+        "referenceDx": 2.2266666666666683,
+        "residualPx": 0.00003333333333088717,
+        "velocityPxPerMs": 0.06666766467065866,
+        "referenceVelocityPxPerMs": 0.06666666666666671
+      },
+      {
+        "input": {
+          "category": "incompatible-loops",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "after:incompatible-loop",
+        "next": "last",
+        "dt": 117,
+        "dx": 7.800000000000001,
+        "referenceDx": 7.799999999999997,
+        "residualPx": 3.552713678800501e-15,
+        "velocityPxPerMs": 0.06666666666666668,
+        "referenceVelocityPxPerMs": 0.06666666666666664
+      },
+      {
+        "input": {
+          "category": "projection",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 100,
+        "dx": 6.66666,
+        "referenceDx": 6.666666666666667,
+        "residualPx": 0.000006666666666710341,
+        "velocityPxPerMs": 0.0666666,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "projection",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "before:projection-will-update",
+        "next": "after:projection-will-update",
+        "dt": 33.99999999962748,
+        "dx": 2.2933700000000004,
+        "referenceDx": 2.2666666666418314,
+        "residualPx": 0.02670333335816899,
+        "velocityPxPerMs": 0.06745205882426847,
+        "referenceVelocityPxPerMs": 0.06666666666666665
+      },
+      {
+        "input": {
+          "category": "projection",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "after:projection-will-update",
+        "next": "last",
+        "dt": 100.5,
+        "dx": 6.666599999999999,
+        "referenceDx": 6.699999999999999,
+        "residualPx": 0.03340000000000032,
+        "velocityPxPerMs": 0.06633432835820895,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "projection",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 100.00000000000001,
+        "dx": 6.66667,
+        "referenceDx": 6.666666666666668,
+        "residualPx": 0.000003333333332022903,
+        "velocityPxPerMs": 0.0666667,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "projection",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "before:projection-will-update",
+        "next": "after:projection-will-update",
+        "dt": 34.19999999999999,
+        "dx": 2.280030000000001,
+        "referenceDx": 2.2799999999999985,
+        "residualPx": 0.000030000000002416982,
+        "velocityPxPerMs": 0.06666754385964917,
+        "referenceVelocityPxPerMs": 0.06666666666666664
+      },
+      {
+        "input": {
+          "category": "projection",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "after:projection-will-update",
+        "next": "last",
+        "dt": 101.29999999888241,
+        "dx": 6.7333,
+        "referenceDx": 6.753333333258826,
+        "residualPx": 0.020033333258826502,
+        "velocityPxPerMs": 0.06646890424555069,
+        "referenceVelocityPxPerMs": 0.06666666666666665
+      }
+    ]
+  },
+  {
+    "subject": "current",
+    "engine": "webkit",
+    "harness": "81d76a4f61b1a241fb090213e1bcbeb327cdeeb8",
+    "count": 54,
+    "tolerancePx": 0.25,
+    "maxResidualPx": 0.0000043333333330508594,
+    "windows": [
+      {
+        "input": {
+          "category": "join-leave",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 77,
+        "dx": 5.133334,
+        "referenceDx": 5.133333333333334,
+        "residualPx": 6.666666658716736e-7,
+        "velocityPxPerMs": 0.06666667532467532,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "join-leave",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "before:join",
+        "next": "after:join",
+        "dt": 33,
+        "dx": 2.199998999999999,
+        "referenceDx": 2.200000000000001,
+        "residualPx": 0.0000010000000019161348,
+        "velocityPxPerMs": 0.06666663636363634,
+        "referenceVelocityPxPerMs": 0.0666666666666667
+      },
+      {
+        "input": {
+          "category": "join-leave",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "before:leave",
+        "next": "after:leave",
+        "dt": 40,
+        "dx": 2.6666670000000003,
+        "referenceDx": 2.666666666666666,
+        "residualPx": 3.333333342681044e-7,
+        "velocityPxPerMs": 0.06666667500000001,
+        "referenceVelocityPxPerMs": 0.06666666666666665
+      },
+      {
+        "input": {
+          "category": "join-leave",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "after:leave",
+        "next": "last",
+        "dt": 77,
+        "dx": 5.133334000000001,
+        "referenceDx": 5.133333333333333,
+        "residualPx": 6.666666685362088e-7,
+        "velocityPxPerMs": 0.06666667532467534,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "join-leave",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 83,
+        "dx": 5.533333000000001,
+        "referenceDx": 5.533333333333333,
+        "residualPx": 3.3333333249174757e-7,
+        "velocityPxPerMs": 0.06666666265060242,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "join-leave",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "before:join",
+        "next": "after:join",
+        "dt": 33,
+        "dx": 2.199999,
+        "referenceDx": 2.1999999999999993,
+        "residualPx": 9.999999992515995e-7,
+        "velocityPxPerMs": 0.06666663636363636,
+        "referenceVelocityPxPerMs": 0.06666666666666665
+      },
+      {
+        "input": {
+          "category": "join-leave",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "before:leave",
+        "next": "after:leave",
+        "dt": 34,
+        "dx": 2.2666679999999992,
+        "referenceDx": 2.2666666666666675,
+        "residualPx": 0.0000013333333317433471,
+        "velocityPxPerMs": 0.06666670588235292,
+        "referenceVelocityPxPerMs": 0.0666666666666667
+      },
+      {
+        "input": {
+          "category": "join-leave",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "after:leave",
+        "next": "last",
+        "dt": 82,
+        "dx": 5.466668,
+        "referenceDx": 5.466666666666667,
+        "residualPx": 0.000001333333333519704,
+        "velocityPxPerMs": 0.06666668292682927,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "finite-repeat",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 84,
+        "dx": 5.6,
+        "referenceDx": 5.600000000000001,
+        "residualPx": 1.7763568394002505e-15,
+        "velocityPxPerMs": 0.06666666666666667,
+        "referenceVelocityPxPerMs": 0.06666666666666668
+      },
+      {
+        "input": {
+          "category": "finite-repeat",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "before:finite-repeat-delay",
+        "next": "after:finite-repeat-delay",
+        "dt": 33,
+        "dx": 2.1999999999999993,
+        "referenceDx": 2.1999999999999993,
+        "residualPx": 0,
+        "velocityPxPerMs": 0.06666666666666665,
+        "referenceVelocityPxPerMs": 0.06666666666666665
+      },
+      {
+        "input": {
+          "category": "finite-repeat",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "after:finite-repeat-delay",
+        "next": "finite-finished",
+        "dt": 367,
+        "dx": 24.466669000000003,
+        "referenceDx": 24.466666666666665,
+        "residualPx": 0.000002333333338100374,
+        "velocityPxPerMs": 0.06666667302452317,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "finite-repeat",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "finite-finished",
+        "next": "last",
+        "dt": 84,
+        "dx": 5.599997999999999,
+        "referenceDx": 5.599999999999994,
+        "residualPx": 0.0000019999999949504854,
+        "velocityPxPerMs": 0.06666664285714285,
+        "referenceVelocityPxPerMs": 0.0666666666666666
+      },
+      {
+        "input": {
+          "category": "finite-repeat",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 84,
+        "dx": 5.6,
+        "referenceDx": 5.6000000000000005,
+        "residualPx": 8.881784197001252e-16,
+        "velocityPxPerMs": 0.06666666666666667,
+        "referenceVelocityPxPerMs": 0.06666666666666668
+      },
+      {
+        "input": {
+          "category": "finite-repeat",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "before:finite-repeat-delay",
+        "next": "after:finite-repeat-delay",
+        "dt": 33,
+        "dx": 2.200000000000001,
+        "referenceDx": 2.2,
+        "residualPx": 8.881784197001252e-16,
+        "velocityPxPerMs": 0.0666666666666667,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "finite-repeat",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "after:finite-repeat-delay",
+        "next": "finite-finished",
+        "dt": 383,
+        "dx": 25.533331999999998,
+        "referenceDx": 25.533333333333335,
+        "residualPx": 0.0000013333333370724176,
+        "velocityPxPerMs": 0.06666666318537859,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "finite-repeat",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "finite-finished",
+        "next": "last",
+        "dt": 83,
+        "dx": 5.533332999999999,
+        "referenceDx": 5.533333333333331,
+        "residualPx": 3.3333333249174757e-7,
+        "velocityPxPerMs": 0.06666666265060239,
+        "referenceVelocityPxPerMs": 0.06666666666666664
+      },
+      {
+        "input": {
+          "category": "infinite-repeat",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 82,
+        "dx": 5.466666,
+        "referenceDx": 5.466666666666667,
+        "residualPx": 6.66666666759852e-7,
+        "velocityPxPerMs": 0.06666665853658536,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "infinite-repeat",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "before:infinite-repeat",
+        "next": "after:infinite-repeat",
+        "dt": 41,
+        "dx": 2.733332999999999,
+        "referenceDx": 2.7333333333333334,
+        "residualPx": 3.333333342681044e-7,
+        "velocityPxPerMs": 0.06666665853658535,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "infinite-repeat",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "after:infinite-repeat",
+        "next": "loop-running",
+        "dt": 318,
+        "dx": 21.199999000000002,
+        "referenceDx": 21.199999999999996,
+        "residualPx": 9.99999993922529e-7,
+        "velocityPxPerMs": 0.06666666352201259,
+        "referenceVelocityPxPerMs": 0.06666666666666665
+      },
+      {
+        "input": {
+          "category": "infinite-repeat",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "loop-running",
+        "next": "last",
+        "dt": 82,
+        "dx": 5.466671000000002,
+        "referenceDx": 5.466666666666669,
+        "residualPx": 0.0000043333333330508594,
+        "velocityPxPerMs": 0.06666671951219515,
+        "referenceVelocityPxPerMs": 0.0666666666666667
+      },
+      {
+        "input": {
+          "category": "infinite-repeat",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 82,
+        "dx": 5.466667,
+        "referenceDx": 5.466666666666667,
+        "residualPx": 3.33333333379926e-7,
+        "velocityPxPerMs": 0.06666667073170732,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "infinite-repeat",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "before:infinite-repeat",
+        "next": "after:infinite-repeat",
+        "dt": 35,
+        "dx": 2.3333330000000005,
+        "referenceDx": 2.333333333333333,
+        "residualPx": 3.3333333249174757e-7,
+        "velocityPxPerMs": 0.06666665714285716,
+        "referenceVelocityPxPerMs": 0.06666666666666665
+      },
+      {
+        "input": {
+          "category": "infinite-repeat",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "after:infinite-repeat",
+        "next": "loop-running",
+        "dt": 308,
+        "dx": 20.533335,
+        "referenceDx": 20.53333333333334,
+        "residualPx": 0.0000016666666624587378,
+        "velocityPxPerMs": 0.06666667207792208,
+        "referenceVelocityPxPerMs": 0.06666666666666668
+      },
+      {
+        "input": {
+          "category": "infinite-repeat",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "loop-running",
+        "next": "last",
+        "dt": 84,
+        "dx": 5.600000000000001,
+        "referenceDx": 5.600000000000001,
+        "residualPx": 0,
+        "velocityPxPerMs": 0.06666666666666668,
+        "referenceVelocityPxPerMs": 0.06666666666666668
+      },
+      {
+        "input": {
+          "category": "outside-write",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 85,
+        "dx": 5.6666669999999995,
+        "referenceDx": 5.666666666666667,
+        "residualPx": 3.3333333249174757e-7,
+        "velocityPxPerMs": 0.06666667058823529,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "outside-write",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "before:outside-write-one",
+        "next": "after:outside-write-one",
+        "dt": 34,
+        "dx": 2.266667,
+        "referenceDx": 2.2666666666666666,
+        "residualPx": 3.33333333379926e-7,
+        "velocityPxPerMs": 0.06666667647058823,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "outside-write",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "before:outside-write-two",
+        "next": "after:outside-write-two",
+        "dt": 33,
+        "dx": 2.200000000000001,
+        "referenceDx": 2.200000000000001,
+        "residualPx": 0,
+        "velocityPxPerMs": 0.0666666666666667,
+        "referenceVelocityPxPerMs": 0.0666666666666667
+      },
+      {
+        "input": {
+          "category": "outside-write",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "after:outside-write-two",
+        "next": "last",
+        "dt": 100,
+        "dx": 6.666666999999999,
+        "referenceDx": 6.666666666666666,
+        "residualPx": 3.3333333249174757e-7,
+        "velocityPxPerMs": 0.06666666999999998,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "outside-write",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 102,
+        "dx": 6.8,
+        "referenceDx": 6.8,
+        "residualPx": 0,
+        "velocityPxPerMs": 0.06666666666666667,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "outside-write",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "before:outside-write-one",
+        "next": "after:outside-write-one",
+        "dt": 25,
+        "dx": 1.6666670000000003,
+        "referenceDx": 1.666666666666666,
+        "residualPx": 3.333333342681044e-7,
+        "velocityPxPerMs": 0.06666668000000002,
+        "referenceVelocityPxPerMs": 0.06666666666666664
+      },
+      {
+        "input": {
+          "category": "outside-write",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "before:outside-write-two",
+        "next": "after:outside-write-two",
+        "dt": 31,
+        "dx": 2.066666999999999,
+        "referenceDx": 2.0666666666666664,
+        "residualPx": 3.3333333249174757e-7,
+        "velocityPxPerMs": 0.06666667741935481,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "outside-write",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "after:outside-write-two",
+        "next": "last",
+        "dt": 99,
+        "dx": 6.600000000000001,
+        "referenceDx": 6.600000000000003,
+        "residualPx": 1.7763568394002505e-15,
+        "velocityPxPerMs": 0.06666666666666668,
+        "referenceVelocityPxPerMs": 0.0666666666666667
+      },
+      {
+        "input": {
+          "category": "native-cancel",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 91,
+        "dx": 6.066667,
+        "referenceDx": 6.066666666666666,
+        "residualPx": 3.33333333379926e-7,
+        "velocityPxPerMs": 0.06666667032967033,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "native-cancel",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "after:external-native-cancel",
+        "next": "cancel-survival",
+        "dt": 116,
+        "dx": 7.733333,
+        "referenceDx": 7.7333333333333325,
+        "residualPx": 3.3333333249174757e-7,
+        "velocityPxPerMs": 0.06666666379310345,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "native-cancel",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 84,
+        "dx": 5.6,
+        "referenceDx": 5.6,
+        "residualPx": 0,
+        "velocityPxPerMs": 0.06666666666666667,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "native-cancel",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "after:external-native-cancel",
+        "next": "cancel-survival",
+        "dt": 126,
+        "dx": 8.4,
+        "referenceDx": 8.400000000000002,
+        "residualPx": 1.7763568394002505e-15,
+        "velocityPxPerMs": 0.06666666666666667,
+        "referenceVelocityPxPerMs": 0.06666666666666668
+      },
+      {
+        "input": {
+          "category": "callback-return",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 83,
+        "dx": 5.533333,
+        "referenceDx": 5.533333333333332,
+        "residualPx": 3.3333333249174757e-7,
+        "velocityPxPerMs": 0.0666666626506024,
+        "referenceVelocityPxPerMs": 0.06666666666666665
+      },
+      {
+        "input": {
+          "category": "callback-return",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "after:callback-join",
+        "next": "callback-ended",
+        "dt": 299.99999999999994,
+        "dx": 20,
+        "referenceDx": 19.999999999999996,
+        "residualPx": 3.552713678800501e-15,
+        "velocityPxPerMs": 0.06666666666666668,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "callback-return",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "callback-ended",
+        "next": "last",
+        "dt": 83,
+        "dx": 5.533335000000001,
+        "referenceDx": 5.533333333333331,
+        "residualPx": 0.0000016666666695641652,
+        "velocityPxPerMs": 0.06666668674698796,
+        "referenceVelocityPxPerMs": 0.06666666666666664
+      },
+      {
+        "input": {
+          "category": "callback-return",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 83,
+        "dx": 5.533333,
+        "referenceDx": 5.533333333333334,
+        "residualPx": 3.333333342681044e-7,
+        "velocityPxPerMs": 0.0666666626506024,
+        "referenceVelocityPxPerMs": 0.06666666666666668
+      },
+      {
+        "input": {
+          "category": "callback-return",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "after:callback-join",
+        "next": "callback-ended",
+        "dt": 282,
+        "dx": 18.799999,
+        "referenceDx": 18.799999999999997,
+        "residualPx": 9.999999974752427e-7,
+        "velocityPxPerMs": 0.06666666312056738,
+        "referenceVelocityPxPerMs": 0.06666666666666665
+      },
+      {
+        "input": {
+          "category": "callback-return",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "callback-ended",
+        "next": "last",
+        "dt": 92,
+        "dx": 6.133336,
+        "referenceDx": 6.133333333333333,
+        "residualPx": 0.000002666666667039408,
+        "velocityPxPerMs": 0.06666669565217391,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "incompatible-loops",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 78,
+        "dx": 5.199999999999999,
+        "referenceDx": 5.199999999999999,
+        "residualPx": 0,
+        "velocityPxPerMs": 0.06666666666666665,
+        "referenceVelocityPxPerMs": 0.06666666666666665
+      },
+      {
+        "input": {
+          "category": "incompatible-loops",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "before:first-loop",
+        "next": "after:first-loop",
+        "dt": 32,
+        "dx": 2.1333329999999995,
+        "referenceDx": 2.1333333333333346,
+        "residualPx": 3.3333333515628283e-7,
+        "velocityPxPerMs": 0.06666665624999998,
+        "referenceVelocityPxPerMs": 0.06666666666666671
+      },
+      {
+        "input": {
+          "category": "incompatible-loops",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "after:incompatible-loop",
+        "next": "last",
+        "dt": 124,
+        "dx": 8.266666,
+        "referenceDx": 8.266666666666664,
+        "residualPx": 6.666666632071383e-7,
+        "velocityPxPerMs": 0.06666666129032259,
+        "referenceVelocityPxPerMs": 0.06666666666666664
+      },
+      {
+        "input": {
+          "category": "incompatible-loops",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 81,
+        "dx": 5.3999999999999995,
+        "referenceDx": 5.3999999999999995,
+        "residualPx": 0,
+        "velocityPxPerMs": 0.06666666666666667,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "incompatible-loops",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "before:first-loop",
+        "next": "after:first-loop",
+        "dt": 40,
+        "dx": 2.6666680000000005,
+        "referenceDx": 2.666666666666666,
+        "residualPx": 0.0000013333333344078824,
+        "velocityPxPerMs": 0.06666670000000001,
+        "referenceVelocityPxPerMs": 0.06666666666666665
+      },
+      {
+        "input": {
+          "category": "incompatible-loops",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "after:incompatible-loop",
+        "next": "last",
+        "dt": 100,
+        "dx": 6.666667,
+        "referenceDx": 6.666666666666666,
+        "residualPx": 3.333333342681044e-7,
+        "velocityPxPerMs": 0.06666667,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "projection",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 77,
+        "dx": 5.133334,
+        "referenceDx": 5.133333333333333,
+        "residualPx": 6.66666666759852e-7,
+        "velocityPxPerMs": 0.06666667532467532,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "projection",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "before:projection-will-update",
+        "next": "after:projection-will-update",
+        "dt": 33,
+        "dx": 2.2,
+        "referenceDx": 2.200000000000001,
+        "residualPx": 8.881784197001252e-16,
+        "velocityPxPerMs": 0.06666666666666667,
+        "referenceVelocityPxPerMs": 0.0666666666666667
+      },
+      {
+        "input": {
+          "category": "projection",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "after:projection-will-update",
+        "next": "last",
+        "dt": 100,
+        "dx": 6.666665999999999,
+        "referenceDx": 6.666666666666668,
+        "residualPx": 6.666666685362088e-7,
+        "velocityPxPerMs": 0.06666665999999999,
+        "referenceVelocityPxPerMs": 0.06666666666666668
+      },
+      {
+        "input": {
+          "category": "projection",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 89,
+        "dx": 5.933333,
+        "referenceDx": 5.933333333333334,
+        "residualPx": 3.33333333379926e-7,
+        "velocityPxPerMs": 0.06666666292134832,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "projection",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "before:projection-will-update",
+        "next": "after:projection-will-update",
+        "dt": 27,
+        "dx": 1.799999999999999,
+        "referenceDx": 1.799999999999999,
+        "residualPx": 0,
+        "velocityPxPerMs": 0.06666666666666662,
+        "referenceVelocityPxPerMs": 0.06666666666666662
+      },
+      {
+        "input": {
+          "category": "projection",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "after:projection-will-update",
+        "next": "last",
+        "dt": 100,
+        "dx": 6.666667,
+        "referenceDx": 6.666666666666666,
+        "residualPx": 3.333333342681044e-7,
+        "velocityPxPerMs": 0.06666667,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      }
+    ]
+  },
+  {
+    "subject": "historical",
+    "engine": "chromium",
+    "harness": "81d76a4f61b1a241fb090213e1bcbeb327cdeeb8",
+    "count": 54,
+    "tolerancePx": 0.25,
+    "maxResidualPx": 0.04670000007450348,
+    "windows": [
+      {
+        "input": {
+          "category": "join-leave",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 100.10000000000002,
+        "dx": 6.67333,
+        "referenceDx": 6.673333333333335,
+        "residualPx": 0.0000033333333346874383,
+        "velocityPxPerMs": 0.06666663336663335,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "join-leave",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "before:join",
+        "next": "after:join",
+        "dt": 33.30000000000001,
+        "dx": 2.21997,
+        "referenceDx": 2.2200000000000006,
+        "residualPx": 0.000030000000000640625,
+        "velocityPxPerMs": 0.06666576576576574,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "join-leave",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "before:leave",
+        "next": "after:leave",
+        "dt": 33.299999999999955,
+        "dx": 2.2200000000000006,
+        "referenceDx": 2.219999999999997,
+        "residualPx": 3.552713678800501e-15,
+        "velocityPxPerMs": 0.06666666666666678,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "join-leave",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "after:leave",
+        "next": "last",
+        "dt": 100,
+        "dx": 6.666699999999999,
+        "referenceDx": 6.666666666666664,
+        "residualPx": 0.000033333333334439885,
+        "velocityPxPerMs": 0.06666699999999999,
+        "referenceVelocityPxPerMs": 0.06666666666666664
+      },
+      {
+        "input": {
+          "category": "join-leave",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 100,
+        "dx": 6.66667,
+        "referenceDx": 6.666666666666666,
+        "residualPx": 0.00000333333333379926,
+        "velocityPxPerMs": 0.0666667,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "join-leave",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "before:join",
+        "next": "after:join",
+        "dt": 33.30000000000001,
+        "dx": 2.2200000000000006,
+        "referenceDx": 2.2200000000000024,
+        "residualPx": 1.7763568394002505e-15,
+        "velocityPxPerMs": 0.06666666666666667,
+        "referenceVelocityPxPerMs": 0.06666666666666672
+      },
+      {
+        "input": {
+          "category": "join-leave",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "before:leave",
+        "next": "after:leave",
+        "dt": 33.39999999999998,
+        "dx": 2.2266999999999992,
+        "referenceDx": 2.226666666666663,
+        "residualPx": 0.00003333333333621624,
+        "velocityPxPerMs": 0.06666766467065871,
+        "referenceVelocityPxPerMs": 0.0666666666666666
+      },
+      {
+        "input": {
+          "category": "join-leave",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "after:leave",
+        "next": "last",
+        "dt": 100,
+        "dx": 6.666599999999999,
+        "referenceDx": 6.666666666666664,
+        "residualPx": 0.00006666666666532706,
+        "velocityPxPerMs": 0.06666599999999999,
+        "referenceVelocityPxPerMs": 0.06666666666666664
+      },
+      {
+        "input": {
+          "category": "finite-repeat",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 100.1,
+        "dx": 6.67334,
+        "referenceDx": 6.673333333333334,
+        "residualPx": 0.000006666666665822163,
+        "velocityPxPerMs": 0.06666673326673327,
+        "referenceVelocityPxPerMs": 0.06666666666666668
+      },
+      {
+        "input": {
+          "category": "finite-repeat",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "before:finite-repeat-delay",
+        "next": "after:finite-repeat-delay",
+        "dt": 33.30000000000001,
+        "dx": 2.2200299999999995,
+        "referenceDx": 2.219999999999999,
+        "residualPx": 0.000030000000000640625,
+        "velocityPxPerMs": 0.06666756756756753,
+        "referenceVelocityPxPerMs": 0.06666666666666661
+      },
+      {
+        "input": {
+          "category": "finite-repeat",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "after:finite-repeat-delay",
+        "next": "finite-finished",
+        "dt": 383.3,
+        "dx": 25.5533,
+        "referenceDx": 25.553333333333338,
+        "residualPx": 0.0000333333333379926,
+        "velocityPxPerMs": 0.06666657970258283,
+        "referenceVelocityPxPerMs": 0.06666666666666668
+      },
+      {
+        "input": {
+          "category": "finite-repeat",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "finite-finished",
+        "next": "last",
+        "dt": 100,
+        "dx": 6.666699999999999,
+        "referenceDx": 6.666666666666664,
+        "residualPx": 0.000033333333334439885,
+        "velocityPxPerMs": 0.06666699999999999,
+        "referenceVelocityPxPerMs": 0.06666666666666664
+      },
+      {
+        "input": {
+          "category": "finite-repeat",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 100.10000000000001,
+        "dx": 6.67333,
+        "referenceDx": 6.673333333333334,
+        "residualPx": 0.00000333333333379926,
+        "velocityPxPerMs": 0.06666663336663337,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "finite-repeat",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "before:finite-repeat-delay",
+        "next": "after:finite-repeat-delay",
+        "dt": 33.29999999999998,
+        "dx": 2.219999999999999,
+        "referenceDx": 2.2200000000000006,
+        "residualPx": 1.7763568394002505e-15,
+        "velocityPxPerMs": 0.06666666666666667,
+        "referenceVelocityPxPerMs": 0.06666666666666672
+      },
+      {
+        "input": {
+          "category": "finite-repeat",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "after:finite-repeat-delay",
+        "next": "finite-finished",
+        "dt": 383.29999999999995,
+        "dx": 25.5533,
+        "referenceDx": 25.553333333333335,
+        "residualPx": 0.000033333333334439885,
+        "velocityPxPerMs": 0.06666657970258284,
+        "referenceVelocityPxPerMs": 0.06666666666666668
+      },
+      {
+        "input": {
+          "category": "finite-repeat",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "finite-finished",
+        "next": "last",
+        "dt": 100,
+        "dx": 6.666699999999999,
+        "referenceDx": 6.666666666666664,
+        "residualPx": 0.000033333333334439885,
+        "velocityPxPerMs": 0.06666699999999999,
+        "referenceVelocityPxPerMs": 0.06666666666666664
+      },
+      {
+        "input": {
+          "category": "infinite-repeat",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 100,
+        "dx": 6.666670000000001,
+        "referenceDx": 6.666666666666668,
+        "residualPx": 0.0000033333333329110815,
+        "velocityPxPerMs": 0.06666670000000001,
+        "referenceVelocityPxPerMs": 0.06666666666666668
+      },
+      {
+        "input": {
+          "category": "infinite-repeat",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "before:infinite-repeat",
+        "next": "after:infinite-repeat",
+        "dt": 33.400000000000006,
+        "dx": 2.2266999999999992,
+        "referenceDx": 2.2266666666666666,
+        "residualPx": 0.00003333333333266353,
+        "velocityPxPerMs": 0.06666766467065866,
+        "referenceVelocityPxPerMs": 0.06666666666666665
+      },
+      {
+        "input": {
+          "category": "infinite-repeat",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "after:infinite-repeat",
+        "next": "loop-running",
+        "dt": 333.29999999999995,
+        "dx": 22.220000000000002,
+        "referenceDx": 22.22,
+        "residualPx": 3.552713678800501e-15,
+        "velocityPxPerMs": 0.06666666666666668,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "infinite-repeat",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "loop-running",
+        "next": "last",
+        "dt": 99.90000000000009,
+        "dx": 6.659999999999997,
+        "referenceDx": 6.660000000000011,
+        "residualPx": 1.4210854715202004e-14,
+        "velocityPxPerMs": 0.06666666666666657,
+        "referenceVelocityPxPerMs": 0.06666666666666671
+      },
+      {
+        "input": {
+          "category": "infinite-repeat",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 99.89999999999999,
+        "dx": 6.66,
+        "referenceDx": 6.659999999999999,
+        "residualPx": 8.881784197001252e-16,
+        "velocityPxPerMs": 0.06666666666666668,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "infinite-repeat",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "before:infinite-repeat",
+        "next": "after:infinite-repeat",
+        "dt": 33.400000000000006,
+        "dx": 2.226630000000001,
+        "referenceDx": 2.2266666666666692,
+        "residualPx": 0.000036666666668239145,
+        "velocityPxPerMs": 0.06666556886227547,
+        "referenceVelocityPxPerMs": 0.06666666666666674
+      },
+      {
+        "input": {
+          "category": "infinite-repeat",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "after:infinite-repeat",
+        "next": "loop-running",
+        "dt": 333.29999999999995,
+        "dx": 22.22,
+        "referenceDx": 22.22,
+        "residualPx": 0,
+        "velocityPxPerMs": 0.06666666666666667,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "infinite-repeat",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "loop-running",
+        "next": "last",
+        "dt": 100,
+        "dx": 6.666699999999999,
+        "referenceDx": 6.666666666666664,
+        "residualPx": 0.000033333333334439885,
+        "velocityPxPerMs": 0.06666699999999999,
+        "referenceVelocityPxPerMs": 0.06666666666666664
+      },
+      {
+        "input": {
+          "category": "outside-write",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 99.99999999999997,
+        "dx": 6.66667,
+        "referenceDx": 6.666666666666666,
+        "residualPx": 0.00000333333333379926,
+        "velocityPxPerMs": 0.06666670000000002,
+        "referenceVelocityPxPerMs": 0.06666666666666668
+      },
+      {
+        "input": {
+          "category": "outside-write",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "before:outside-write-one",
+        "next": "after:outside-write-one",
+        "dt": 33.30000000000001,
+        "dx": 2.2200000000000006,
+        "referenceDx": 2.2200000000000006,
+        "residualPx": 0,
+        "velocityPxPerMs": 0.06666666666666667,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "outside-write",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "before:outside-write-two",
+        "next": "after:outside-write-two",
+        "dt": 34.60000000074507,
+        "dx": 2.2866999999999997,
+        "referenceDx": 2.306666666716337,
+        "residualPx": 0.0199666667163374,
+        "velocityPxPerMs": 0.06608959537429937,
+        "referenceVelocityPxPerMs": 0.06666666666666664
+      },
+      {
+        "input": {
+          "category": "outside-write",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "after:outside-write-two",
+        "next": "last",
+        "dt": 99.89999999850988,
+        "dx": 6.666600000000001,
+        "referenceDx": 6.659999999900659,
+        "residualPx": 0.006600000099341585,
+        "velocityPxPerMs": 0.06673273273372814,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "outside-write",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 99.9,
+        "dx": 6.659999999999999,
+        "referenceDx": 6.66,
+        "residualPx": 8.881784197001252e-16,
+        "velocityPxPerMs": 0.06666666666666665,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "outside-write",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "before:outside-write-one",
+        "next": "after:outside-write-one",
+        "dt": 33.400000000000006,
+        "dx": 2.226700000000001,
+        "referenceDx": 2.2266666666666683,
+        "residualPx": 0.00003333333333266353,
+        "velocityPxPerMs": 0.0666676646706587,
+        "referenceVelocityPxPerMs": 0.06666666666666671
+      },
+      {
+        "input": {
+          "category": "outside-write",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "before:outside-write-two",
+        "next": "after:outside-write-two",
+        "dt": 34.399999998509884,
+        "dx": 2.273299999999999,
+        "referenceDx": 2.293333333233992,
+        "residualPx": 0.020033333233993034,
+        "velocityPxPerMs": 0.06608430232844396,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "outside-write",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "after:outside-write-two",
+        "next": "last",
+        "dt": 101.10000000149012,
+        "dx": 6.7333,
+        "referenceDx": 6.740000000099339,
+        "residualPx": 0.006700000099339576,
+        "velocityPxPerMs": 0.06660039564689177,
+        "referenceVelocityPxPerMs": 0.06666666666666665
+      },
+      {
+        "input": {
+          "category": "native-cancel",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 100,
+        "dx": 6.666670000000001,
+        "referenceDx": 6.666666666666666,
+        "residualPx": 0.0000033333333346874383,
+        "velocityPxPerMs": 0.06666670000000001,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "native-cancel",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "after:external-native-cancel",
+        "next": "cancel-survival",
+        "dt": 116.20000000111759,
+        "dx": 7.733329999999999,
+        "referenceDx": 7.74666666674117,
+        "residualPx": 0.013336666741171399,
+        "velocityPxPerMs": 0.06655189328679537,
+        "referenceVelocityPxPerMs": 0.06666666666666665
+      },
+      {
+        "input": {
+          "category": "native-cancel",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 100,
+        "dx": 6.66667,
+        "referenceDx": 6.666666666666666,
+        "residualPx": 0.00000333333333379926,
+        "velocityPxPerMs": 0.0666667,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "native-cancel",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "after:external-native-cancel",
+        "next": "cancel-survival",
+        "dt": 116.40000000037253,
+        "dx": 7.80003,
+        "referenceDx": 7.760000000024835,
+        "residualPx": 0.04002999997516454,
+        "velocityPxPerMs": 0.06701056701009481,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "callback-return",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 100,
+        "dx": 6.66667,
+        "referenceDx": 6.666666666666666,
+        "residualPx": 0.00000333333333379926,
+        "velocityPxPerMs": 0.0666667,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "callback-return",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "after:callback-join",
+        "next": "callback-ended",
+        "dt": 298.5000000007451,
+        "dx": 19.893330000000002,
+        "referenceDx": 19.900000000049673,
+        "residualPx": 0.006670000049670222,
+        "velocityPxPerMs": 0.06664432160787385,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "callback-return",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "callback-ended",
+        "next": "last",
+        "dt": 100,
+        "dx": 6.666699999999995,
+        "referenceDx": 6.666666666666671,
+        "residualPx": 0.000033333333323781744,
+        "velocityPxPerMs": 0.06666699999999995,
+        "referenceVelocityPxPerMs": 0.06666666666666671
+      },
+      {
+        "input": {
+          "category": "callback-return",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 100.1,
+        "dx": 6.673329999999999,
+        "referenceDx": 6.673333333333334,
+        "residualPx": 0.0000033333333346874383,
+        "velocityPxPerMs": 0.06666663336663337,
+        "referenceVelocityPxPerMs": 0.06666666666666668
+      },
+      {
+        "input": {
+          "category": "callback-return",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "after:callback-join",
+        "next": "callback-ended",
+        "dt": 298.5000000007451,
+        "dx": 19.899969999999996,
+        "referenceDx": 19.900000000049673,
+        "residualPx": 0.00003000004967645964,
+        "velocityPxPerMs": 0.06666656616398768,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "callback-return",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "callback-ended",
+        "next": "last",
+        "dt": 100.09999999999991,
+        "dx": 6.673400000000001,
+        "referenceDx": 6.673333333333332,
+        "residualPx": 0.00006666666666887977,
+        "velocityPxPerMs": 0.06666733266733274,
+        "referenceVelocityPxPerMs": 0.06666666666666671
+      },
+      {
+        "input": {
+          "category": "incompatible-loops",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 100.1,
+        "dx": 6.67333,
+        "referenceDx": 6.673333333333332,
+        "residualPx": 0.000003333333332022903,
+        "velocityPxPerMs": 0.06666663336663337,
+        "referenceVelocityPxPerMs": 0.06666666666666665
+      },
+      {
+        "input": {
+          "category": "incompatible-loops",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "before:first-loop",
+        "next": "after:first-loop",
+        "dt": 33.30000000000001,
+        "dx": 2.219999999999999,
+        "referenceDx": 2.2200000000000006,
+        "residualPx": 1.7763568394002505e-15,
+        "velocityPxPerMs": 0.06666666666666661,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "incompatible-loops",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "after:incompatible-loop",
+        "next": "last",
+        "dt": 116.59999999962747,
+        "dx": 7.800000000000001,
+        "referenceDx": 7.773333333308496,
+        "residualPx": 0.026666666691504304,
+        "velocityPxPerMs": 0.06689536878237497,
+        "referenceVelocityPxPerMs": 0.06666666666666665
+      },
+      {
+        "input": {
+          "category": "incompatible-loops",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 100,
+        "dx": 6.66667,
+        "referenceDx": 6.666666666666666,
+        "residualPx": 0.00000333333333379926,
+        "velocityPxPerMs": 0.0666667,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "incompatible-loops",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "before:first-loop",
+        "next": "after:first-loop",
+        "dt": 33.30000000000001,
+        "dx": 2.2199999999999998,
+        "referenceDx": 2.2199999999999998,
+        "residualPx": 0,
+        "velocityPxPerMs": 0.06666666666666664,
+        "referenceVelocityPxPerMs": 0.06666666666666664
+      },
+      {
+        "input": {
+          "category": "incompatible-loops",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "after:incompatible-loop",
+        "next": "last",
+        "dt": 116.70000000111759,
+        "dx": 7.7333,
+        "referenceDx": 7.780000000074503,
+        "residualPx": 0.04670000007450348,
+        "velocityPxPerMs": 0.06626649528642624,
+        "referenceVelocityPxPerMs": 0.06666666666666665
+      },
+      {
+        "input": {
+          "category": "projection",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 100,
+        "dx": 6.66667,
+        "referenceDx": 6.666666666666666,
+        "residualPx": 0.00000333333333379926,
+        "velocityPxPerMs": 0.0666667,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "projection",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "before:projection-will-update",
+        "next": "after:projection-will-update",
+        "dt": 34.900000001117576,
+        "dx": 2.3467000000000002,
+        "referenceDx": 2.326666666741172,
+        "residualPx": 0.02003333325882828,
+        "velocityPxPerMs": 0.06724068767692991,
+        "referenceVelocityPxPerMs": 0.06666666666666668
+      },
+      {
+        "input": {
+          "category": "projection",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "after:projection-will-update",
+        "next": "last",
+        "dt": 99.89999999850988,
+        "dx": 6.666600000000001,
+        "referenceDx": 6.659999999900659,
+        "residualPx": 0.006600000099341585,
+        "velocityPxPerMs": 0.06673273273372814,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "projection",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 99.9,
+        "dx": 6.659999999999999,
+        "referenceDx": 6.660000000000001,
+        "residualPx": 1.7763568394002505e-15,
+        "velocityPxPerMs": 0.06666666666666665,
+        "referenceVelocityPxPerMs": 0.06666666666666668
+      },
+      {
+        "input": {
+          "category": "projection",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "before:projection-will-update",
+        "next": "after:projection-will-update",
+        "dt": 35,
+        "dx": 2.3666300000000007,
+        "referenceDx": 2.333333333333332,
+        "residualPx": 0.03329666666666853,
+        "velocityPxPerMs": 0.06761800000000003,
+        "referenceVelocityPxPerMs": 0.06666666666666664
+      },
+      {
+        "input": {
+          "category": "projection",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "after:projection-will-update",
+        "next": "last",
+        "dt": 100,
+        "dx": 6.666699999999999,
+        "referenceDx": 6.666666666666668,
+        "residualPx": 0.00003333333333088717,
+        "velocityPxPerMs": 0.06666699999999999,
+        "referenceVelocityPxPerMs": 0.06666666666666668
+      }
+    ]
+  },
+  {
+    "subject": "historical",
+    "engine": "webkit",
+    "harness": "81d76a4f61b1a241fb090213e1bcbeb327cdeeb8",
+    "count": 55,
+    "tolerancePx": 0.25,
+    "maxResidualPx": 0.000001999999998503199,
+    "windows": [
+      {
+        "input": {
+          "category": "join-leave",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 78,
+        "dx": 5.2,
+        "referenceDx": 5.199999999999999,
+        "residualPx": 8.881784197001252e-16,
+        "velocityPxPerMs": 0.06666666666666667,
+        "referenceVelocityPxPerMs": 0.06666666666666665
+      },
+      {
+        "input": {
+          "category": "join-leave",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "before:join",
+        "next": "after:join",
+        "dt": 33,
+        "dx": 2.2,
+        "referenceDx": 2.2,
+        "residualPx": 0,
+        "velocityPxPerMs": 0.06666666666666667,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "join-leave",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "before:leave",
+        "next": "after:leave",
+        "dt": 40,
+        "dx": 2.6666670000000003,
+        "referenceDx": 2.666666666666668,
+        "residualPx": 3.3333333249174757e-7,
+        "velocityPxPerMs": 0.06666667500000001,
+        "referenceVelocityPxPerMs": 0.0666666666666667
+      },
+      {
+        "input": {
+          "category": "join-leave",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "after:leave",
+        "next": "last",
+        "dt": 77,
+        "dx": 5.133331999999999,
+        "referenceDx": 5.133333333333333,
+        "residualPx": 0.000001333333333519704,
+        "velocityPxPerMs": 0.06666664935064934,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "join-leave",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 83,
+        "dx": 5.533333,
+        "referenceDx": 5.533333333333333,
+        "residualPx": 3.33333333379926e-7,
+        "velocityPxPerMs": 0.0666666626506024,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "join-leave",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "before:join",
+        "next": "after:join",
+        "dt": 39,
+        "dx": 2.6000000000000005,
+        "referenceDx": 2.6000000000000005,
+        "residualPx": 0,
+        "velocityPxPerMs": 0.06666666666666668,
+        "referenceVelocityPxPerMs": 0.06666666666666668
+      },
+      {
+        "input": {
+          "category": "join-leave",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "before:leave",
+        "next": "after:leave",
+        "dt": 27,
+        "dx": 1.799999999999999,
+        "referenceDx": 1.799999999999999,
+        "residualPx": 0,
+        "velocityPxPerMs": 0.06666666666666662,
+        "referenceVelocityPxPerMs": 0.06666666666666662
+      },
+      {
+        "input": {
+          "category": "join-leave",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "after:leave",
+        "next": "last",
+        "dt": 84,
+        "dx": 5.600000000000001,
+        "referenceDx": 5.600000000000001,
+        "residualPx": 0,
+        "velocityPxPerMs": 0.06666666666666668,
+        "referenceVelocityPxPerMs": 0.06666666666666668
+      },
+      {
+        "input": {
+          "category": "finite-repeat",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 83,
+        "dx": 5.533333,
+        "referenceDx": 5.533333333333334,
+        "residualPx": 3.333333342681044e-7,
+        "velocityPxPerMs": 0.0666666626506024,
+        "referenceVelocityPxPerMs": 0.06666666666666668
+      },
+      {
+        "input": {
+          "category": "finite-repeat",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "before:finite-repeat-delay",
+        "next": "after:finite-repeat-delay",
+        "dt": 33,
+        "dx": 2.200000000000001,
+        "referenceDx": 2.1999999999999993,
+        "residualPx": 1.7763568394002505e-15,
+        "velocityPxPerMs": 0.0666666666666667,
+        "referenceVelocityPxPerMs": 0.06666666666666665
+      },
+      {
+        "input": {
+          "category": "finite-repeat",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "after:finite-repeat-delay",
+        "next": "finite-finished",
+        "dt": 366,
+        "dx": 24.400001000000003,
+        "referenceDx": 24.4,
+        "residualPx": 0.00000100000000458067,
+        "velocityPxPerMs": 0.06666666939890711,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "finite-repeat",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "finite-finished",
+        "next": "last",
+        "dt": 84,
+        "dx": 5.599998999999997,
+        "referenceDx": 5.600000000000001,
+        "residualPx": 0.00000100000000458067,
+        "velocityPxPerMs": 0.06666665476190473,
+        "referenceVelocityPxPerMs": 0.06666666666666668
+      },
+      {
+        "input": {
+          "category": "finite-repeat",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 83,
+        "dx": 5.533333,
+        "referenceDx": 5.533333333333334,
+        "residualPx": 3.333333342681044e-7,
+        "velocityPxPerMs": 0.0666666626506024,
+        "referenceVelocityPxPerMs": 0.06666666666666668
+      },
+      {
+        "input": {
+          "category": "finite-repeat",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "before:finite-repeat-delay",
+        "next": "after:finite-repeat-delay",
+        "dt": 40,
+        "dx": 2.6666670000000003,
+        "referenceDx": 2.666666666666667,
+        "residualPx": 3.33333333379926e-7,
+        "velocityPxPerMs": 0.06666667500000001,
+        "referenceVelocityPxPerMs": 0.06666666666666668
+      },
+      {
+        "input": {
+          "category": "finite-repeat",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "after:finite-repeat-delay",
+        "next": "finite-finished",
+        "dt": 376,
+        "dx": 25.066665,
+        "referenceDx": 25.06666666666667,
+        "residualPx": 0.0000016666666695641652,
+        "velocityPxPerMs": 0.06666666223404255,
+        "referenceVelocityPxPerMs": 0.06666666666666668
+      },
+      {
+        "input": {
+          "category": "finite-repeat",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "finite-finished",
+        "next": "last",
+        "dt": 82,
+        "dx": 5.466667000000001,
+        "referenceDx": 5.4666666666666615,
+        "residualPx": 3.3333333959717493e-7,
+        "velocityPxPerMs": 0.06666667073170733,
+        "referenceVelocityPxPerMs": 0.0666666666666666
+      },
+      {
+        "input": {
+          "category": "infinite-repeat",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 83,
+        "dx": 5.533334,
+        "referenceDx": 5.533333333333333,
+        "residualPx": 6.66666666759852e-7,
+        "velocityPxPerMs": 0.06666667469879518,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "infinite-repeat",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "before:infinite-repeat",
+        "next": "after:infinite-repeat",
+        "dt": 42,
+        "dx": 2.800001,
+        "referenceDx": 2.8,
+        "residualPx": 0.000001000000000139778,
+        "velocityPxPerMs": 0.06666669047619048,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "infinite-repeat",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "after:infinite-repeat",
+        "next": "loop-running",
+        "dt": 309,
+        "dx": 20.599998,
+        "referenceDx": 20.599999999999998,
+        "residualPx": 0.000001999999998503199,
+        "velocityPxPerMs": 0.06666666019417475,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "infinite-repeat",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "loop-running",
+        "next": "last",
+        "dt": 82,
+        "dx": 5.466664999999999,
+        "referenceDx": 5.466666666666669,
+        "residualPx": 0.0000016666666695641652,
+        "velocityPxPerMs": 0.06666664634146341,
+        "referenceVelocityPxPerMs": 0.0666666666666667
+      },
+      {
+        "input": {
+          "category": "infinite-repeat",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 84,
+        "dx": 5.6,
+        "referenceDx": 5.6,
+        "residualPx": 0,
+        "velocityPxPerMs": 0.06666666666666667,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "infinite-repeat",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "before:infinite-repeat",
+        "next": "after:infinite-repeat",
+        "dt": 33,
+        "dx": 2.1999999999999993,
+        "referenceDx": 2.200000000000001,
+        "residualPx": 1.7763568394002505e-15,
+        "velocityPxPerMs": 0.06666666666666665,
+        "referenceVelocityPxPerMs": 0.0666666666666667
+      },
+      {
+        "input": {
+          "category": "infinite-repeat",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "after:infinite-repeat",
+        "next": "loop-running",
+        "dt": 316,
+        "dx": 21.066666,
+        "referenceDx": 21.066666666666663,
+        "residualPx": 6.666666614307815e-7,
+        "velocityPxPerMs": 0.06666666455696203,
+        "referenceVelocityPxPerMs": 0.06666666666666665
+      },
+      {
+        "input": {
+          "category": "infinite-repeat",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "loop-running",
+        "next": "last",
+        "dt": 84,
+        "dx": 5.599998999999997,
+        "referenceDx": 5.600000000000005,
+        "residualPx": 0.0000010000000081333837,
+        "velocityPxPerMs": 0.06666665476190473,
+        "referenceVelocityPxPerMs": 0.06666666666666672
+      },
+      {
+        "input": {
+          "category": "outside-write",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 83,
+        "dx": 5.533333,
+        "referenceDx": 5.533333333333334,
+        "residualPx": 3.333333342681044e-7,
+        "velocityPxPerMs": 0.0666666626506024,
+        "referenceVelocityPxPerMs": 0.06666666666666668
+      },
+      {
+        "input": {
+          "category": "outside-write",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "before:outside-write-one",
+        "next": "after:outside-write-one",
+        "dt": 34,
+        "dx": 2.266667,
+        "referenceDx": 2.2666666666666675,
+        "residualPx": 3.3333333249174757e-7,
+        "velocityPxPerMs": 0.06666667647058823,
+        "referenceVelocityPxPerMs": 0.0666666666666667
+      },
+      {
+        "input": {
+          "category": "outside-write",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "before:outside-write-two",
+        "next": "after:outside-write-two",
+        "dt": 34,
+        "dx": 2.266667,
+        "referenceDx": 2.2666666666666657,
+        "residualPx": 3.333333342681044e-7,
+        "velocityPxPerMs": 0.06666667647058823,
+        "referenceVelocityPxPerMs": 0.06666666666666664
+      },
+      {
+        "input": {
+          "category": "outside-write",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "after:outside-write-two",
+        "next": "last",
+        "dt": 99,
+        "dx": 6.600000000000001,
+        "referenceDx": 6.599999999999998,
+        "residualPx": 3.552713678800501e-15,
+        "velocityPxPerMs": 0.06666666666666668,
+        "referenceVelocityPxPerMs": 0.06666666666666665
+      },
+      {
+        "input": {
+          "category": "outside-write",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 83,
+        "dx": 5.533333,
+        "referenceDx": 5.533333333333332,
+        "residualPx": 3.3333333249174757e-7,
+        "velocityPxPerMs": 0.0666666626506024,
+        "referenceVelocityPxPerMs": 0.06666666666666665
+      },
+      {
+        "input": {
+          "category": "outside-write",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "before:outside-write-one",
+        "next": "after:outside-write-one",
+        "dt": 33,
+        "dx": 2.2,
+        "referenceDx": 2.2,
+        "residualPx": 0,
+        "velocityPxPerMs": 0.06666666666666667,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "outside-write",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "before:outside-write-two",
+        "next": "after:outside-write-two",
+        "dt": 34.00000000000006,
+        "dx": 2.266667,
+        "referenceDx": 2.266666666666671,
+        "residualPx": 3.333333289390339e-7,
+        "velocityPxPerMs": 0.06666667647058812,
+        "referenceVelocityPxPerMs": 0.06666666666666668
+      },
+      {
+        "input": {
+          "category": "outside-write",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "after:outside-write-two",
+        "next": "last",
+        "dt": 97.99999999999994,
+        "dx": 6.533332,
+        "referenceDx": 6.53333333333333,
+        "residualPx": 0.0000013333333299669903,
+        "velocityPxPerMs": 0.06666665306122453,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "native-cancel",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 82,
+        "dx": 5.466667,
+        "referenceDx": 5.466666666666667,
+        "residualPx": 3.33333333379926e-7,
+        "velocityPxPerMs": 0.06666667073170732,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "native-cancel",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "after:external-native-cancel",
+        "next": "cancel-survival",
+        "dt": 117,
+        "dx": 7.8,
+        "referenceDx": 7.800000000000001,
+        "residualPx": 8.881784197001252e-16,
+        "velocityPxPerMs": 0.06666666666666667,
+        "referenceVelocityPxPerMs": 0.06666666666666668
+      },
+      {
+        "input": {
+          "category": "native-cancel",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 82,
+        "dx": 5.466667,
+        "referenceDx": 5.466666666666667,
+        "residualPx": 3.33333333379926e-7,
+        "velocityPxPerMs": 0.06666667073170732,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "native-cancel",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "after:external-native-cancel",
+        "next": "cancel-survival",
+        "dt": 117,
+        "dx": 7.799999,
+        "referenceDx": 7.799999999999999,
+        "residualPx": 9.999999992515995e-7,
+        "velocityPxPerMs": 0.06666665811965812,
+        "referenceVelocityPxPerMs": 0.06666666666666665
+      },
+      {
+        "input": {
+          "category": "callback-return",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 82,
+        "dx": 5.466666,
+        "referenceDx": 5.466666666666666,
+        "residualPx": 6.666666658716736e-7,
+        "velocityPxPerMs": 0.06666665853658536,
+        "referenceVelocityPxPerMs": 0.06666666666666665
+      },
+      {
+        "input": {
+          "category": "callback-return",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "after:callback-join",
+        "next": "callback-ended",
+        "dt": 280.99999999999994,
+        "dx": 18.733334,
+        "referenceDx": 18.73333333333333,
+        "residualPx": 6.666666685362088e-7,
+        "velocityPxPerMs": 0.06666666903914592,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "callback-return",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "callback-ended",
+        "next": "last",
+        "dt": 98,
+        "dx": 6.533335000000001,
+        "referenceDx": 6.533333333333331,
+        "residualPx": 0.0000016666666695641652,
+        "velocityPxPerMs": 0.0666666836734694,
+        "referenceVelocityPxPerMs": 0.06666666666666665
+      },
+      {
+        "input": {
+          "category": "callback-return",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 83,
+        "dx": 5.533333000000001,
+        "referenceDx": 5.533333333333333,
+        "residualPx": 3.3333333249174757e-7,
+        "velocityPxPerMs": 0.06666666265060242,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "callback-return",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "after:callback-join",
+        "next": "callback-ended",
+        "dt": 283,
+        "dx": 18.866666000000002,
+        "referenceDx": 18.866666666666667,
+        "residualPx": 6.666666649834951e-7,
+        "velocityPxPerMs": 0.06666666431095407,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "callback-return",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "callback-ended",
+        "next": "last",
+        "dt": 82,
+        "dx": 5.466667000000001,
+        "referenceDx": 5.466666666666665,
+        "residualPx": 3.3333333604446125e-7,
+        "velocityPxPerMs": 0.06666667073170733,
+        "referenceVelocityPxPerMs": 0.06666666666666665
+      },
+      {
+        "input": {
+          "category": "incompatible-loops",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 83,
+        "dx": 5.533333000000001,
+        "referenceDx": 5.533333333333333,
+        "residualPx": 3.3333333249174757e-7,
+        "velocityPxPerMs": 0.06666666265060242,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "incompatible-loops",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "before:first-loop",
+        "next": "after:first-loop",
+        "dt": 42,
+        "dx": 2.799999999999999,
+        "referenceDx": 2.8000000000000007,
+        "residualPx": 1.7763568394002505e-15,
+        "velocityPxPerMs": 0.06666666666666664,
+        "referenceVelocityPxPerMs": 0.06666666666666668
+      },
+      {
+        "input": {
+          "category": "incompatible-loops",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "after:incompatible-loop",
+        "next": "last",
+        "dt": 100,
+        "dx": 6.666666000000001,
+        "referenceDx": 6.666666666666664,
+        "residualPx": 6.666666632071383e-7,
+        "velocityPxPerMs": 0.06666666000000002,
+        "referenceVelocityPxPerMs": 0.06666666666666664
+      },
+      {
+        "input": {
+          "category": "incompatible-loops",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 90,
+        "dx": 6,
+        "referenceDx": 6,
+        "residualPx": 0,
+        "velocityPxPerMs": 0.06666666666666667,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "incompatible-loops",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "before:first-loop",
+        "next": "after:first-loop",
+        "dt": 27,
+        "dx": 1.800001,
+        "referenceDx": 1.7999999999999998,
+        "residualPx": 0.000001000000000139778,
+        "velocityPxPerMs": 0.0666667037037037,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "incompatible-loops",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "before:incompatible-loop",
+        "next": "after:incompatible-loop",
+        "dt": 22,
+        "dx": 1.466666,
+        "referenceDx": 1.4666666666666668,
+        "residualPx": 6.66666666759852e-7,
+        "velocityPxPerMs": 0.06666663636363636,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "incompatible-loops",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "after:incompatible-loop",
+        "next": "last",
+        "dt": 112,
+        "dx": 7.466666,
+        "referenceDx": 7.466666666666667,
+        "residualPx": 6.66666666759852e-7,
+        "velocityPxPerMs": 0.06666666071428572,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "projection",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 82,
+        "dx": 5.466667,
+        "referenceDx": 5.466666666666667,
+        "residualPx": 3.33333333379926e-7,
+        "velocityPxPerMs": 0.06666667073170732,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "projection",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "before:projection-will-update",
+        "next": "after:projection-will-update",
+        "dt": 35,
+        "dx": 2.3333329999999997,
+        "referenceDx": 2.333333333333335,
+        "residualPx": 3.3333333515628283e-7,
+        "velocityPxPerMs": 0.06666665714285713,
+        "referenceVelocityPxPerMs": 0.06666666666666671
+      },
+      {
+        "input": {
+          "category": "projection",
+          "seek": 0.62,
+          "rate": 0.5,
+          "wait": 72
+        },
+        "previous": "after:projection-will-update",
+        "next": "last",
+        "dt": 100,
+        "dx": 6.666666000000001,
+        "referenceDx": 6.666666666666666,
+        "residualPx": 6.666666649834951e-7,
+        "velocityPxPerMs": 0.06666666000000002,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "projection",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "native-start",
+        "next": "running",
+        "dt": 100,
+        "dx": 6.6666669999999995,
+        "referenceDx": 6.666666666666667,
+        "residualPx": 3.3333333249174757e-7,
+        "velocityPxPerMs": 0.06666667,
+        "referenceVelocityPxPerMs": 0.06666666666666667
+      },
+      {
+        "input": {
+          "category": "projection",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "before:projection-will-update",
+        "next": "after:projection-will-update",
+        "dt": 33,
+        "dx": 2.200000000000001,
+        "referenceDx": 2.1999999999999993,
+        "residualPx": 1.7763568394002505e-15,
+        "velocityPxPerMs": 0.0666666666666667,
+        "referenceVelocityPxPerMs": 0.06666666666666665
+      },
+      {
+        "input": {
+          "category": "projection",
+          "seek": 0.58,
+          "rate": 0.5,
+          "wait": 73
+        },
+        "previous": "after:projection-will-update",
+        "next": "last",
+        "dt": 100.00000000000006,
+        "dx": 6.666666999999999,
+        "referenceDx": 6.66666666666667,
+        "residualPx": 3.333333289390339e-7,
+        "velocityPxPerMs": 0.06666666999999994,
+        "referenceVelocityPxPerMs": 0.06666666666666665
+      }
+    ]
+  }
+]

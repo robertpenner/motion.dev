@@ -1,0 +1,42 @@
+[
+  {
+    "subject": "current",
+    "engine": "chromium",
+    "snapshots": 282,
+    "effectObservations": 474,
+    "staleEffects": 0,
+    "resurrectedCancelledIdentities": 0,
+    "incorrectOwners": 0,
+    "transformLimit": "1; 2 only in declared infinite-loop categories"
+  },
+  {
+    "subject": "current",
+    "engine": "webkit",
+    "snapshots": 282,
+    "effectObservations": 474,
+    "staleEffects": 0,
+    "resurrectedCancelledIdentities": 0,
+    "incorrectOwners": 0,
+    "transformLimit": "1; 2 only in declared infinite-loop categories"
+  },
+  {
+    "subject": "historical",
+    "engine": "chromium",
+    "snapshots": 282,
+    "effectObservations": 474,
+    "staleEffects": 0,
+    "resurrectedCancelledIdentities": 0,
+    "incorrectOwners": 0,
+    "transformLimit": "1; 2 only in declared infinite-loop categories"
+  },
+  {
+    "subject": "historical",
+    "engine": "webkit",
+    "snapshots": 282,
+    "effectObservations": 474,
+    "staleEffects": 0,
+    "resurrectedCancelledIdentities": 0,
+    "incorrectOwners": 0,
+    "transformLimit": "1; 2 only in declared infinite-loop categories"
+  }
+]

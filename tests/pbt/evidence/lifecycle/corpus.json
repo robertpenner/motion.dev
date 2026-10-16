@@ -1,0 +1,492 @@
+[
+  {
+    "input": {
+      "category": "sync-pause",
+      "seek": 0.62,
+      "rate": 0.5,
+      "wait": 72
+    },
+    "index": 0,
+    "seed": 20261016,
+    "operations": [
+      "pause",
+      "play"
+    ]
+  },
+  {
+    "input": {
+      "category": "sync-pause",
+      "seek": 0.58,
+      "rate": 0.5,
+      "wait": 73
+    },
+    "index": 1,
+    "seed": 20261016,
+    "operations": [
+      "pause",
+      "play"
+    ]
+  },
+  {
+    "input": {
+      "category": "independent-pause",
+      "seek": 0.62,
+      "rate": 0.5,
+      "wait": 72
+    },
+    "index": 0,
+    "seed": 20261016,
+    "operations": [
+      "pause",
+      "play"
+    ]
+  },
+  {
+    "input": {
+      "category": "independent-pause",
+      "seek": 0.58,
+      "rate": 0.5,
+      "wait": 73
+    },
+    "index": 1,
+    "seed": 20261016,
+    "operations": [
+      "pause",
+      "play"
+    ]
+  },
+  {
+    "input": {
+      "category": "sync-seek",
+      "seek": 0.62,
+      "rate": 0.5,
+      "wait": 72
+    },
+    "index": 0,
+    "seed": 20261016,
+    "operations": [
+      "pause",
+      "seek"
+    ]
+  },
+  {
+    "input": {
+      "category": "sync-seek",
+      "seek": 0.58,
+      "rate": 0.5,
+      "wait": 73
+    },
+    "index": 1,
+    "seed": 20261016,
+    "operations": [
+      "pause",
+      "seek"
+    ]
+  },
+  {
+    "input": {
+      "category": "independent-seek",
+      "seek": 0.62,
+      "rate": 0.5,
+      "wait": 72
+    },
+    "index": 0,
+    "seed": 20261016,
+    "operations": [
+      "pause",
+      "seek"
+    ]
+  },
+  {
+    "input": {
+      "category": "independent-seek",
+      "seek": 0.58,
+      "rate": 0.5,
+      "wait": 73
+    },
+    "index": 1,
+    "seed": 20261016,
+    "operations": [
+      "pause",
+      "seek"
+    ]
+  },
+  {
+    "input": {
+      "category": "sync-rate",
+      "seek": 0.62,
+      "rate": 0.5,
+      "wait": 72
+    },
+    "index": 0,
+    "seed": 20261016,
+    "operations": [
+      "rate"
+    ]
+  },
+  {
+    "input": {
+      "category": "sync-rate",
+      "seek": 0.58,
+      "rate": 0.5,
+      "wait": 73
+    },
+    "index": 1,
+    "seed": 20261016,
+    "operations": [
+      "rate"
+    ]
+  },
+  {
+    "input": {
+      "category": "independent-rate",
+      "seek": 0.62,
+      "rate": 0.5,
+      "wait": 72
+    },
+    "index": 0,
+    "seed": 20261016,
+    "operations": [
+      "rate"
+    ]
+  },
+  {
+    "input": {
+      "category": "independent-rate",
+      "seek": 0.58,
+      "rate": 0.5,
+      "wait": 73
+    },
+    "index": 1,
+    "seed": 20261016,
+    "operations": [
+      "rate"
+    ]
+  },
+  {
+    "input": {
+      "category": "interruption",
+      "seek": 0.62,
+      "rate": 0.5,
+      "wait": 72
+    },
+    "index": 0,
+    "seed": 20261016,
+    "operations": [
+      "interrupt-x"
+    ]
+  },
+  {
+    "input": {
+      "category": "interruption",
+      "seek": 0.58,
+      "rate": 0.5,
+      "wait": 73
+    },
+    "index": 1,
+    "seed": 20261016,
+    "operations": [
+      "interrupt-x"
+    ]
+  },
+  {
+    "input": {
+      "category": "join-leave",
+      "seek": 0.62,
+      "rate": 0.5,
+      "wait": 72
+    },
+    "index": 0,
+    "seed": 20261016,
+    "operations": [
+      "join",
+      "leave"
+    ]
+  },
+  {
+    "input": {
+      "category": "join-leave",
+      "seek": 0.58,
+      "rate": 0.5,
+      "wait": 73
+    },
+    "index": 1,
+    "seed": 20261016,
+    "operations": [
+      "join",
+      "leave"
+    ]
+  },
+  {
+    "input": {
+      "category": "finite-repeat",
+      "seek": 0.62,
+      "rate": 0.5,
+      "wait": 72
+    },
+    "index": 0,
+    "seed": 20261016,
+    "operations": [
+      "finite-repeat-delay"
+    ]
+  },
+  {
+    "input": {
+      "category": "finite-repeat",
+      "seek": 0.58,
+      "rate": 0.5,
+      "wait": 73
+    },
+    "index": 1,
+    "seed": 20261016,
+    "operations": [
+      "finite-repeat-delay"
+    ]
+  },
+  {
+    "input": {
+      "category": "infinite-repeat",
+      "seek": 0.62,
+      "rate": 0.5,
+      "wait": 72
+    },
+    "index": 0,
+    "seed": 20261016,
+    "operations": [
+      "infinite-repeat"
+    ]
+  },
+  {
+    "input": {
+      "category": "infinite-repeat",
+      "seek": 0.58,
+      "rate": 0.5,
+      "wait": 73
+    },
+    "index": 1,
+    "seed": 20261016,
+    "operations": [
+      "infinite-repeat"
+    ]
+  },
+  {
+    "input": {
+      "category": "outside-write",
+      "seek": 0.62,
+      "rate": 0.5,
+      "wait": 72
+    },
+    "index": 0,
+    "seed": 20261016,
+    "operations": [
+      "outside-write-one",
+      "outside-write-two"
+    ]
+  },
+  {
+    "input": {
+      "category": "outside-write",
+      "seek": 0.58,
+      "rate": 0.5,
+      "wait": 73
+    },
+    "index": 1,
+    "seed": 20261016,
+    "operations": [
+      "outside-write-one",
+      "outside-write-two"
+    ]
+  },
+  {
+    "input": {
+      "category": "native-cancel",
+      "seek": 0.62,
+      "rate": 0.5,
+      "wait": 72
+    },
+    "index": 0,
+    "seed": 20261016,
+    "operations": [
+      "external-native-cancel"
+    ]
+  },
+  {
+    "input": {
+      "category": "native-cancel",
+      "seek": 0.58,
+      "rate": 0.5,
+      "wait": 73
+    },
+    "index": 1,
+    "seed": 20261016,
+    "operations": [
+      "external-native-cancel"
+    ]
+  },
+  {
+    "input": {
+      "category": "callback-return",
+      "seek": 0.62,
+      "rate": 0.5,
+      "wait": 72
+    },
+    "index": 0,
+    "seed": 20261016,
+    "operations": [
+      "callback-join"
+    ]
+  },
+  {
+    "input": {
+      "category": "callback-return",
+      "seek": 0.58,
+      "rate": 0.5,
+      "wait": 73
+    },
+    "index": 1,
+    "seed": 20261016,
+    "operations": [
+      "callback-join"
+    ]
+  },
+  {
+    "input": {
+      "category": "negative-rate",
+      "seek": 0.62,
+      "rate": 0.5,
+      "wait": 72
+    },
+    "index": 0,
+    "seed": 20261016,
+    "operations": [
+      "negative-speed",
+      "positive-speed"
+    ]
+  },
+  {
+    "input": {
+      "category": "negative-rate",
+      "seek": 0.58,
+      "rate": 0.5,
+      "wait": 73
+    },
+    "index": 1,
+    "seed": 20261016,
+    "operations": [
+      "negative-speed",
+      "positive-speed"
+    ]
+  },
+  {
+    "input": {
+      "category": "incompatible-loops",
+      "seek": 0.62,
+      "rate": 0.5,
+      "wait": 72
+    },
+    "index": 0,
+    "seed": 20261016,
+    "operations": [
+      "first-loop",
+      "incompatible-loop"
+    ]
+  },
+  {
+    "input": {
+      "category": "incompatible-loops",
+      "seek": 0.58,
+      "rate": 0.5,
+      "wait": 73
+    },
+    "index": 1,
+    "seed": 20261016,
+    "operations": [
+      "first-loop",
+      "incompatible-loop"
+    ]
+  },
+  {
+    "input": {
+      "category": "mixed-control-replay",
+      "seek": 0.62,
+      "rate": 0.5,
+      "wait": 72
+    },
+    "index": 0,
+    "seed": 20261016,
+    "operations": [
+      "prepare-mixed",
+      "play-x",
+      "rate-all",
+      "play-all"
+    ]
+  },
+  {
+    "input": {
+      "category": "mixed-control-replay",
+      "seek": 0.58,
+      "rate": 0.5,
+      "wait": 73
+    },
+    "index": 1,
+    "seed": 20261016,
+    "operations": [
+      "prepare-mixed",
+      "play-x",
+      "rate-all",
+      "play-all"
+    ]
+  },
+  {
+    "input": {
+      "category": "projection",
+      "seek": 0.62,
+      "rate": 0.5,
+      "wait": 72
+    },
+    "index": 0,
+    "seed": 20261016,
+    "operations": [
+      "projection-will-update"
+    ]
+  },
+  {
+    "input": {
+      "category": "projection",
+      "seek": 0.58,
+      "rate": 0.5,
+      "wait": 73
+    },
+    "index": 1,
+    "seed": 20261016,
+    "operations": [
+      "projection-will-update"
+    ]
+  },
+  {
+    "input": {
+      "category": "completion-order",
+      "seek": 0.62,
+      "rate": 0.5,
+      "wait": 72
+    },
+    "index": 0,
+    "seed": 20261016,
+    "operations": [
+      "short-tracks"
+    ]
+  },
+  {
+    "input": {
+      "category": "completion-order",
+      "seek": 0.58,
+      "rate": 0.5,
+      "wait": 73
+    },
+    "index": 1,
+    "seed": 20261016,
+    "operations": [
+      "short-tracks"
+    ]
+  }
+]
